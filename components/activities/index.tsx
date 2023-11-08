@@ -3,7 +3,7 @@ import { ActivitiesCard } from "./ActivitiesCards";
 
 export const ActivitiesPage = () => {
   return (
-    <div className="">
+    <div className="">git branch -M main
       <ActivitiesCard />
     </div>
   );

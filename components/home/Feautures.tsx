@@ -2,53 +2,53 @@ import React from "react";
 import { MessageForm } from "./MessageForm";
 import Image from "next/image";
 
-const features = [
-  {
-    id: 1,
-    title: "Interactive reading",
-    description:
-      " Immerse yourself in the heartwarming story with our interactive book that mimic the feel of a physical book.",
-    img: (
-      <Image
-      width={18}
-      height={20}
-        src="../src/assets/images/features1.svg"
-        className="w-[413.94px] h-[245.871px]"
-        alt="features-1"
-      />
-    ),
-  },
-  {
-    id: 2,
-    title: "Engaging activities",
-    description:
-      " Dive into a curated selection of interactive games and activities tied to the narrative, encouraging curiosity and exploration",
-    img: (
-      <Image
-      width={18}
-      height={20}
-        src="../src/assets/images/features2.svg"
-        className="w-[413.94px] h-[245.871px]"
-        alt="features-2"
-      />
-    ),
-  },
-  {
-    id: 1,
-    title: "Easy Access to the Book",
-    description:
-      " Own a physical copy of 'your favorite books' with a direct link to purchase on Amazon, readily available for your convenience.",
-    img: (
-      <Image
-              width={18}
-              height={20}
-        src="../src/assets/images/features3.svg"
-        className="w-[413.94px] h-[245.871px]"
-        alt="features-3"
-      />
-    ),
-  },
-];
+// const features = [
+//   {
+//     id: 1,
+//     title: "Interactive reading",
+//     description:
+//       " Immerse yourself in the heartwarming story with our interactive book that mimic the feel of a physical book.",
+//     img: (
+//       <Image
+//       width={18}
+//       height={20}
+//         src="../src/assets/images/features1.svg"
+//         className="w-[413.94px] h-[245.871px]"
+//         alt="features-1"
+//       />
+//     ),
+//   },
+//   {
+//     id: 2,
+//     title: "Engaging activities",
+//     description:
+//       " Dive into a curated selection of interactive games and activities tied to the narrative, encouraging curiosity and exploration",
+//     img: (
+//       <Image
+//       width={18}
+//       height={20}
+//         src="../src/assets/images/features2.svg"
+//         className="w-[413.94px] h-[245.871px]"
+//         alt="features-2"
+//       />
+//     ),
+//   },
+//   {
+//     id: 1,
+//     title: "Easy Access to the Book",
+//     description:
+//       " Own a physical copy of 'your favorite books' with a direct link to purchase on Amazon, readily available for your convenience.",
+//     img: (
+//       <Image
+//               width={18}
+//               height={20}
+//         src="../src/assets/images/features3.svg"
+//         className="w-[413.94px] h-[245.871px]"
+//         alt="features-3"
+//       />
+//     ),
+//   },
+// ];
 
 export const Feautures = () => {
   return (
