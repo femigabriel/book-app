@@ -6,7 +6,7 @@ export const LandingPage = () => {
   return (
     <div className="bg-[#EEE0FF] w-full h-screen landingPage">
       <Header />
-      <div className="px-10 pt-5">
+      <div className="px-10 pt-10">
         <div className="text-[#9B59B6]">
           <h1 className="text-[1.792em] w-[12em] font-medium leading-[42px] mb-3">
             Three Paths Social Emotional Learning.
