@@ -95,7 +95,7 @@ export const Feautures = () => {
             <div className="py-12">
               <h3 className="text-[1.2em]">Easy Access to the Book</h3>
               <p className="w-[24em] text-[0.85em] leading-6">
-                {/* Own a physical copy of 'your favorite books' with a direct link */}
+                Own a physical copy of 'your favorite books' with a direct link
                 to purchase on Amazon, readily available for your convenience.
               </p>
             </div>
