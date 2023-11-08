@@ -16,7 +16,7 @@ export const LandingPage = () => {
             by Charlie’s Big Gift.
           </p>
         </div>
-        <div className="flex gap-5 mt-10 lists">
+        <div className="flex gap-5 mt-20 lists">
           <Image
             width={18}
             height={20}

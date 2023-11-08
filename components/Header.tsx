@@ -17,7 +17,7 @@ export const Header = () => {
 
   return (
     <div>
-      <header className="px-5 py- flex justify-between h-[96px] header">
+      <header className="px-5 py-5 flex justify-between h-[96px] header">
         <Image
           src="./assets/icons/logo.svg"
           width={131}
