@@ -58,8 +58,6 @@ export const Feautures = () => {
           One platform, multiple Function
         </h3>
         <div className=" w-full ">
-          {/* {features.map((page, index) => {
-            return ( */}
           <div className="flex justify- gap-[80px] my-10 w-full">
             <div className="py-14">
               <h3 className="text-[1.2em]">Interactive reading</h3>
@@ -126,8 +124,6 @@ export const Feautures = () => {
               </p>
             </div>
           </div>
-          {/* );
-          })} */}
         </div>
         <MessageForm />
       </div>
