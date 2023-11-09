@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import { Input } from "antd";
 import Link from "next/link";
 
-export default function NickNameForm() {
+interface Props {
+  onNextClick: () => any;
+}
+// export default function NickNameForm() {
+export const NickNameForm = ({ onNextClick }: Props) => {
   const [name, setName] = useState("");
   const [error, setError] = useState(false);
 
@@ -12,7 +16,7 @@ export default function NickNameForm() {
       setError(true);
       return;
     }
-    // onSuccessCallback()
+    onNextClick();
     e.preventDefault();
   };
   return (
@@ -61,4 +65,4 @@ export default function NickNameForm() {
       </form>
     </div>
   );
-}
+};

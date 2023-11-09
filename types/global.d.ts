@@ -134,3 +134,7 @@ export type PersonelProps = {
   name: string,
   img: React.ReactElement;
 }
+export type PaymentPlanList = {
+  id: number;
+  img: React.ReactElement;
+};
