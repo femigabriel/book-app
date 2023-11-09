@@ -1,12 +1,13 @@
 import React from "react";
 import { DownOutlined } from "@ant-design/icons";
 import Image from "next/image";
+import Link from "next/link";
 
 export const ReadBookHeader = () => {
   return (
     <div className=" h-[96px]">
       <header className="px-10 py-7 flex justify-between ">
-        <div className="flex cursor-pointer">
+        <Link href="/" className="flex cursor-pointer">
           <Image
             width={17}
             height={19}
@@ -15,7 +16,7 @@ export const ReadBookHeader = () => {
             alt="back-icon"
           />
           <span>Back</span>
-        </div>
+        </Link>
 
         <div className="flex">
           <div className="flex cursor-pointer">
