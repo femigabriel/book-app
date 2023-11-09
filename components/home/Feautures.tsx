@@ -52,14 +52,14 @@ import Image from "next/image";
 
 export const Feautures = () => {
   return (
-    <div className="flex justify-center w-full bg-[#F8F8F8] ">
+    <div className="flex justify-center w-full bg-[#F8F8F8] features ">
       <div className="">
         <h3 className="text-[1.5em] text-center my-12 mt-16">
           One platform, multiple Function
         </h3>
         <div className=" w-full ">
-          <div className="flex justify- gap-[80px] my-10 w-full">
-            <div className="py-14">
+          <div className="flex justify- gap-[80px] my-10 w-full features ">
+            <div className="py-14 feat-content">
               <h3 className="text-[1.2em]">Interactive reading</h3>
               <p className="w-[24em] text-[0.85em] leading-6">
                 Immerse yourself in the heartwarming story with our interactive
@@ -74,7 +74,7 @@ export const Feautures = () => {
               alt="features-1"
             />
           </div>
-          <div className="flex justify- gap-[80px] my-10 w-full">
+          <div className="flex justify- gap-[80px] my-10 w-full features-1">
             <Image
               width={18}
               height={20}
@@ -82,7 +82,7 @@ export const Feautures = () => {
               className="w-[413.94px] h-[245.871px]"
               alt="features-2"
             />
-            <div className="py-20">
+            <div className="py-20 feat-content">
               <h3 className="text-[1.2em]">Engaging activities</h3>
               <p className="w-[24em] text-[0.85em] leading-6">
                 Dive into a curated selection of interactive games and
@@ -91,8 +91,8 @@ export const Feautures = () => {
               </p>
             </div>
           </div>
-          <div className="flex justify- gap-[80px] my-10 w-full">
-            <div className="py-12">
+          <div className="flex justify- gap-[80px] my-10 w-full features">
+            <div className="py-12 feat-content">
               <h3 className="text-[1.2em]">Easy Access to the Book</h3>
               <p className="w-[24em] text-[0.85em] leading-6">
                 {/* Own a physical copy of 'your favorite books' with a direct link */}
@@ -107,7 +107,7 @@ export const Feautures = () => {
               alt="features-3"
             />
           </div>
-          <div className="flex justify- gap-[80px] my-10 w-full">
+          <div className="flex justify- gap-[80px] my-10 w-full features-1">
             <Image
               width={18}
               height={20}
@@ -115,7 +115,7 @@ export const Feautures = () => {
               className="w-[413.94px] h-[245.871px]"
               alt="features-4"
             />
-            <div className="py-20">
+            <div className="py-20 feat-content">
               <h3 className="text-[1.2em]">Engaging activities</h3>
               <p className="w-[24em] text-[0.85em] leading-6">
                 Dive into a curated selection of interactive games and

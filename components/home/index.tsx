@@ -9,7 +9,7 @@ export const HomePage = () => {
     <div className="home">
       <LandingPage />
       <Feautures />
-      <AboutPage />
+      {/* <AboutPage /> */}
       <Footer />
     </div>
   );

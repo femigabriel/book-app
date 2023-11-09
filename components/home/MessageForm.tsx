@@ -18,7 +18,7 @@ export const MessageForm = () => {
         <form
           action=""
           // onSubmit={(event) => event.preventDefault()}
-          className="my-10 w-[527px]"
+          className="my-10 w-[527px] messageForm"
         >
           <div className="flex w-full mb-5">
             <label htmlFor="" className="mt-2 mr-3">
@@ -26,7 +26,7 @@ export const MessageForm = () => {
             </label>
             <Input
               placeholder="Enter your name"
-              className=" h-[44px] w-[471px] border-[#D9D9D9] border-2 text-[0.725em]"
+              className=" h-[44px] w-full border-[#D9D9D9] border-2 text-[0.725em]"
             />
           </div>
           <div className="flex w-full mb-5 ">
@@ -35,11 +35,11 @@ export const MessageForm = () => {
             </label>
             <Input
               placeholder="Enter your email address"
-              className=" h-[44px] w-[471px] border-[#D9D9D9] border-2 text-[0.725em]"
+              className=" h-[44px] w-full border-[#D9D9D9] border-2 text-[0.725em]"
             />
           </div>
           <TextArea
-            className="h-[169px] w-[527px] border-[#D9D9D9] border-2 text-[0.725em]"
+            className="h-[169px] w-full border-[#D9D9D9] border-2 text-[0.725em]"
             placeholder="Write a message"
             allowClear
             onChange={onChange}
