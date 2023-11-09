@@ -9,24 +9,16 @@ interface Props {
 }
 export const BookPageCoverEnd = ({ onNextClick, onBackClick }: Props) => {
   return (
-    <div className="coverBook">
+    <div className="coverBook w-full h-screen">
       <ReadBookHeader />
-      <div className="flex justify-between items-center coverBook w-full h-screen px-5">
-        {/* <Image
-          width={17}
-          height={19}
-          src="./assets/icons/forwardIcon.svg"
-          className="w-[17px] h-[19px] cursor-pointer cover"
-          alt="forward-icon"
-          onClick={onBackClick}
-        /> */}
+      <div className="flex justify-between items-center cover px-5">
         <LeftOutlined onClick={onBackClick} className="w cursor-pointer" />
-        <div className="flex w-full items-center">
+        <div className="flex w-full items-center bookBackcover">
           <Image
             width={17}
             height={19}
             src="./assets/images/backCover.svg"
-            className="w-[680px] px-10 h-[538.355px] cursor-pointer "
+            className="w-[680px] px-10 h-[488.355px] cursor-pointer book mb-5"
             alt="cover"
           />
           <button
@@ -37,14 +29,6 @@ export const BookPageCoverEnd = ({ onNextClick, onBackClick }: Props) => {
           </button>
         </div>
 
-        {/* <Image
-          width={17}
-          height={19}
-          src="./assets/icons/backIcon.svg"
-          className="w-[17px] h-[19px] cursor-pointer cover"
-          alt="forward-icon"
-          onClick={onNextClick}
-        /> */}
         <RightOutlined onClick={onNextClick} className="w cursor-pointer" />
       </div>
     </div>

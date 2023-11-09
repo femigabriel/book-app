@@ -9,35 +9,21 @@ interface Props {
 }
 export const BookPageFlipped = ({ onNextClick, onBackClick }: Props) => {
   return (
-    <div className="coverBook">
+    <div className="coverBook  w-full h-screen">
       <ReadBookHeader />
-      <div className="flex justify-between items-center coverBook w-full px-5">
-        {/* <Image
-          width={17}
-          height={19}
-          src="./assets/icons/forwardIcon.svg"
-          className="w-[17px] h-[19px] cursor-pointer cover"
-          alt="forward-icon"
-          onClick={onBackClick}
-        /> */}
+      <div className="flex justify-between items-center cover px-5 ">
+      
         <LeftOutlined onClick={onBackClick} className="w cursor-pointer" />
         <div>
           <Image
             width={17}
             height={19}
             src="./assets/images/bookFlip.svg"
-            className="w-full px-10 h-[538.355px] cursor-pointer "
+            className="w-full px-10 h-[538.355px] cursor-pointer book"
             alt="cover"
           />
         </div>
-        {/* <Image
-          width={17}
-          height={19}
-          src="./assets/icons/backIcon.svg"
-          className="w-[17px] h-[19px] cursor-pointer cover"
-          alt="forward-icon"
-          onClick={onNextClick}
-        /> */}
+       
         <RightOutlined onClick={onNextClick} className="w cursor-pointer" />
       </div>
     </div>
