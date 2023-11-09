@@ -71,8 +71,7 @@ const items: PaymentPlanList[] = [
   },
 ];
 
-// export default function CreateUniqueName() {
-export const CreateUniqueName = ({ onNextClick, onBackClick }: Props) => {
+export const CreateUniqueNameAvatar = ({ onNextClick, onBackClick }: Props) => {
   const [name, setName] = useState("");
   const [error, setError] = useState(false);
   const [selected, setSelected] = useState<PaymentPlanList | undefined>();
@@ -80,10 +79,28 @@ export const CreateUniqueName = ({ onNextClick, onBackClick }: Props) => {
   const handleOnClick = (item: PaymentPlanList) => {
     setSelected(item);
   };
+  const handleSubmit = () => {
+    if (selected === undefined) {
+      return;
+    }
+    // pageContext.dispatch({ type: 'setPlans', payload: selected })
+    // pageContext.dispatch({ type: 'isYearly', payload: active })
+    onNextClick();
+  };
 
   return (
     <div className=" flex justify-center items-center h-screen">
       <div className="formgroup px-20 py-10">
+        <div className="flex cursor-pointer"    onClick={onBackClick}>
+          <Image
+            width={24}
+            height={24}
+            src="./assets/icons/back.svg"
+            className="w-[24px] h-[24px] mr-2"
+            alt="back-icon"
+          />
+          <span>Back</span>
+        </div>
         <h3 className="text-[1.500em] text-center my-7">
           Your Nickname is your Passcode
         </h3>
@@ -97,10 +114,11 @@ export const CreateUniqueName = ({ onNextClick, onBackClick }: Props) => {
               return (
                 <div
                   key={list.id}
-                  style={{
-                    borderColor: list.id === selected?.id ? "blue" : "",
-                  }}
-                  onClick={() => handleOnClick(list)}
+                  // style={{
+                  //   borderColor: list.id === selected?.id ? "blue" : "",
+                  // }}
+                  //   onClick={() => handleOnClick(list)}
+                  onClick={onNextClick}
                 >
                   {list.img}
                 </div>

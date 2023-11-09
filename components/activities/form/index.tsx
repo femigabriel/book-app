@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NickNameForm } from "./NickNameForm";
-import { CreateUniqueName } from "./CreateUniqueName";
+import { CreateUniqueNameAvatar } from "./CreateUniqueNameAvatar";
+import { CreateUniqueNameForm } from "./CreateUniqueNameForm";
 
 export default function Form() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -19,12 +20,12 @@ export default function Form() {
         return <NickNameForm onNextClick={gotoNext} />;
       case 1:
         return (
-          <CreateUniqueName onNextClick={gotoNext} onBackClick={gotoPrevious} />
+          <CreateUniqueNameAvatar onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
-      // case 2:
-      //   return (
-      //     <BookPageFlipped onNextClick={gotoNext} onBackClick={gotoPrevious} />
-      //   );
+      case 2:
+        return (
+          <CreateUniqueNameForm onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
       // case 3:
       //   return (
       //     <BookPageCoverEnd onNextClick={gotoNext} onBackClick={gotoPrevious} />

@@ -45,7 +45,7 @@ export const NickNameForm = ({ onNextClick }: Props) => {
           </Link>
           {error && name.length <= 0 ? (
             <label className="text-[#F13737] text-[0.750em]">
-              This field is required
+              *Nickname not found
             </label>
           ) : (
             ""
