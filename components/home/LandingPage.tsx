@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const LandingPage = () => {
   return (
-    <div className="bg-[#EEE0FF] w-full h-screen landingPage">
+    <div className="bg-[#EEE0FF] w-full h-screen landingPage pt-32">
       <Header />
       <div className="px-10 pt-10">
         <div className="text-[#9B59B6]">

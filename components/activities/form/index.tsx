@@ -1,7 +1,11 @@
 import React, { useState } from "react";
-import { NickNameForm } from "./NickNameForm";
-import { CreateUniqueNameAvatar } from "./CreateUniqueNameAvatar";
-import { CreateUniqueNameForm } from "./CreateUniqueNameForm";
+import { NickNameForm } from "../NickNameForm";
+import { StoybookCovers } from "./StoybookCovers";
+import { StorybookIntro } from "../StorybookIntro";
+import { ActivitiesCard } from "../ActivitiesCards";
+import { CharliesChoices1 } from "../CharliesChoices1";
+import { CharliesChoices2 } from "../CharliesChoice2";
+import { CharliesChoices3 } from "../CharliesChoices3";
 
 export default function Form() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -20,19 +24,31 @@ export default function Form() {
         return <NickNameForm onNextClick={gotoNext} />;
       case 1:
         return (
-          <CreateUniqueNameAvatar onNextClick={gotoNext} onBackClick={gotoPrevious} />
+          <StoybookCovers onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
       case 2:
         return (
-          <CreateUniqueNameForm onNextClick={gotoNext} onBackClick={gotoPrevious} />
+          <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
-      // case 3:
-      //   return (
-      //     <BookPageCoverEnd onNextClick={gotoNext} onBackClick={gotoPrevious} />
-      //   );
+      case 3:
+        return (
+          <ActivitiesCard onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
+      case 4:
+        return (
+          <CharliesChoices1 onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
+      case 5:
+        return (
+          <CharliesChoices2 onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
+      case 6:
+        return (
+          <CharliesChoices3 onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
       default:
         return <NickNameForm onNextClick={gotoNext} />;
     }
   };
-  return <div className="nicknameForm">{renderCurrentSelection()}</div>;
+  return <div className="">{renderCurrentSelection()}</div>;
 }

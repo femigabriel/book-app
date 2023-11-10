@@ -40,7 +40,7 @@ const items: MenuProps["items"] = [
 export const ActivitiesHeader = () => {
   return (
     <div className="w-full h-[96px]">
-      <header className="px-10 py-7 flex justify-between  w-full">
+      <header className="px-10 py-7 flex justify-between shadow-sm w-full">
         <Link href="/" className="flex cursor-pointer w-full">
           
             <Image
@@ -67,11 +67,7 @@ export const ActivitiesHeader = () => {
               Queen1234
             </span>
           </div>
-          {/* <img
-            src="../src/assets/icons/downIcon.svg"
-            className="w-[40px] h-[40px] items-center flex justify-center"
-            alt="down-icon"
-          /> */}
+      
           <Dropdown menu={{ items }} placement="bottomRight" arrow>
             <Image
                  width={40}

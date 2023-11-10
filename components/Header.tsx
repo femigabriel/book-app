@@ -1,45 +1,170 @@
 import React, { useState } from "react";
-import { Button, Drawer } from "antd";
 import Link from "next/link";
 import Image from "next/image";
-import { MenuOutlined, RightOutlined } from "@ant-design/icons";
+import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
+import type { MenuProps } from "antd";
+import { Dropdown, Space } from "antd";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
+  const [close, setClose] = useState(false);
+  const [active, setActive] = useState(false);
 
-  const showDrawer = () => {
+  // const showDrawer = () => {
+  //   setOpen(true);
+  // };
+
+  const onClose = () => {
     setOpen(true);
   };
 
-  const onClose = () => {
+  const handleMenuClick: MenuProps["onClick"] = (e) => {
+    // if (e.key === "3") {
+    //   setOpen(false);
+    // }
     setOpen(false);
   };
+  const handleClick = () => {
+    // setActive(!active);
+    setClose(true);
+  };
+
+  const handleOpenChange = (flag: boolean) => {
+    setOpen(flag);
+  };
+
+  //   <nav className="">
+  //   <li className="py-3 text-[1em]">
+  //     <Link href="/">Home</Link>
+  //   </li>
+  //   <li className="py-2 text-[1em]">
+  //     <Link href="/read-book">Read Book</Link>
+  //   </li>
+  //   <li className="py-2 text-[1em]">
+  //     <Link href="/activities">Activities</Link>
+  //   </li>
+  //   <li className="py-2 text-[1em]">
+  //     <Link href="/purchase-book">purchase Books</Link>
+  //   </li>
+  //   <li className="py-2 text-[1em]">
+  //     <Link href="/leaderboard">Leaderboard</Link>
+  //   </li>
+  //   <li className="py-2 text-[1em]">
+  //     <Link href="/store">How it Works</Link>
+  //   </li>
+
+  //   <li className="py-2 text-[1em]">
+  //     <Link href="/store">About</Link>
+  //   </li>
+  // </nav>
+
+  const items: MenuProps["items"] = [
+    {
+      label: (
+        <li className=" text-[1.5em]">
+          <Link href="/read-book">Read Book</Link>
+        </li>
+      ),
+      key: "1",
+    },
+    {
+      label: (
+        <li className=" text-[1.5em]">
+          <Link href="/activities">Activities</Link>
+        </li>
+      ),
+      key: "2",
+    },
+    {
+      label: (
+        <li className=" text-[1.5em]">
+          <Link href="/read-book">Leaderboard</Link>
+        </li>
+      ),
+      key: "3",
+    },
+    {
+      label: (
+        <li className=" text-[1.5em]">
+          <Link href="/read-book">How it Works</Link>
+        </li>
+      ),
+      key: "4",
+    },
+    {
+      label: (
+        <li className=" text-[1.5em]">
+          <Link href="/read-book">About</Link>
+        </li>
+      ),
+      key: "5",
+    },
+    // {
+    //   label: (
+    //     <li className=" text-[1em]">
+    //       <Link href="/read-book">Purchase Book</Link>
+    //     </li>
+    //   ),
+    //   key: "6",
+    // },
+  ];
 
   return (
-    <div>
-      <header className="px-5 py-5 flex justify-between h-[96px] header">
-        <Image
-          src="./assets/icons/logo.svg"
-          width={131}
-          height={101}
-          className="w-[91px] h-[71px] cursor-pointer logo"
-          alt="logo"
-        />
-        {/* <Image
-          src="./assets/icons/menuIcon.svg"
-          width={57}
-          height={85}
-          onClick={showDrawer}
-          className="w-[47px] h-[65px] cursor-pointer menuIcon"
-          alt="menu"
-        /> */}
+    <div className="">
+      {/* <header className="px-5 py-5 flex justify-between h-[96px] header">
+        <Link href="/">
+          <Image
+            src="./assets/icons/logo.svg"
+            width={131}
+            height={101}
+            className="w-[91px] h-[71px] cursor-pointer logo"
+            alt="logo"
+          />
+        </Link>
+
         <MenuOutlined
           className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon"
           onClick={showDrawer}
         />
+      </header> */}
+      <header className=" fixed top-0 w-full header shadow-sm">
+        <nav className="container mx-auto px-5 py-3">
+          <div className="flex justify-between items-center">
+            <Link href="/">
+              <Image
+                src="./assets/icons/logo.svg"
+                width={131}
+                height={101}
+                className="w-[91px] h-[71px] cursor-pointer logo"
+                alt="logo"
+              />
+            </Link>
+
+            <div className="hidden md:flex items-center space-x-4">
+              <Dropdown
+                menu={{
+                  items,
+                  onClick: handleMenuClick,
+                }}
+                onOpenChange={handleOpenChange}
+                open={open}
+                trigger={['click']}
+              >
+                <div className="flex">
+                  <MenuOutlined className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon" />
+                </div>
+              </Dropdown>
+              {/* <CloseOutlined
+                onClick={handleClick}
+                className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon"
+              /> */}
+            </div>
+          </div>
+        </nav>
       </header>
-      <Drawer
-        // title="Basic Drawer"
+
+      {/* <Drawer
+        title="Basic Drawer"
         placement="right"
         onClose={onClose}
         open={open}
@@ -55,10 +180,20 @@ export const Header = () => {
             <Link href="/activities">Activities</Link>
           </li>
           <li className="py-2 text-[1em]">
-            <Link href="/store">Store</Link>
+            <Link href="/purchase-book">purchase Books</Link>
+          </li>
+          <li className="py-2 text-[1em]">
+            <Link href="/leaderboard">Leaderboard</Link>
+          </li>
+          <li className="py-2 text-[1em]">
+            <Link href="/store">How it Works</Link>
+          </li>
+
+          <li className="py-2 text-[1em]">
+            <Link href="/store">About</Link>
           </li>
         </nav>
-      </Drawer>
+      </Drawer> */}
     </div>
   );
 };
