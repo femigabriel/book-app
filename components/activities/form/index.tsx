@@ -6,6 +6,7 @@ import { ActivitiesCard } from "../ActivitiesCards";
 import { CharliesChoices1 } from "../CharliesChoices1";
 import { CharliesChoices2 } from "../CharliesChoice2";
 import { CharliesChoices3 } from "../CharliesChoices3";
+import { CharliesChoices4 } from "../CharliesChoices4";
 
 export default function Form() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -45,6 +46,10 @@ export default function Form() {
       case 6:
         return (
           <CharliesChoices3 onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
+      case 7:
+        return (
+          <CharliesChoices4 onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
       default:
         return <NickNameForm onNextClick={gotoNext} />;
