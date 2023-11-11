@@ -15,8 +15,8 @@ export const ActivitiesCard = () => {
       {/* <ActivitiesHeader /> */}
       <div className="flex justify-center ">
         <div className="w-full">
-          {/* <ChalieschoicePages /> */}
-          <BusStop />
+          <ChalieschoicePages />
+          {/* <BusStop /> */}
 
           {/* <Image
             width={18}
