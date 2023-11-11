@@ -9,7 +9,7 @@ interface Props {
 
 export const PowerOfWordsPage1 = ({ onNextClick, onBackClick }: Props) => {
   return (
-    <div>
+    <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
         <Image
           width={17}
@@ -31,7 +31,9 @@ export const PowerOfWordsPage1 = ({ onNextClick, onBackClick }: Props) => {
 
       <div className="flex justify-center item-center px-5 my-10">
         <div className="lg:w-[723px]">
-          <h1 className="text-[1.5em] font-semibold mb-5">The Power of Words</h1>
+          <h1 className="text-[1.5em] font-semibold mb-5">
+            The Power of Words
+          </h1>
           <div className="lg:mb-10">
             <p className="text-[1.em]">
               Words can hurt or help.
