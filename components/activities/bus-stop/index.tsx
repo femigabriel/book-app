@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { BustopPage1 } from "./BustopPage1";
+import { BusStop } from "./BusStop";
 
 export default function BusStopPages() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -16,18 +17,18 @@ export default function BusStopPages() {
     switch (currentStepIndex) {
       case 0:
         return (
-          <BustopPage1
-            // gotoNextBusStopPage={gotoNextBusStopPage}
+          <BusStop
+          gotoNextBusStopePage={gotoNextBusStopPage}
             // onBackClick={gotoPreviousPage}
           />
         );
-      //   case 1:
-      //     return (
-      //       <CharliesChoices1
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
+        case 1:
+          return (
+            <BustopPage1
+              onNextClick={gotoNextBusStopPage}
+              onBackClick={gotoPreviousBusStopPage}
+            />
+          );
       //   case 2:
       //     return (
       //       <CharliesChoices2

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export const AboutPage = () => {
   return (
-    <div className="bg-[#F8F8F8] px-10 py-10 pt-20">
-      <div className="flex justify-between">
+    <div className="bg-[#F8F8F8] px-10 py-10 pt-20 aboutPage">
+      <div className="flex justify-between ">
         <span className="text-[0.850em]">About</span>
         <Image
           width={64}
@@ -14,13 +14,22 @@ export const AboutPage = () => {
           alt="scroll-up"
         />
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between aboutPage-Content">
         <div className="flex flex-col ">
           <h2 className="mb-[32px] text-[#9B59B6] text-[1.000em]">
             Three Paths Social Emotional Learning is inspired by Charlie’s Big
             Gift
           </h2>
-          <p className="text-[#303030] text-[0.85em] w-[47em]">
+          <div className="mobile-img">
+            <Image
+              width={365}
+              height={351}
+              src="./assets/images/charlieImg.svg"
+              className=" cursor-pointer w-[365px] h-[351.46px]"
+              alt="scroll-up"
+            />
+          </div>
+          <p className="text-[#303030] text-[0.85em] lg:w-[47em]">
             The idea of Charlie’s Big Gift was conceived from the round-up that
             occurred in Morton, Mississippi in which a place of business was
             raided by ICE (Immigration and Customs Enforcement), placing
@@ -35,13 +44,15 @@ export const AboutPage = () => {
             Buy Now
           </button>
         </div>
-        <Image
-          width={365}
-          height={351}
-          src="./assets/images/charlieImg.svg"
-          className=" cursor-pointer w-[365px] h-[351.46px]"
-          alt="scroll-up"
-        />
+        <div className="charlieImg">
+          <Image
+            width={365}
+            height={351}
+            src="./assets/images/charlieImg.svg"
+            className=" cursor-pointer w-[365px] h-[351.46px]"
+            alt="scroll-up"
+          />
+        </div>
       </div>
     </div>
   );

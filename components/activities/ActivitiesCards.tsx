@@ -2,7 +2,7 @@ import React from "react";
 import { ActivitiesHeader } from "./ActivitiesHeader";
 import Image from "next/image";
 import ChalieschoicePages from "./charlie'sChoice";
-import { BusStop } from "./bus-stop/BusStop";
+import BusStopPages from "./bus-stop";
 
 interface Props {
   onNextClick: () => any;
@@ -16,7 +16,7 @@ export const ActivitiesCard = () => {
       <div className="flex justify-center ">
         <div className="w-full">
           <ChalieschoicePages />
-          {/* <BusStop /> */}
+          {/* <BusStopPages /> */}
 
           {/* <Image
             width={18}

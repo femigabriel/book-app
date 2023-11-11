@@ -127,7 +127,7 @@ export const Header = () => {
           onClick={showDrawer}
         />
       </header> */}
-      <header className="  top-0 w-full header shadow-sm">
+      <header className=" fixed top-0 w-full header shadow-sm">
         <nav className="container mx-auto px-5 py-3">
           <div className="flex justify-between items-center">
             <Link href="/">
@@ -140,7 +140,7 @@ export const Header = () => {
               />
             </Link>
 
-            <div className="hidden md:flex items-center space-x-4">
+            <div className=" md:flex items-center space-x-4">
               <Dropdown
                 menu={{
                   items,
@@ -154,10 +154,6 @@ export const Header = () => {
                   <MenuOutlined className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon" />
                 </div>
               </Dropdown>
-              {/* <CloseOutlined
-                onClick={handleClick}
-                className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon"
-              /> */}
             </div>
           </div>
         </nav>

@@ -3,12 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
-    onNextClick: () => any;
-    onBackClick: () => any;
-  }
+  onNextClick: () => any;
+  onBackClick: () => any;
+}
 
-  
-export const BustopPage1 = () => {
+export const BustopPage1 = ({ onNextClick, onBackClick }: Props) => {
   return (
     <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
@@ -18,7 +17,7 @@ export const BustopPage1 = () => {
           src="./assets/icons/quitIcon.svg"
           className="w-[68px] h-[25px] cursor-pointer"
           alt="back-icon"
-        //   onClick={onBackClick}
+          onClick={onBackClick}
         />
         <Image
           width={17}
@@ -26,27 +25,35 @@ export const BustopPage1 = () => {
           src="./assets/icons/nextIcon.svg"
           className="w-[60px] h-[20px] cursor-pointer"
           alt="next-icon"
-        //   onClick={onNextClick}
+          onClick={onNextClick}
         />
       </header>
       <div className="flex justify-center item-center px-5 my-10">
-        <div className="">
-          <div className="text-[1em] mb-10">
-            <h1 className="font-bold text-[1.65em] ">Charlie's choice</h1>
-            <h3 className="text-[#9B59B6] ]">Reflection</h3>
-            <h4 className="">
-              Let’s talk about some of the Relationship Skills that Charlie and
-              her friends have in the story.
-            </h4>
+        <div className="flex flex-col lg:w-[973px] px-5 text-[1em]">
+          <div className="flex flex-col lg:mb-[100px] mb-10">
+            <h3 className="text-[#9B59B6]">Read Carefully</h3>
+            <p>
+              Charlie and Mya caught the city bus downtown to go and see Mya’s
+              dad who was taken away because he could not prove that he is an
+              American citizen.
+              <br />
+              On the way downtown, they passed many bus stops. Each bus stops
+              had the name of a street on it.
+            </p>
           </div>
-          <Image
-            width={18}
-            height={20}
-            src="./assets/images/choice1.svg"
-            className="w-full h-[320px] book "
-            alt="activity-card"
-            draggable="false"
-          />
+          <div className="flex flex-col">
+            <h3 className="text-[#9B59B6]">Directions</h3>
+            <p>
+              Let’s pretend we are on a bus.
+              <br />
+              Its’s called the R.S. Bus. We need to get off at the right bus
+              stop. On the net page look at the descriptions, sentences, words
+              and decided if you want to get off at that stop, to do that click
+              on the bus stop sign.
+              <br />
+              Each correct stop is worth 1 point. Let’s ride!
+            </p>
+          </div>
         </div>
       </div>
     </div>

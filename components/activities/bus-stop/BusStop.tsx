@@ -1,7 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-export const BusStop = () => {
+interface Props {
+  gotoNextBusStopePage: () => any;
+  // onBackClick: () => any;
+}
+
+export const BusStop = ({ gotoNextBusStopePage }: Props) => {
   return (
     <div>
       <Image
@@ -10,7 +15,7 @@ export const BusStop = () => {
         src="./assets/images/activity1.svg"
         className="w-[326px] h-[565px] cursor-pointer book"
         alt="activity-card"
-        // onClick={onNextClick}
+        onClick={gotoNextBusStopePage}
         draggable="false"
       />
     </div>
