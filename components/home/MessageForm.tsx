@@ -18,7 +18,7 @@ export const MessageForm = () => {
         <form
           action=""
           // onSubmit={(event) => event.preventDefault()}
-          className="my-10 w-[527px] messageForm"
+          className="lg:my-10 lg:w-[527px] messageForm"
         >
           <div className="flex w-full mb-5">
             <label htmlFor="" className="mt-2 mr-3">

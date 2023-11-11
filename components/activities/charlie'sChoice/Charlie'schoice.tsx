@@ -7,7 +7,7 @@ interface Props {
 }
 export const Charlieschoice = ({ gotoNextChaliePage }: Props) => {
   return (
-    <div className="choices h-screen">
+    <div className="">
       <Image
         width={18}
         height={20}

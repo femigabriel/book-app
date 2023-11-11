@@ -13,7 +13,7 @@ export const SpotLight = ({ gotoNextSpotLightPages }: Props) => {
         width={18}
         height={20}
         src="./assets/images/activity4.svg"
-        className="w-[326px] h-[565px] cursor-pointer book"
+        className="lg:w-[326px] lg:h-[565px] cursor-pointer book"
         alt="activity-card"
         onClick={gotoNextSpotLightPages}
         draggable="false"

@@ -129,7 +129,7 @@ export const Header = () => {
       </header> */}
       <header className=" fixed top-0 w-full header shadow-sm">
         <nav className="container mx-auto px-5 py-3">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between">
             <Link href="/">
               <Image
                 src="./assets/icons/logo.svg"
@@ -140,7 +140,7 @@ export const Header = () => {
               />
             </Link>
 
-            <div className=" md:flex items-center space-x-4">
+            <div className="">
               <Dropdown
                 menu={{
                   items,
@@ -158,38 +158,6 @@ export const Header = () => {
           </div>
         </nav>
       </header>
-
-      {/* <Drawer
-        title="Basic Drawer"
-        placement="right"
-        onClose={onClose}
-        open={open}
-      >
-        <nav className="">
-          <li className="py-3 text-[1em]">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="py-2 text-[1em]">
-            <Link href="/read-book">Read Book</Link>
-          </li>
-          <li className="py-2 text-[1em]">
-            <Link href="/activities">Activities</Link>
-          </li>
-          <li className="py-2 text-[1em]">
-            <Link href="/purchase-book">purchase Books</Link>
-          </li>
-          <li className="py-2 text-[1em]">
-            <Link href="/leaderboard">Leaderboard</Link>
-          </li>
-          <li className="py-2 text-[1em]">
-            <Link href="/store">How it Works</Link>
-          </li>
-
-          <li className="py-2 text-[1em]">
-            <Link href="/store">About</Link>
-          </li>
-        </nav>
-      </Drawer> */}
     </div>
   );
 };

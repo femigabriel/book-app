@@ -1,3 +1,4 @@
+import UserContext from "@/context/user/UserContext";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -24,7 +25,9 @@ export default function RootLayout({
           rel="stylesheet"
         ></link>
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className="">
+        <UserContext>{children}</UserContext>
+      </body>
     </html>
   );
 }
