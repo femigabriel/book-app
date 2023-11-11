@@ -127,7 +127,7 @@ export const Header = () => {
           onClick={showDrawer}
         />
       </header> */}
-      <header className=" fixed top-0 w-full header shadow-sm">
+      <header className="  top-0 w-full header shadow-sm">
         <nav className="container mx-auto px-5 py-3">
           <div className="flex justify-between items-center">
             <Link href="/">
