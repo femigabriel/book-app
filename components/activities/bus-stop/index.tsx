@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { BustopPage1 } from "./BustopPage1";
 import { BusStop } from "./BusStop";
+import { BustopPage2 } from "./BustopPage2";
+import { BustopPage3 } from "./BustopPage3";
 
 export default function BusStopPages() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -18,38 +20,32 @@ export default function BusStopPages() {
       case 0:
         return (
           <BusStop
-          gotoNextBusStopePage={gotoNextBusStopPage}
+            gotoNextBusStopePage={gotoNextBusStopPage}
             // onBackClick={gotoPreviousPage}
           />
         );
-        case 1:
-          return (
-            <BustopPage1
-              onNextClick={gotoNextBusStopPage}
-              onBackClick={gotoPreviousBusStopPage}
-            />
-          );
-      //   case 2:
-      //     return (
-      //       <CharliesChoices2
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
-      //   case 3:
-      //     return (
-      //       <CharliesChoices3
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
-      //   case 4:
-      //     return (
-      //       <CharliesChoices4
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
+      case 1:
+        return (
+          <BustopPage1
+            onNextClick={gotoNextBusStopPage}
+            onBackClick={gotoPreviousBusStopPage}
+          />
+        );
+      case 2:
+        return (
+          <BustopPage2
+            onNextClick={gotoNextBusStopPage}
+            onBackClick={gotoNextBusStopPage}
+          />
+        );
+      case 3:
+        return (
+          <BustopPage3
+            onNextClick={gotoNextBusStopPage}
+            onBackClick={gotoNextBusStopPage}
+          />
+        );
+      
 
       //   default:
       //     return (

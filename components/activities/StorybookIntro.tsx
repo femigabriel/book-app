@@ -43,7 +43,7 @@ export const StorybookIntro = ({ onNextClick, onBackClick }: Props) => {
           <h1 className="text-[#9B59B6] text-[1.5em] font-semibold">
             Relationship Skills
           </h1>
-          <div className="lg:pt-20 text-[1em] lg:w-[723px] text-left">
+          <div className="lg:pt-10 text-[1em] lg:w-[723px] text-left">
             <p className="leading-9">
               Charlie cares about other people and how they feel. She doesn’t
               like it when people are hurt or upset.

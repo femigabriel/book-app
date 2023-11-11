@@ -8,12 +8,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Poppins'; */
+  font-family: "Fredoka", sans-serif;
 }
 body {
   color: #303030;
   overflow-x: hidden;
-  font-family: "Fredoka", sans-serif;
 }
 ::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);

@@ -29,10 +29,10 @@ export const BustopPage1 = ({ onNextClick, onBackClick }: Props) => {
         />
       </header>
       <div className="flex justify-center item-center px-5 my-10">
-        <div className="flex flex-col lg:w-[973px] px-5 text-[1em]">
-          <div className="flex flex-col lg:mb-[100px] mb-10">
+        <div className="flex flex-col lg:w-[733px] px-5 text-[1em]">
+          <div className="flex flex-col lg:mb-[100px] mb-7">
             <h3 className="text-[#9B59B6]">Read Carefully</h3>
-            <p>
+            <p className="leading-6">
               Charlie and Mya caught the city bus downtown to go and see Mya’s
               dad who was taken away because he could not prove that he is an
               American citizen.
@@ -43,7 +43,7 @@ export const BustopPage1 = ({ onNextClick, onBackClick }: Props) => {
           </div>
           <div className="flex flex-col">
             <h3 className="text-[#9B59B6]">Directions</h3>
-            <p>
+            <p className="leading-6">
               Let’s pretend we are on a bus.
               <br />
               Its’s called the R.S. Bus. We need to get off at the right bus

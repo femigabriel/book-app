@@ -3,6 +3,8 @@ import { ActivitiesHeader } from "./ActivitiesHeader";
 import Image from "next/image";
 import ChalieschoicePages from "./charlie'sChoice";
 import BusStopPages from "./bus-stop";
+import PowerOfWordsPages from "./powerOfWords";
+import SpotLightPages from "./spot-light";
 
 interface Props {
   onNextClick: () => any;
@@ -17,6 +19,8 @@ export const ActivitiesCard = () => {
         <div className="w-full">
           <ChalieschoicePages />
           {/* <BusStopPages /> */}
+          {/* <PowerOfWordsPages /> */}
+          {/* <SpotLightPages /> */}
 
           {/* <Image
             width={18}
