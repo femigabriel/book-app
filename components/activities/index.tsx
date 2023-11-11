@@ -3,8 +3,8 @@ import { ActivitiesCard } from "./ActivitiesCards";
 
 export const ActivitiesPage = () => {
   return (
-    <div className="">git branch -M main
-      <ActivitiesCard />
+    <div className="">
+      {/* <ActivitiesCard /> */}
     </div>
   );
 };

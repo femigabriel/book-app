@@ -1,14 +1,14 @@
 import React from "react";
-import { ArrowRightOutlined, CloseOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
-  onNextClick: () => any;
-  onBackClick: () => any;
-}
+    onNextClick: () => any;
+    onBackClick: () => any;
+  }
 
-export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
+  
+export const BustopPage1 = () => {
   return (
     <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
@@ -16,17 +16,17 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
           width={17}
           height={19}
           src="./assets/icons/quitIcon.svg"
-          className="w-[70.19px] h-[29px] cursor-pointer"
+          className="w-[68px] h-[25px] cursor-pointer"
           alt="back-icon"
-          onClick={onBackClick}
+        //   onClick={onBackClick}
         />
         <Image
           width={17}
           height={19}
           src="./assets/icons/nextIcon.svg"
-          className="w-[70px] h-[25px] cursor-pointer"
+          className="w-[60px] h-[20px] cursor-pointer"
           alt="next-icon"
-          onClick={onNextClick}
+        //   onClick={onNextClick}
         />
       </header>
       <div className="flex justify-center item-center px-5 my-10">

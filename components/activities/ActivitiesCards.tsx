@@ -1,19 +1,24 @@
 import React from "react";
 import { ActivitiesHeader } from "./ActivitiesHeader";
 import Image from "next/image";
+import ChalieschoicePages from "./charlie'sChoice";
+import { BusStop } from "./bus-stop/BusStop";
 
 interface Props {
   onNextClick: () => any;
   onBackClick: () => any;
 }
 
-export const ActivitiesCard = ({ onNextClick, onBackClick }: Props) => {
+export const ActivitiesCard = () => {
   return (
     <div className="coverBook">
-      <ActivitiesHeader />
-      <div className="flex justify-center py-10 ">
-        <div className="grid grid-cols-4 gap-[20px] lg:px-10 activity-card">
-          <Image
+      {/* <ActivitiesHeader /> */}
+      <div className="flex justify-center ">
+        <div className="w-full">
+          {/* <ChalieschoicePages /> */}
+          <BusStop />
+
+          {/* <Image
             width={18}
             height={20}
             src="./assets/images/activity3.svg"
@@ -28,7 +33,7 @@ export const ActivitiesCard = ({ onNextClick, onBackClick }: Props) => {
             src="./assets/images/activity1.svg"
             className="w-[326px] h-[565px] cursor-pointer book"
             alt="activity-card"
-            onClick={onNextClick}
+            // onClick={onNextClick}
             draggable="false"
           />
           <Image
@@ -37,7 +42,7 @@ export const ActivitiesCard = ({ onNextClick, onBackClick }: Props) => {
             src="./assets/images/activity2.svg"
             className="w-[326px] h-[565px] cursor-pointer book"
             alt="activity-card"
-            onClick={onNextClick}
+            // onClick={onNextClick}
             draggable="false"
           />
           <Image
@@ -46,9 +51,9 @@ export const ActivitiesCard = ({ onNextClick, onBackClick }: Props) => {
             src="./assets/images/activity4.svg"
             className="w-[326px] h-[565px] cursor-pointer book"
             alt="activity-card"
-            onClick={onNextClick}
+            // onClick={onNextClick}
             draggable="false"
-          />
+          /> */}
 
           {/* <div className="w-[305px] h-[151px] rounded-[24px] bg-[#FD8C4D] cursor-pointer">
             <div className=" bg-[#242424] w-[305px] h-[355px] rounded-[30px] px-5 py-5 relative top-20 flex justify-center items-center">
