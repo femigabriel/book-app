@@ -61,7 +61,7 @@ export const Header = () => {
   const items: MenuProps["items"] = [
     {
       label: (
-        <li className=" text-[1.5em]">
+        <li className=" text-[1.2em]">
           <Link href="/read-book">Read Book</Link>
         </li>
       ),
@@ -69,7 +69,7 @@ export const Header = () => {
     },
     {
       label: (
-        <li className=" text-[1.5em]">
+        <li className=" text-[1.2em]">
           <Link href="/activities">Activities</Link>
         </li>
       ),
@@ -77,7 +77,7 @@ export const Header = () => {
     },
     {
       label: (
-        <li className=" text-[1.5em]">
+        <li className=" text-[1.2em]">
           <Link href="/read-book">Leaderboard</Link>
         </li>
       ),
@@ -85,7 +85,7 @@ export const Header = () => {
     },
     {
       label: (
-        <li className=" text-[1.5em]">
+        <li className=" text-[1.2em]">
           <Link href="/read-book">How it Works</Link>
         </li>
       ),
@@ -93,7 +93,7 @@ export const Header = () => {
     },
     {
       label: (
-        <li className=" text-[1.5em]">
+        <li className=" text-[1.2em]">
           <Link href="/read-book">About</Link>
         </li>
       ),

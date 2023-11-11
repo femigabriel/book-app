@@ -7,12 +7,12 @@ interface Props {
 }
 export const Charlieschoice = ({ gotoNextChaliePage }: Props) => {
   return (
-    <div>
+    <div className="choices h-screen">
       <Image
         width={18}
         height={20}
         src="./assets/images/activity3.svg"
-        className="w-[326px] h-[565px] cursor-pointer book"
+        className="lg:w-[326px] lg:h-[565px] cursor-pointer book"
         alt="activity-card"
         onClick={gotoNextChaliePage}
         draggable="false"

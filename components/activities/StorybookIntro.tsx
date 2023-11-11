@@ -37,7 +37,7 @@ export const StorybookIntro = ({ onNextClick, onBackClick }: Props) => {
           </div>
         </div>
       </header>
-      <div className="flex justify-center item-center my-10">
+      <div className="flex justify-center item-center my-10 px-5">
         <div className="text-center">
           <h3 className="text-[1em] font-medium">Introduction</h3>
           <h1 className="text-[#9B59B6] text-[1.5em] font-semibold">

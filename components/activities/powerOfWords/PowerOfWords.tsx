@@ -8,7 +8,7 @@ interface Props {
 
 export const PowerOfWords = ({ gotoNextPowerOfWordsPage }: Props) => {
   return (
-    <div>
+    <div className="choices h-screen">
       <Image
         width={18}
         height={20}

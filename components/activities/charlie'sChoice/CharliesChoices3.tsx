@@ -50,12 +50,12 @@ export const CharliesChoices3 = ({ onNextClick, onBackClick }: Props) => {
           </div>
         </div>
       </div> */}
-      <div className="">
+      <div className="mt-7 px-5">
         <Image
           width={18}
           height={20}
           src="./assets/images/choice3.svg"
-          className="w-full h-[380px] book"
+          className="w-full h-[400px] book"
           alt="activity-card"
           draggable="false"
         />
