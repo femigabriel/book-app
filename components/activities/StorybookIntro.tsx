@@ -9,7 +9,7 @@ interface Props {
 
 export const StorybookIntro = ({ onNextClick, onBackClick }: Props) => {
   return (
-    <div className="readBook w-full h-screen">
+    <div className="readBook w-full lg:h-screen">
       <header className="px-10 py-7 flex justify-between ">
         <Link href="/" className="flex cursor-pointer">
           <Image

@@ -9,7 +9,7 @@ interface Props {
 
 export const PowerOfWords = () => {
   return (
-    <div className="choices h-screen ">
+    <div className=" ">
       <Link href="/bus-stop">
       <Image
         width={18}

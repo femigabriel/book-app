@@ -18,27 +18,13 @@ interface Props {
 export const ActivitiesCard = () => {
   return (
     <div className="coverBook h-full">
-      {/* <ActivitiesHeader /> */}
-      {/* <div className="lg:flex justify-center lg:px-10"> */}
-      <div className="grid grid-cols-4 gap-3 booklist lg:px-10">
-        <Charlieschoice />
+      <div className="grid grid-cols-4 gap-3 activities-card px-24">
+       <div> 
+       <Charlieschoice />
         <BusStop />
         <PowerOfWords />
         <SpotLight />
-        
-        {/* <div className="w-full mx-5">
-       <div className="flex gap-5">
-       <div className="flex gap-5">
-       <ChalieschoicePages />
-
-          <BusStopPages />
        </div>
-         <div className="flex gap-5">
-         <PowerOfWordsPages />
-          <SpotLightPages />
-         </div>
-       </div>
-        </div> */}
       </div>
     </div>
   );
