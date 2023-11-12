@@ -8,7 +8,7 @@ interface Props {
 }
 export const Charlieschoice = () => {
   return (
-    <div className="lg:mt-[50px]">
+    <div className="">
   <Link href="/charlies-choice">
   <Image
         width={18}
