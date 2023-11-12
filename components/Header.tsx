@@ -88,19 +88,19 @@ export const Header = () => {
   return (
     <div className="">
       <header className=" fixed top-0 w-full header shadow-sm">
-        <nav className="container mx-auto px-5 py-3">
+        <nav className="container py-3">
           <div className="flex justify-between">
-            <Link href="/" className="my-2">
+            <Link href="/" className="">
               <Image
                 src="./assets/icons/logo.svg"
                 width={131}
                 height={101}
-                className="w-[91px] h-[71px] cursor-pointer logo"
+                className="w-full h-full cursor-pointer logo"
                 alt="logo"
               />
             </Link>
 
-            <div className="my-5">
+            <div className="my-5 lg:mr-5">
               <Dropdown
                 menu={{
                   items,
@@ -111,7 +111,7 @@ export const Header = () => {
                 trigger={['click']}
               >
                 <div className="flex">
-                  <MenuOutlined className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon" />
+                  <MenuOutlined className="w-[47px] text-[#303030] text-[34px] cursor-pointer menuIcon" />
                 </div>
               </Dropdown>
             </div>
