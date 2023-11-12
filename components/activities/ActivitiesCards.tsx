@@ -18,13 +18,13 @@ interface Props {
 export const ActivitiesCard = () => {
   return (
     <div className="coverBook h-full">
-      <div className="grid grid-cols-4 gap-3 activities-card px-24">
-       <div> 
+      <div className="grid grid-cols-4 gap-3 lg:pt-5 activities-card px-24">
+     
        <Charlieschoice />
         <BusStop />
         <PowerOfWords />
         <SpotLight />
-       </div>
+     
       </div>
     </div>
   );

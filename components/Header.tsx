@@ -33,30 +33,6 @@ export const Header = () => {
     setOpen(flag);
   };
 
-  //   <nav className="">
-  //   <li className="py-3 text-[1em]">
-  //     <Link href="/">Home</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/read-book">Read Book</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/activities">Activities</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/purchase-book">purchase Books</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/leaderboard">Leaderboard</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/store">How it Works</Link>
-  //   </li>
-
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/store">About</Link>
-  //   </li>
-  // </nav>
 
   const items: MenuProps["items"] = [
     {
@@ -111,22 +87,6 @@ export const Header = () => {
 
   return (
     <div className="">
-      {/* <header className="px-5 py-5 flex justify-between h-[96px] header">
-        <Link href="/">
-          <Image
-            src="./assets/icons/logo.svg"
-            width={131}
-            height={101}
-            className="w-[91px] h-[71px] cursor-pointer logo"
-            alt="logo"
-          />
-        </Link>
-
-        <MenuOutlined
-          className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon"
-          onClick={showDrawer}
-        />
-      </header> */}
       <header className=" fixed top-0 w-full header shadow-sm">
         <nav className="container mx-auto px-5 py-3">
           <div className="flex justify-between">
