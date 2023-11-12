@@ -86,7 +86,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/read-book">How it Works</Link>
+          <Link href="/how-it-works">How it Works</Link>
         </li>
       ),
       key: "4",
@@ -94,7 +94,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/read-book">About</Link>
+          <Link href="/about">About</Link>
         </li>
       ),
       key: "5",
@@ -130,7 +130,7 @@ export const Header = () => {
       <header className=" fixed top-0 w-full header shadow-sm">
         <nav className="container mx-auto px-5 py-3">
           <div className="flex justify-between">
-            <Link href="/">
+            <Link href="/" className="my-2">
               <Image
                 src="./assets/icons/logo.svg"
                 width={131}
@@ -140,7 +140,7 @@ export const Header = () => {
               />
             </Link>
 
-            <div className="">
+            <div className="my-5">
               <Dropdown
                 menu={{
                   items,

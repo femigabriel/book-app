@@ -18,9 +18,9 @@ export const ActivitiesCard = () => {
       <div className="flex justify-center ">
         <div className="w-full">
           <ChalieschoicePages />
-          <BusStopPages />
+          {/* <BusStopPages />
           <PowerOfWordsPages />
-          <SpotLightPages />
+          <SpotLightPages /> */}
         </div>
       </div>
     </div>
