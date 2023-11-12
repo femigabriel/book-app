@@ -16,21 +16,21 @@ export default function PowerOfWordsPages() {
 
   const renderCurrentSelection = () => {
     switch (currentStepIndex) {
+      // case 0:
+      //   return (
+      //     <PowerOfWords
+      //       gotoNextPowerOfWordsPage={gotoNextPowerOfWordsPage}
+      //       // onBackClick={gotoPreviousPage}
+      //     />
+      //   );
       case 0:
-        return (
-          <PowerOfWords
-            gotoNextPowerOfWordsPage={gotoNextPowerOfWordsPage}
-            // onBackClick={gotoPreviousPage}
-          />
-        );
-      case 1:
         return (
           <PowerOfWordsPage1
             onNextClick={gotoNextPowerOfWordsPage}
             onBackClick={gotoPreviousPowerOfWordsPage}
           />
         );
-      case 2:
+      case 1:
         return (
           <PowerOfWordsPage2
             onNextClick={gotoNextPowerOfWordsPage}
@@ -38,13 +38,13 @@ export default function PowerOfWordsPages() {
           />
         );
 
-      //   default:
-      //     return (
-      //       <CharliesChoices1
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
+        default:
+          return (
+            <PowerOfWordsPage1
+            onNextClick={gotoNextPowerOfWordsPage}
+            onBackClick={gotoPreviousPowerOfWordsPage}
+          />
+          );
     }
   };
   return <div className="h-screen w-full">{renderCurrentSelection()}</div>;

@@ -18,35 +18,35 @@ export default function ChalieschoicePages() {
 
   const renderCurrentSelection = () => {
     switch (currentStepIndex) {
+      // case 0:
+      //   return (
+      //     <Charlieschoice
+      //       gotoNextChaliePage={gotoNextChaliePage}
+      //       // onBackClick={gotoPreviousPage}
+      //     />
+      //   );
       case 0:
-        return (
-          <Charlieschoice
-            gotoNextChaliePage={gotoNextChaliePage}
-            // onBackClick={gotoPreviousPage}
-          />
-        );
-      case 1:
         return (
           <CharliesChoices1
             onNextClick={gotoNextChaliePage}
             onBackClick={gotoPreviousChaliePage}
           />
         );
-      case 2:
+      case 1:
         return (
           <CharliesChoices2
             onNextClick={gotoNextChaliePage}
             onBackClick={gotoPreviousChaliePage}
           />
         );
-      case 3:
+      case 2:
         return (
           <CharliesChoices3
             onNextClick={gotoNextChaliePage}
             onBackClick={gotoPreviousChaliePage}
           />
         );
-      case 4:
+      case 3:
         return (
           <CharliesChoices4
             onNextClick={gotoNextChaliePage}
@@ -54,8 +54,9 @@ export default function ChalieschoicePages() {
           />
         );
 
-      // default:
-      //   return <Charlieschoice gotoNextChaliePage={gotoNextChaliePage} />;
+      default:
+        return <CharliesChoices1 onNextClick={gotoNextChaliePage}
+        onBackClick={gotoPreviousChaliePage}/>;
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;

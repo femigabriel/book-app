@@ -12,7 +12,8 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
   return (
     <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
-        <Image
+      {/* <Link href="/activities"> */}
+      <Image
           width={17}
           height={19}
           src="./assets/icons/quitIcon.svg"
@@ -20,6 +21,8 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
           alt="back-icon"
           onClick={onBackClick}
         />
+      {/* </Link> */}
+      
         <Image
           width={17}
           height={19}

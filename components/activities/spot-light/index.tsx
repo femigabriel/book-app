@@ -18,30 +18,30 @@ export default function SpotLightPages() {
 
   const renderCurrentSelection = () => {
     switch (currentStepIndex) {
+      // case 0:
+      //   return <SpotLight gotoNextSpotLightPages={gotoNextSpotLightPages} />;
       case 0:
-        return <SpotLight gotoNextSpotLightPages={gotoNextSpotLightPages} />;
-      case 1:
         return (
           <SpotLightPage1
             onNextClick={gotoNextSpotLightPages}
             onBackClick={gotoPreviousSpotLightPages}
           />
         );
-      case 2:
+      case 1:
         return (
           <SpotLightPage2
             onNextClick={gotoNextSpotLightPages}
             onBackClick={gotoPreviousSpotLightPages}
           />
         );
-      case 3:
+      case 2:
         return (
           <SpotLightPage3
             onNextClick={gotoNextSpotLightPages}
             onBackClick={gotoPreviousSpotLightPages}
           />
         );
-      case 4:
+      case 3:
         return (
           <SpotLightPage4
             onNextClick={gotoNextSpotLightPages}
@@ -49,13 +49,13 @@ export default function SpotLightPages() {
           />
         );
 
-      //   default:
-      //     return (
-      //       <CharliesChoices1
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
+        default:
+          return (
+            <SpotLightPage1
+            onNextClick={gotoNextSpotLightPages}
+            onBackClick={gotoPreviousSpotLightPages}
+          />
+          );
     }
   };
   return <div className="h-screen w-full">{renderCurrentSelection()}</div>;

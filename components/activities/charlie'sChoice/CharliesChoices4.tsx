@@ -20,7 +20,7 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
           onClick={onBackClick}
         />
 
-        <Link href="/">
+        {/* <Link href="/activities"> */}
           <Image
             width={17}
             height={19}
@@ -29,7 +29,7 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
             alt="next-icon"
             onClick={onNextClick}
           />
-        </Link>
+        {/* </Link> */}
       </header>
       <div className="flex justify-center item-center px-5 my-10">
         <div className="">
