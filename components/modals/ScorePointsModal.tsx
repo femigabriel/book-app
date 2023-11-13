@@ -40,7 +40,7 @@ export const ScorePointsModal = () => {
           <div className="mt-5">
             <div className="flex justify-center items-center">
               <div>
-                <h1 className="text-[2em]"> Amazing!</h1>
+                <h1 className="text-[2em] text-center"> Amazing!</h1>
                 <p>300/300</p>
                 <Image
                   width={17}

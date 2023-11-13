@@ -1,6 +1,7 @@
 import React from "react";
 import { Header } from "../Header";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Props {
   onNextClick: () => any;
@@ -21,14 +22,14 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
               className="w-[323px] h-[485px] cursor-pointer book"
               alt="book"
             />
-            <div className="mx-14 bookBtn">
+            <Link href="/book" className="bookBtn mx-14 ">
               <button
                 className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5"
-                onClick={onNextClick}
+                // onClick={onNextClick}
               >
                 Read Book
               </button>
-            </div>
+            </Link>
           </div>
 
           <div className="flex flex-col">
@@ -60,7 +61,6 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </div>

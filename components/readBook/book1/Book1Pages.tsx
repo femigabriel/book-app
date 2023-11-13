@@ -3,7 +3,7 @@ import Image from "next/image";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { ReadBookHeader } from "../ReadBookHeader";
 
-export const book1Pages = () => {
+export const Book1Pages = () => {
   const bookPages = [
     {
       id: 1,
@@ -11,7 +11,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant2.svg"
+          src="./assets/storybooks/book1/Property 1=Variant2.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -24,7 +24,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant4.svg"
+          src="./assets/storybooks/book1//Property 1=Variant4.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -37,7 +37,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant5.svg"
+          src="./assets/storybooks/book1//Property 1=Variant5.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -50,7 +50,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant6.svg"
+          src="./assets/storybooks/book1//Property 1=Variant6.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -63,7 +63,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant7.svg"
+          src="./assets/storybooks/book1//Property 1=Variant7.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -76,7 +76,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant8.svg"
+          src="./assets/storybooks/book1//Property 1=Variant8.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -89,7 +89,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant9.svg"
+          src="./assets/storybooks/book1//Property 1=Variant9.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -102,7 +102,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant10.svg"
+          src="./assets/storybooks/book1//Property 1=Variant10.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -115,7 +115,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant11.svg"
+          src="./assets/storybooks/book1//Property 1=Variant11.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -128,7 +128,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant12.svg"
+          src="./assets/storybooks/book1//Property 1=Variant12.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -141,7 +141,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant13.svg"
+          src="./assets/storybooks/book1//Property 1=Variant13.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -154,7 +154,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant14.svg"
+          src="./assets/storybooks/book1//Property 1=Variant14.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -167,7 +167,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant15.svg"
+          src="./assets/storybooks/book1//Property 1=Variant15.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -180,7 +180,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant16.svg"
+          src="./assets/storybooks/book1//Property 1=Variant16.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -193,7 +193,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant17.svg"
+          src="./assets/storybooks/book1//Property 1=Variant17.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -206,7 +206,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant18.svg"
+          src="./assets/storybooks/book1//Property 1=Variant18.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -219,7 +219,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant19.svg"
+          src="./assets/storybooks/book1//Property 1=Variant19.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -232,7 +232,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant20.svg"
+          src="./assets/storybooks/book1//Property 1=Variant20.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -245,7 +245,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant21.svg"
+          src="./assets/storybooks/book1//Property 1=Variant21.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -258,7 +258,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant23.svg"
+          src="./assets/storybooks/book1//Property 1=Variant23.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -271,7 +271,7 @@ export const book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/images/Property 1=Variant24.svg"
+          src="./assets/storybooks/book1//Property 1=Variant24.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
