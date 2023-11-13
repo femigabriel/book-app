@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Header } from "@/components/Header";
+import { ActivitiesHeader } from "./ActivitiesHeader";
 
 interface Props {
   onNextClick: () => any;
@@ -9,8 +10,8 @@ interface Props {
 
 export const StoybookCovers = ({ onNextClick, onBackClick }: Props) => {
   return (
-    <div className="readBook w-full pt-28">
-      <Header />
+    <div className="readBook w-full">
+      <ActivitiesHeader />
       <div className="px-24 ml-5 pb-10 ">
         <h3 className="text-[1.65em] pb-7">Activities</h3>
         <div className="grid grid-cols-3 gap-5 booklist">

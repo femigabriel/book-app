@@ -28,7 +28,7 @@ export const BustopPage1 = ({ onNextClick, onBackClick }: Props) => {
           onClick={onNextClick}
         />
       </header>
-      <div className="flex justify-center item-center px-5 my-10">
+      <div className="flex justify-center item-center px-5 lg:my-10">
         <div className="flex flex-col lg:w-[733px] px-5 text-[1em]">
           <div className="flex flex-col lg:mb-[100px] mb-7">
             <h3 className="text-[#9B59B6]">Read Carefully</h3>

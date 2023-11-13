@@ -4,6 +4,7 @@ import { CharliesChoices2 } from "../charlie'sChoice/CharliesChoice2";
 import { CharliesChoices3 } from "../charlie'sChoice/CharliesChoices3";
 import { CharliesChoices4 } from "../charlie'sChoice/CharliesChoices4";
 import { Charlieschoice } from "./Charlie'schoice";
+import { ActivitiesCard } from "../ActivitiesCards";
 
 export default function ChalieschoicePages() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -20,33 +21,26 @@ export default function ChalieschoicePages() {
     switch (currentStepIndex) {
       case 0:
         return (
-          <Charlieschoice
-            gotoNextChaliePage={gotoNextChaliePage}
-            // onBackClick={gotoPreviousPage}
-          />
-        );
-      case 1:
-        return (
           <CharliesChoices1
             onNextClick={gotoNextChaliePage}
             onBackClick={gotoPreviousChaliePage}
           />
         );
-      case 2:
+      case 1:
         return (
           <CharliesChoices2
             onNextClick={gotoNextChaliePage}
             onBackClick={gotoPreviousChaliePage}
           />
         );
-      case 3:
+      case 2:
         return (
           <CharliesChoices3
             onNextClick={gotoNextChaliePage}
             onBackClick={gotoPreviousChaliePage}
           />
         );
-      case 4:
+      case 3:
         return (
           <CharliesChoices4
             onNextClick={gotoNextChaliePage}
@@ -55,8 +49,20 @@ export default function ChalieschoicePages() {
         );
 
       default:
-        return <Charlieschoice gotoNextChaliePage={gotoNextChaliePage} />;
+        return (
+          <CharliesChoices1
+            onNextClick={gotoNextChaliePage}
+            onBackClick={gotoPreviousChaliePage}
+          />
+        );
     }
   };
+  const charliesCard = [
+    {
+      title: "",
+      page: "",
+      link: "",
+    },
+  ];
   return <div className="">{renderCurrentSelection()}</div>;
 }

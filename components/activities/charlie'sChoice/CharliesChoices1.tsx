@@ -2,6 +2,7 @@ import React from "react";
 import { ArrowRightOutlined, CloseOutlined } from "@ant-design/icons";
 import Image from "next/image";
 import Link from "next/link";
+import { QuitModal } from "@/components/modals/QuitModal";
 
 interface Props {
   onNextClick: () => any;
@@ -12,7 +13,8 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
   return (
     <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
-        <Image
+        {/* <Link href="/activities">
+      <Image
           width={17}
           height={19}
           src="./assets/icons/quitIcon.svg"
@@ -20,6 +22,9 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
           alt="back-icon"
           onClick={onBackClick}
         />
+      </Link> */}
+        <QuitModal />
+
         <Image
           width={17}
           height={19}
@@ -29,9 +34,9 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
           onClick={onNextClick}
         />
       </header>
-      <div className="flex justify-center item-center px-5 my-10">
+      <div className="flex justify-center item-center px-5 lg:my-10">
         <div className="">
-          <div className="text-[1em] mb-10">
+          <div className="text-[1em] lg:mb-10">
             <h1 className="font-bold text-[1.65em] ">Charlie's choice</h1>
             <h3 className="text-[#9B59B6] ]">Reflection</h3>
             <h4 className="">

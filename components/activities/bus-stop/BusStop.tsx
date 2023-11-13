@@ -1,23 +1,23 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-interface Props {
-  gotoNextBusStopePage: () => any;
-  // onBackClick: () => any;
-}
 
-export const BusStop = ({ gotoNextBusStopePage }: Props) => {
+
+export const BusStop = () => {
   return (
-    <div className="choices h-screen">
+    <div className="">
+      <Link href="/bus-stop">
       <Image
         width={18}
         height={20}
         src="./assets/images/activity1.svg"
         className="w-full h-full cursor-pointer book"
         alt="activity-card"
-        onClick={gotoNextBusStopePage}
         draggable="false"
       />
+      </Link>
+     
     </div>
   );
 };

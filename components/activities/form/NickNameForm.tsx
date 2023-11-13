@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Input } from "antd";
 import Link from "next/link";
+import { UserContext } from "@/context/user/UserContext";
 
 interface Props {
   onNextClick: () => any;
@@ -10,15 +11,21 @@ export const NickNameForm = ({ onNextClick }: Props) => {
   const [name, setName] = useState("");
   const [error, setError] = useState(false);
 
+  const userContext = React.useContext(UserContext);
+  const { state } = userContext;
+  const userName = state?.userName;
+  console.log({ userName });
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
     if (!name) {
       setError(true);
       return;
     }
+    userContext.dispatch({ type: "setUserName", payload: name });
     onNextClick();
-    e.preventDefault();
   };
+
   return (
     <div className="nicknameForm">
       <div className=" flex justify-center items-center h-screen">

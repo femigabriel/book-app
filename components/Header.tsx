@@ -4,6 +4,7 @@ import Image from "next/image";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Dropdown, Space } from "antd";
+import { UserContext } from "@/context/user/UserContext";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -33,30 +34,6 @@ export const Header = () => {
     setOpen(flag);
   };
 
-  //   <nav className="">
-  //   <li className="py-3 text-[1em]">
-  //     <Link href="/">Home</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/read-book">Read Book</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/activities">Activities</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/purchase-book">purchase Books</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/leaderboard">Leaderboard</Link>
-  //   </li>
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/store">How it Works</Link>
-  //   </li>
-
-  //   <li className="py-2 text-[1em]">
-  //     <Link href="/store">About</Link>
-  //   </li>
-  // </nav>
 
   const items: MenuProps["items"] = [
     {
@@ -86,7 +63,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/read-book">How it Works</Link>
+          <Link href="/how-it-works">How it Works</Link>
         </li>
       ),
       key: "4",
@@ -94,7 +71,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/read-book">About</Link>
+          <Link href="/about">About</Link>
         </li>
       ),
       key: "5",
@@ -102,12 +79,21 @@ export const Header = () => {
     
   ];
 
+  
+  const userContext = React.useContext(UserContext)
+  const { state } = userContext
+  const userName = state?.userName
+  console.log({ userName })
+
+
+
+
   return (
     <div className="">
       <header className=" fixed top-0 w-full header shadow-sm">
-        <nav className="container  py-3">
+        <nav className="container py-3">
           <div className="flex justify-between">
-            <Link href="/">
+            <Link href="/" className="">
               <Image
                 src="./assets/icons/logo.svg"
                 width={131}
@@ -128,7 +114,7 @@ export const Header = () => {
                 trigger={['click']}
               >
                 <div className="flex">
-                  <MenuOutlined className="w-[47px] text-[#303030] text-[34px] cursor-pointer menuIcon" />
+                  <MenuOutlined className=" text-[#303030] text-[34px] cursor-pointer menuIcon" />
                 </div>
               </Dropdown>
             </div>

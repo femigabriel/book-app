@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { NickNameForm } from "../NickNameForm";
-import { StoybookCovers } from "./StoybookCovers";
+import { NickNameForm } from "./NickNameForm";
+// import { StoybookCovers } from "./StoybookCovers";
 import { StorybookIntro } from "../StorybookIntro";
 import { ActivitiesCard } from "../ActivitiesCards";
 import { CharliesChoices1 } from "../charlie'sChoice/CharliesChoices1";
@@ -8,6 +8,7 @@ import { CharliesChoices2 } from "../charlie'sChoice/CharliesChoice2";
 import { CharliesChoices3 } from "../charlie'sChoice/CharliesChoices3";
 import { CharliesChoices4 } from "../charlie'sChoice/CharliesChoices4";
 import ChalieschoicePages from "../charlie'sChoice";
+import { StoybookCovers } from "../StoybookCovers";
 
 export default function Form() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -33,9 +34,7 @@ export default function Form() {
           <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
       case 3:
-        return (
-          <ActivitiesCard  />
-        );
+        return <ActivitiesCard />;
       // case 4:
       //   return (
       //     <ChalieschoicePages />

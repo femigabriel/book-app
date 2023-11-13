@@ -17,28 +17,27 @@ export default function BusStopPages() {
 
   const renderCurrentSelection = () => {
     switch (currentStepIndex) {
+      // case 0:
+      //   return (
+      //     <BusStop
+      //       gotoNextBusStopePage={gotoNextBusStopPage}
+      //     />
+      //   );
       case 0:
-        return (
-          <BusStop
-            gotoNextBusStopePage={gotoNextBusStopPage}
-          
-          />
-        );
-      case 1:
         return (
           <BustopPage1
             onNextClick={gotoNextBusStopPage}
             onBackClick={gotoPreviousBusStopPage}
           />
         );
-      case 2:
+      case 1:
         return (
           <BustopPage2
             onNextClick={gotoNextBusStopPage}
             onBackClick={gotoNextBusStopPage}
           />
         );
-      case 3:
+      case 2:
         return (
           <BustopPage3
             onNextClick={gotoNextBusStopPage}
@@ -47,7 +46,12 @@ export default function BusStopPages() {
         );
 
       default:
-        return <BusStop gotoNextBusStopePage={gotoNextBusStopPage} />;
+        return (
+          <BustopPage1
+            onNextClick={gotoNextBusStopPage}
+            onBackClick={gotoPreviousBusStopPage}
+          />
+        );
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;

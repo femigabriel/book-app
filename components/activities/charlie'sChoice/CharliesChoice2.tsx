@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,6 +8,18 @@ interface Props {
 }
 
 export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
+  const [firstAns, setfirstAns] = useState("");
+  const [secondAns, setsecondAns] = useState("");
+  const [error, setError] = useState(false);
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    if (!firstAns || !secondAns) {
+      setError(true);
+      return;
+    }
+  };
+
   return (
     <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
@@ -28,18 +40,54 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
           onClick={onNextClick}
         />
       </header>
-      <div className="flex justify-center item-center px-5 my-10">
-        <div className="">
-          <Image
-            width={18}
-            height={20}
-            src="./assets/images/choice2.svg"
-            className="w-full h-[380px] book"
-            alt="activity-card"
-            draggable="false"
-          />
+      <form
+        action=""
+        onSubmit={handleSubmit}
+        className="flex justify-center item-center px-5 my-10"
+      >
+        <div>
+          <div className="text-[1em] w-[673px]">
+            <h3 className="text-[#9B59B6] my-3">Directions</h3>
+            <p className=" font-semibold mb-5">
+              Read each sentence carefully and choose the best answer. Refer to
+              Charlie’s choices and review the definitions.
+            </p>
+            <p>
+              Charlie’s mother said “some kids are not only away from their
+              parents but they are away from home.” “That’s horrible”, Charlie
+              said and she began to cry.
+            </p>
+            <div className="flex w-full mt-2">
+              <p className=" font-semibold w-[12em]">Charlie is showing </p>
+              <input
+                placeholder=""
+                type="text"
+                className="input-field bg-inherit"
+                onChange={(e) => setfirstAns(e.target.value)}
+              />
+            </div>
+          </div>
+
+          <div className="text-[1em] w-[673px] lg:mt-10">
+            <p>
+              Charlie held Mya as she cried on her shoulder. The second bus
+              driver walked over and asks “Are you girls okay?” I can walk you
+              too into the counselor’s office.
+            </p>
+            <div className="flex w-full mt-2">
+              <p className=" font-semibold w-[18em]">
+                The bus driver is showing
+              </p>
+              <input
+                placeholder=""
+                type="text"
+                className="input-field bg-inherit"
+                onChange={(e) => setsecondAns(e.target.value)}
+              />
+            </div>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

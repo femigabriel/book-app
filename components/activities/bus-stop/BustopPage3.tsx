@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { WrongStopModal } from "@/components/modals/WrongStopModal";
 
 interface Props {
   onNextClick: () => any;
@@ -19,16 +20,9 @@ export const BustopPage3 = ({ onNextClick, onBackClick }: Props) => {
           draggable="false"
           onClick={onBackClick}
         />
-        <Link href="/">
-          <Image
-            width={17}
-            height={19}
-            src="./assets/icons/finishIcon.svg"
-            className="w-[60px] h-[20px] cursor-pointer"
-            alt="next-icon"
-            onClick={onNextClick}
-          />
-        </Link>
+        <div>
+          <WrongStopModal />
+        </div>
       </header>
       <div className="flex justify-center item-center px-5 my-10">
         <div className="">
