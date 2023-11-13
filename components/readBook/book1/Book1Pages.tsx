@@ -2,8 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { ReadBookHeader } from "../ReadBookHeader";
+import HTMLFlipBook from "react-pageflip";
 
 export const Book1Pages = () => {
+
   const bookPages = [
     {
       id: 1,
@@ -11,7 +13,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1/Property 1=Variant2.svg"
+          src="./assets/storybooks/book1/page2.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -24,7 +26,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant4.svg"
+          src="./assets/storybooks/book1/page3.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -37,7 +39,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant5.svg"
+          src="./assets/storybooks/book1/page4.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -50,7 +52,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant6.svg"
+          src="./assets/storybooks/book1/page5.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -63,7 +65,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant7.svg"
+          src="./assets/storybooks/book1/page6.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -76,7 +78,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant8.svg"
+          src="./assets/storybooks/book1/page7.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -89,7 +91,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant9.svg"
+          src="./assets/storybooks/book1/page8.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -102,7 +104,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant10.svg"
+          src="./assets/storybooks/book1/page9.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -115,7 +117,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant11.svg"
+          src="./assets/storybooks/book1/page10.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -128,7 +130,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant12.svg"
+          src="./assets/storybooks/book1//page11.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -141,7 +143,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant13.svg"
+          src="./assets/storybooks/book1/page12.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -154,7 +156,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant14.svg"
+          src="./assets/storybooks/book1/page13.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -167,7 +169,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant15.svg"
+          src="./assets/storybooks/book1/page14.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -180,7 +182,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant16.svg"
+          src="./assets/storybooks/book1/page15.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -193,7 +195,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant17.svg"
+          src="./assets/storybooks/book1/page16.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -206,7 +208,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant18.svg"
+          src="./assets/storybooks/book1/page17.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -219,7 +221,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant19.svg"
+          src="./assets/storybooks/book1/page18.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -232,7 +234,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant20.svg"
+          src="./assets/storybooks/book1/page19.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -245,7 +247,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant21.svg"
+          src="./assets/storybooks/book1/page20.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -258,7 +260,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant23.svg"
+          src="./assets/storybooks/book1/page21.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -271,7 +273,7 @@ export const Book1Pages = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/storybooks/book1//Property 1=Variant24.svg"
+          src="./assets/storybooks/book1/page22.svg"
           className="w-full px-10 h-full cursor-pointer book mb-5"
           alt="cover"
         />
@@ -284,13 +286,19 @@ export const Book1Pages = () => {
       <ReadBookHeader />
 
       <div>
-        {bookPages.map((list) => {
+        {/* {bookPages.map((list) => {
           return (
             <div className="" key={list.id}>
               {list.img}
             </div>
           );
-        })}
+        })} */}
+        <HTMLFlipBook width={300} height={500}>
+          <div className="demoPage">Page 1</div>
+          <div className="demoPage">Page 2</div>
+          <div className="demoPage">Page 3</div>
+          <div className="demoPage">Page 4</div>
+        </HTMLFlipBook>
       </div>
     </div>
   );

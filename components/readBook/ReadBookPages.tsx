@@ -32,6 +32,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             </Link>
           </div>
 
+
           <div className="flex flex-col">
             <Image
               width={17}
