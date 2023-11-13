@@ -13,7 +13,7 @@ export const BusStop = ({ gotoNextBusStopePage }: Props) => {
         width={18}
         height={20}
         src="./assets/images/activity1.svg"
-        className="w-[326px] h-[565px] cursor-pointer book"
+        className="w-full h-full cursor-pointer book"
         alt="activity-card"
         onClick={gotoNextBusStopePage}
         draggable="false"

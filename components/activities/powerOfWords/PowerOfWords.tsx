@@ -13,7 +13,7 @@ export const PowerOfWords = ({ gotoNextPowerOfWordsPage }: Props) => {
         width={18}
         height={20}
         src="./assets/images/activity2.svg"
-        className="lg:w-[326px] lg:h-[565px] cursor-pointer book"
+        className="lg:w-full h-full cursor-pointer book"
         alt="activity-card"
         onClick={gotoNextPowerOfWordsPage}
         draggable="false"

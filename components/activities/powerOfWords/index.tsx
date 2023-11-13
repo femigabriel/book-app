@@ -18,10 +18,7 @@ export default function PowerOfWordsPages() {
     switch (currentStepIndex) {
       case 0:
         return (
-          <PowerOfWords
-            gotoNextPowerOfWordsPage={gotoNextPowerOfWordsPage}
-            // onBackClick={gotoPreviousPage}
-          />
+          <PowerOfWords gotoNextPowerOfWordsPage={gotoNextPowerOfWordsPage} />
         );
       case 1:
         return (
@@ -38,13 +35,10 @@ export default function PowerOfWordsPages() {
           />
         );
 
-      //   default:
-      //     return (
-      //       <CharliesChoices1
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
+      default:
+        return (
+          <PowerOfWords gotoNextPowerOfWordsPage={gotoNextPowerOfWordsPage} />
+        );
     }
   };
   return <div className="h-screen w-full">{renderCurrentSelection()}</div>;

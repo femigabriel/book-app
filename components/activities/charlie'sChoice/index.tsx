@@ -54,8 +54,8 @@ export default function ChalieschoicePages() {
           />
         );
 
-      // default:
-      //   return <Charlieschoice gotoNextChaliePage={gotoNextChaliePage} />;
+      default:
+        return <Charlieschoice gotoNextChaliePage={gotoNextChaliePage} />;
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;

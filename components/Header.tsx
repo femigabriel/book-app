@@ -99,48 +99,25 @@ export const Header = () => {
       ),
       key: "5",
     },
-    // {
-    //   label: (
-    //     <li className=" text-[1em]">
-    //       <Link href="/read-book">Purchase Book</Link>
-    //     </li>
-    //   ),
-    //   key: "6",
-    // },
+    
   ];
 
   return (
     <div className="">
-      {/* <header className="px-5 py-5 flex justify-between h-[96px] header">
-        <Link href="/">
-          <Image
-            src="./assets/icons/logo.svg"
-            width={131}
-            height={101}
-            className="w-[91px] h-[71px] cursor-pointer logo"
-            alt="logo"
-          />
-        </Link>
-
-        <MenuOutlined
-          className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon"
-          onClick={showDrawer}
-        />
-      </header> */}
       <header className=" fixed top-0 w-full header shadow-sm">
-        <nav className="container mx-auto px-5 py-3">
+        <nav className="container  py-3">
           <div className="flex justify-between">
             <Link href="/">
               <Image
                 src="./assets/icons/logo.svg"
                 width={131}
                 height={101}
-                className="w-[91px] h-[71px] cursor-pointer logo"
+                className="w-full h-full cursor-pointer logo"
                 alt="logo"
               />
             </Link>
 
-            <div className="">
+            <div className="mt-5">
               <Dropdown
                 menu={{
                   items,
@@ -151,7 +128,7 @@ export const Header = () => {
                 trigger={['click']}
               >
                 <div className="flex">
-                  <MenuOutlined className="w-[47px] text-[#303030] text-[24px] cursor-pointer menuIcon" />
+                  <MenuOutlined className="w-[47px] text-[#303030] text-[34px] cursor-pointer menuIcon" />
                 </div>
               </Dropdown>
             </div>

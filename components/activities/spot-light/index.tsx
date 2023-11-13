@@ -49,13 +49,8 @@ export default function SpotLightPages() {
           />
         );
 
-      //   default:
-      //     return (
-      //       <CharliesChoices1
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
+      default:
+        return <SpotLight gotoNextSpotLightPages={gotoNextSpotLightPages} />;
     }
   };
   return <div className="h-screen w-full">{renderCurrentSelection()}</div>;

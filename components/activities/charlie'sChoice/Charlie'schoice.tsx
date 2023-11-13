@@ -12,7 +12,7 @@ export const Charlieschoice = ({ gotoNextChaliePage }: Props) => {
         width={18}
         height={20}
         src="./assets/images/activity3.svg"
-        className="lg:w-[326px] lg:h-[565px] cursor-pointer book"
+        className="w-full h-full cursor-pointer book"
         alt="activity-card"
         onClick={gotoNextChaliePage}
         draggable="false"

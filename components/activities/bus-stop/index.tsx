@@ -21,7 +21,7 @@ export default function BusStopPages() {
         return (
           <BusStop
             gotoNextBusStopePage={gotoNextBusStopPage}
-            // onBackClick={gotoPreviousPage}
+          
           />
         );
       case 1:
@@ -45,15 +45,9 @@ export default function BusStopPages() {
             onBackClick={gotoNextBusStopPage}
           />
         );
-      
 
-      //   default:
-      //     return (
-      //       <CharliesChoices1
-      //         onNextClick={gotoNextChaliePage}
-      //         onBackClick={gotoPreviousChaliePage}
-      //       />
-      //     );
+      default:
+        return <BusStop gotoNextBusStopePage={gotoNextBusStopPage} />;
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;
