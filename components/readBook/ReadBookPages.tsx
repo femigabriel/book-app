@@ -11,7 +11,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
   return (
     <div className="readBook w-full">
       <Header />
-      <div className="px-24 ml-5  pb-10 ">
+      <div className="px-24 ml-5 py-10 pt-28 ">
         <h3 className="text-[1.500em] pb-5">Books</h3>
         <div className="grid grid-cols-3 gap-5 booklist">
           <div className="flex flex-col">
@@ -31,7 +31,6 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
               </button>
             </Link>
           </div>
-
 
           <div className="flex flex-col">
             <Image

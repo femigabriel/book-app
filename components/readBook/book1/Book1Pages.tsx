@@ -10,6 +10,19 @@ export const Book1Pages = () => {
 
   const bookPages = [
     {
+      id: 0,
+      img: (
+        <Image
+          width={17}
+          height={19}
+          src="./assets/storybooks/book1/cover.svg"
+          className="w-full px-10 h-full cursor-pointer book mb-5"
+          alt="cover"
+        />
+      ),
+      page: "cover",
+    },
+    {
       id: 1,
       img: (
         <Image
@@ -22,6 +35,7 @@ export const Book1Pages = () => {
       ),
       page: "1",
     },
+
     {
       id: 2,
       img: (
@@ -348,10 +362,10 @@ export const Book1Pages = () => {
   };
 
   return (
-    <div className="coverBook w-full h-screen ">
+    <div className="coverBook w-full h-full ">
       <ReadBookHeader />
 
-      <div className="flex px-5" >
+      <div className="flex px-5 py-5">
         {/* {bookPages.map((list) => {
           return (
             <div className="" key={list.id}>
@@ -365,7 +379,7 @@ export const Book1Pages = () => {
           <div className="demoPage">Page 3</div>
           <div className="demoPage">Page 4</div>
         </HTMLFlipBook> */}
-        <ArrowLeftOutlined  onClick={gotoPrevious} />
+        <ArrowLeftOutlined onClick={gotoPrevious} />
         {bookPages.map((index, key) => {
           return (
             <div
