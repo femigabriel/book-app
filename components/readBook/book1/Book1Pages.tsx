@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { ReadBookHeader } from "../ReadBookHeader";
 import HTMLFlipBook from "react-pageflip";
+import { ArrowLeftOutlined } from "@ant-design/icons";
 
 export const Book1Pages = () => {
+  const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
   const bookPages = [
     {
@@ -280,12 +282,76 @@ export const Book1Pages = () => {
       ),
       page: "21",
     },
+    {
+      id: 22,
+      img: (
+        <Image
+          width={17}
+          height={19}
+          src="./assets/storybooks/book1/page23.svg"
+          className="w-full px-10 h-full cursor-pointer book mb-5"
+          alt="cover"
+        />
+      ),
+      page: "22",
+    },
+    {
+      id: 23,
+      img: (
+        <Image
+          width={17}
+          height={19}
+          src="./assets/storybooks/book1/page24.svg"
+          className="w-full px-10 h-full cursor-pointer book mb-5"
+          alt="cover"
+        />
+      ),
+      page: "23",
+    },
+    {
+      id: 24,
+      img: (
+        <Image
+          width={17}
+          height={19}
+          src="./assets/storybooks/book1/page25.svg"
+          className="w-full px-10 h-full cursor-pointer book mb-5"
+          alt="cover"
+        />
+      ),
+      page: "24",
+    },
+    {
+      id: 25,
+      img: (
+        <Image
+          width={17}
+          height={19}
+          src="./assets/storybooks/book1/page26.svg"
+          className="w-full px-10 h-full cursor-pointer book mb-5"
+          alt="cover"
+        />
+      ),
+      page: "25",
+    },
   ];
+
+  const gotoNext = () => {
+    setCurrentStepIndex((x) => x + 1);
+  };
+  const gotoThisSlide = (newSlide: any) => {
+    setCurrentStepIndex(newSlide);
+  };
+
+  const gotoPrevious = () => {
+    setCurrentStepIndex((x) => x - 1);
+  };
+
   return (
-    <div className="coverBook w-full h-screen">
+    <div className="coverBook w-full h-screen ">
       <ReadBookHeader />
 
-      <div>
+      <div className="flex px-5" >
         {/* {bookPages.map((list) => {
           return (
             <div className="" key={list.id}>
@@ -293,12 +359,25 @@ export const Book1Pages = () => {
             </div>
           );
         })} */}
-        <HTMLFlipBook width={300} height={500}>
+        {/* <HTMLFlipBook width={300} height={500}>
           <div className="demoPage">Page 1</div>
           <div className="demoPage">Page 2</div>
           <div className="demoPage">Page 3</div>
           <div className="demoPage">Page 4</div>
-        </HTMLFlipBook>
+        </HTMLFlipBook> */}
+        <ArrowLeftOutlined  onClick={gotoPrevious} />
+        {bookPages.map((index, key) => {
+          return (
+            <div
+              className="div"
+              style={{ display: key == currentStepIndex ? "block" : "none" }}
+              key={key}
+              onClick={gotoNext}
+            >
+              {index.img}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
