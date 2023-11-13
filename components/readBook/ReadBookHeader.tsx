@@ -24,7 +24,7 @@ export const ReadBookHeader = () => {
               width={17}
               height={19}
               src="./assets/icons/exclaIcon.svg"
-              className="w-[20px] h-[20px] cursor-pointer"
+              className="w-[20px] h-[20px] cursor-pointer mt-2"
               alt="avatar"
             />
             <span className="mx-2 flex items-center  text-[0.750em] text-[#9B59B6]">
