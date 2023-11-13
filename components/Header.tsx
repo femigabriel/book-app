@@ -4,6 +4,7 @@ import Image from "next/image";
 import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Dropdown, Space } from "antd";
+import { UserContext } from "@/context/user/UserContext";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -85,6 +86,15 @@ export const Header = () => {
     // },
   ];
 
+  
+  const userContext = React.useContext(UserContext)
+  const { state } = userContext
+  const userName = state?.userName
+  console.log({ userName })
+
+
+
+
   return (
     <div className="">
       <header className=" fixed top-0 w-full header shadow-sm">
@@ -100,7 +110,19 @@ export const Header = () => {
               />
             </Link>
 
-            <div className="my-5 lg:mr-5">
+            <div className="my-5 lg:mr-5 flex">
+            <div className="flex cursor-pointer h-[] w-[198px]">
+            <Image
+                 width={58}
+                 height={58}
+              src="./assets/icons/avatarIcon.svg"
+              className="w-[48px] h-[48px] cursor-pointer"
+              alt="avatar"
+            />
+            <span className="mx-3 items-center flex justify-center">
+            {userName}
+            </span>
+          </div>
               <Dropdown
                 menu={{
                   items,

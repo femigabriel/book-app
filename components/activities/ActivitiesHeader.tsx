@@ -4,6 +4,7 @@ import type { MenuProps } from "antd";
 import { Button, Dropdown } from "antd";
 import Link from "next/link";
 import Image from "next/image"
+import { UserContext } from "@/context/user/UserContext";
 
 
 const items: MenuProps["items"] = [
@@ -38,6 +39,14 @@ const items: MenuProps["items"] = [
 ];
 
 export const ActivitiesHeader = () => {
+  const userContext = React.useContext(UserContext)
+  const { state } = userContext
+  const userName = state?.userName
+  console.log({ userName })
+
+
+
+  
   return (
     <div className="w-full h-[96px]">
       <header className="px-10 py-7 flex justify-between shadow-sm w-full">
@@ -64,11 +73,11 @@ export const ActivitiesHeader = () => {
               alt="avatar"
             />
             <span className="mx-3 items-center flex justify-center">
-              Queen1234
+            {userName}
             </span>
           </div>
       
-          <Dropdown menu={{ items }} placement="bottomRight" arrow>
+         
             <Image
                  width={40}
                  height={40}
@@ -76,7 +85,7 @@ export const ActivitiesHeader = () => {
               className="w-[40px] h-[40px] mt-3 cursor-pointer"
               alt="down-icon"
             />
-          </Dropdown>
+         
         </div>
       </header>
     </div>

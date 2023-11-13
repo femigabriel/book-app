@@ -12,8 +12,8 @@ import { SpotLight } from "./spot-light/SpotLight";
 
 const activitiesCard = [
   {
-    id: 1,
-    card: <Charlieschoice />
+    id: 0,
+    card: <Charlieschoice  />
   },
   {
     id: 2,
