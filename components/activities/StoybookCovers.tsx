@@ -12,7 +12,7 @@ export const StoybookCovers = ({ onNextClick, onBackClick }: Props) => {
   return (
     <div className="readBook w-full">
       <ActivitiesHeader />
-      <div className="px-24 ml-5 pb-10 ">
+      <div className="px-24 mt-10 ml-5 pb-10 ">
         <h3 className="text-[1.65em] pb-7">Activities</h3>
         <div className="grid grid-cols-3 gap-5 booklist">
           <div className="flex flex-col">
