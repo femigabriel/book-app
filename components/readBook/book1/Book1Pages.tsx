@@ -362,7 +362,7 @@ export const Book1Pages = () => {
   };
 
   return (
-    <div className="coverBook w-full lg:h-screen ">
+    <div className="coverBook w-full h-screen ">
       <ReadBookHeader />
 
       <div className="flex px-5 py-5">
