@@ -55,7 +55,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/read-book">Leaderboard</Link>
+          <Link href="/">Leaderboard</Link>
         </li>
       ),
       key: "3",
@@ -63,7 +63,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/how-it-works">How it Works</Link>
+          <Link href="/">How it Works</Link>
         </li>
       ),
       key: "4",
@@ -71,7 +71,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/about">About</Link>
+          <Link href="/">About</Link>
         </li>
       ),
       key: "5",
@@ -90,7 +90,7 @@ export const Header = () => {
 
   return (
     <div className="">
-      <header className=" fixed top-0 w-full header shadow-sm">
+      <header className=" fixed bg-[#e1d1f6]  top-0 w-full header shadow-sm">
         <nav className="container py-3">
           <div className="flex justify-between">
             <Link href="/" className="">

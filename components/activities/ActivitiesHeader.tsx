@@ -32,8 +32,8 @@ export const ActivitiesHeader = () => {
   console.log({ userName });
 
   return (
-    <div className="w-full h-[96px]">
-      <header className="px-10 py-7 flex justify-between shadow-sm w-full">
+    <div className="w-full h-[96px] bg-[#e1d1f6] ">
+      <header className="px-10 py-7 flex justify-between shadow-sm w-full ">
         <Link href="/" className="flex cursor-pointer w-full">
           {/* <Image
                  width={24}
