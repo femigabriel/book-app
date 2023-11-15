@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { ActivitiesCard } from "../ActivitiesCards";
 import { StoybookCovers } from "../StoybookCovers";
 import { StorybookIntro } from "../StorybookIntro";
 
@@ -29,8 +28,8 @@ export default function ActivitiesPlay() {
             <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
  
-      default:
-        return <ActivitiesCard  />;
+      // default:
+      //   return <ActivitiesCard  />;
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;
