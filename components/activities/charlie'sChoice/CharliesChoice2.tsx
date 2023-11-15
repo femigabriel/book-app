@@ -89,7 +89,6 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
               parents but they are away from home.” “That’s horrible”, Charlie
               said and she began to cry.
             </p>
-            {/* {questions[currentQuestion].type === "empathy" && ( */}
               <div className="flex w-full mt-2">
                 <p className=" font-semibold w-[12em]">Charlie is showing </p>
                 <input
@@ -99,7 +98,7 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
                   onChange={(e) => setfirstAns(e.target.value)}
                 />
               </div>
-            {/* )} */}
+        
           </div>
 
           <div className="text-[1em] w-[673px] lg:mt-10">

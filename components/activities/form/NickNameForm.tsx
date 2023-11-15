@@ -63,11 +63,11 @@ export const NickNameForm = ({ onNextClick }: Props) => {
             )}
           </div>
           <div className="flex justify-center items-center mt-14">
-            <Link href="activities/play-activities" className="w-full">
+            {/* <Link href="activities/play-activities" className="w-full"> */}
               <button className="bg-[#9B59B6] rounded-[24px] text-[#FDFDFF] w-full px-[12px] py-[11px]">
                 Continue
               </button>
-            </Link>
+            {/* </Link> */}
           </div>
           <div className="flex justify-center items-center mt-3 text-[0.85em]">
             <span>Don’t have a nickname?</span>

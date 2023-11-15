@@ -25,16 +25,21 @@ export default function Form() {
         );
       case 1:
         return (
-          <CreateUniqueNameForm onNextClick={gotoNext} onBackClick={gotoPrevious} />
+          <CreateUniqueNameForm
+            onNextClick={gotoNext}
+            onBackClick={gotoPrevious}
+          />
         );
- 
-     
-      // case 7:
-      //   return (
-      //     <CharliesChoices4 onNextClick={gotoNext} onBackClick={gotoPrevious} />
-      //   );
+
+      case 3:
+        return <ActivitiesCard />;
       default:
-        return <ActivitiesCard  />;
+        return (
+          <CreateUniqueNameAvatar
+            onNextClick={gotoNext}
+            onBackClick={gotoPrevious}
+          />
+        );
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;
