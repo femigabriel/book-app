@@ -24,7 +24,7 @@ export const QuitModal = () => {
         <Image
           width={17}
           height={19}
-          src="./assets/icons/quitIcon.svg"
+          src="/assets/icons/quitIcon.svg"
           className="w-[68px] h-[25px] cursor-pointer"
           alt="back-icon"
           onClick={showModal}
@@ -51,7 +51,7 @@ export const QuitModal = () => {
             <h1 className="text-[2em]"> Do you really want to quit?</h1>
 
             <div className="w-full flex justify-between py-5 pt-20">
-              <Link href="/activities-card">
+              <Link href="/activities/activities-card">
                 <button
                   className="bg-[#9B59B6] rounded-[24px] lg:h-[47px] px-5 lg:px-16 text-white text-[1em]"
                   onClick={handleOk}

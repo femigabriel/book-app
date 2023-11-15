@@ -11,7 +11,7 @@ export const ReadBookHeader = () => {
           <Image
             width={17}
             height={19}
-            src="./assets/icons/back.svg"
+            src="/assets/icons/back.svg"
             className="w-[24px] h-[24px] mr-3"
             alt="back-icon"
           />
@@ -23,7 +23,7 @@ export const ReadBookHeader = () => {
             <Image
               width={17}
               height={19}
-              src="./assets/icons/exclaIcon.svg"
+              src="/assets/icons/exclaIcon.svg"
               className="w-[20px] h-[20px] cursor-pointer mt-2"
               alt="avatar"
             />

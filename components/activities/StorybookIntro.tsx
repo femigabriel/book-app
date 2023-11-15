@@ -15,7 +15,7 @@ export const StorybookIntro = ({ onNextClick, onBackClick }: Props) => {
           <Image
             width={17}
             height={19}
-            src="./assets/icons/back.svg"
+            src="/assets/icons/back.svg"
             className="w-[24px] h-[24px] mr-3"
             alt="back-icon"
           />
@@ -27,7 +27,7 @@ export const StorybookIntro = ({ onNextClick, onBackClick }: Props) => {
             <Image
               width={17}
               height={19}
-              src="./assets/icons/exclaIcon.svg"
+              src="/assets/icons/exclaIcon.svg"
               className="w-[20px] h-[20px] mt-2 cursor-pointer"
               alt="avatar"
             />
@@ -60,7 +60,7 @@ export const StorybookIntro = ({ onNextClick, onBackClick }: Props) => {
               Relationship Skills as we read Charlie’s Big Gift.
             </p>
           </div>
-          <Link href="/activities-card" className=" cursor-pointer lg:float-right">
+          <Link href="/activities/activities-card" className=" cursor-pointer lg:float-right">
             <button
               className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5 "
               // onClick={onNextClick}

@@ -18,11 +18,11 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             <Image
               width={17}
               height={19}
-              src="./assets/images/book1.svg"
+              src="/assets/images/book1.svg"
               className="w-[323px] h-[485px] cursor-pointer book"
               alt="book"
             />
-            <Link href="/book" className="bookBtn mx-14 ">
+            <Link href="/read-book/book" className="bookBtn mx-14 ">
               <button
                 className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5"
                 // onClick={onNextClick}
@@ -36,7 +36,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             <Image
               width={17}
               height={19}
-              src="./assets/images/book2.svg"
+              src="/assets/images/book2.svg"
               className="w-[323px] h-[485px] cursor-pointer book"
               alt="book"
             />
@@ -51,7 +51,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             <Image
               width={17}
               height={19}
-              src="../assets/images/book2.svg"
+              src="/assets/images/book2.svg"
               className="w-[323px] h-[485px] cursor-pointer book"
               alt="book"
             />

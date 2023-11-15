@@ -11,18 +11,21 @@ export const PowerOfWordsPage1 = ({ onNextClick, onBackClick }: Props) => {
   return (
     <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
+        <Link href="/activities/activities-card">
+          <Image
+            width={17}
+            height={19}
+            src="/assets/icons/quitIcon.svg"
+            className="w-[68px] h-[25px] cursor-pointer"
+            alt="back-icon"
+            onClick={onBackClick}
+          />
+        </Link>
+
         <Image
           width={17}
           height={19}
-          src="./assets/icons/quitIcon.svg"
-          className="w-[68px] h-[25px] cursor-pointer"
-          alt="back-icon"
-          onClick={onBackClick}
-        />
-        <Image
-          width={17}
-          height={19}
-          src="./assets/icons/nextIcon.svg"
+          src="/assets/icons/nextIcon.svg"
           className="w-[60px] h-[20px] cursor-pointer"
           alt="next-icon"
           onClick={onNextClick}

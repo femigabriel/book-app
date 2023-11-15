@@ -28,7 +28,7 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
         <Image
           width={17}
           height={19}
-          src="./assets/icons/nextIcon.svg"
+          src="/assets/icons/nextIcon.svg"
           className="w-[60px] h-[20px] cursor-pointer"
           alt="next-icon"
           onClick={onNextClick}
@@ -47,7 +47,7 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
           <Image
             width={18}
             height={20}
-            src="./assets/images/choice1.svg"
+            src="/assets/images/choice1.svg"
             className="w-full h-[320px] book "
             alt="activity-card"
             draggable="false"

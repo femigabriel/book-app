@@ -19,7 +19,7 @@ export const StoybookCovers = ({ onNextClick, onBackClick }: Props) => {
             <Image
               width={17}
               height={19}
-              src="./assets/images/book1.svg"
+              src="/assets/images/book1.svg"
               className="w-[323px] h-[485px] cursor-pointer book"
               alt="book"
             />

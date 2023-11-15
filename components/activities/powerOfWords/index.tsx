@@ -23,13 +23,13 @@ export default function PowerOfWordsPages() {
       //       // onBackClick={gotoPreviousPage}
       //     />
       //   );
+      // case 0:
+      //   return (
+      //     <PowerOfWords 
+      //     // gotoNextPowerOfWordsPage={gotoNextPowerOfWordsPage}
+      //      />
+      //   );
       case 0:
-        return (
-          <PowerOfWords 
-          // gotoNextPowerOfWordsPage={gotoNextPowerOfWordsPage}
-           />
-        );
-      case 1:
         return (
           <PowerOfWordsPage1
             onNextClick={gotoNextPowerOfWordsPage}

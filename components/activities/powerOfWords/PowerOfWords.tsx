@@ -10,11 +10,11 @@ interface Props {
 export const PowerOfWords = () => {
   return (
     <div className=" ">
-      <Link href="/bus-stop">
+      <Link href="/activities/power-of-choice">
       <Image
         width={18}
         height={20}
-        src="./assets/images/activity2.svg"
+        src="/assets/images/activity2.svg"
         className="lg:w-full h-full cursor-pointer book"
         alt="activity-card"
         // onClick={gotoNextPowerOfWordsPage}

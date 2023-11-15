@@ -26,7 +26,7 @@ export const CharliesChoices3 = ({ onNextClick, onBackClick }: Props) => {
         <Image
           width={17}
           height={19}
-          src="./assets/icons/prevIcon.svg"
+          src="/assets/icons/prevIcon.svg"
           className="w-[70.19px] h-[34px] cursor-pointer"
           alt="back-icon"
           onClick={onBackClick}
@@ -34,7 +34,7 @@ export const CharliesChoices3 = ({ onNextClick, onBackClick }: Props) => {
         <Image
           width={17}
           height={19}
-          src="./assets/icons/nextIcon.svg"
+          src="/assets/icons/nextIcon.svg"
           className="w-[60px] h-[20px] cursor-pointer"
           alt="next-icon"
           onClick={onNextClick}
@@ -58,30 +58,32 @@ export const CharliesChoices3 = ({ onNextClick, onBackClick }: Props) => {
               said and she began to cry.
             </p>
             <div className="flex w-full mt-2">
-              <p className=" font-semibold w-[12em]">Charlie is showing </p>
+              <p className=" font-semibold lg:w-[18em]">Charlie is showing </p>
               <input
                 placeholder=""
                 type="text"
-                className="input-field bg-inherit"
+                value={"empathy"}
+                className="input-field bg-inherit px-5"
                 onChange={(e) => setfirstAns(e.target.value)}
               />
             </div>
           </div>
 
-          <div className="text-[1em] w-[673px] lg:mt-10">
+          <div className="text-[1em] lg:w-[673px] lg:mt-10">
             <p>
               Charlie held Mya as she cried on her shoulder. The second bus
               driver walked over and asks “Are you girls okay?” I can walk you
               too into the counselor’s office.
             </p>
             <div className="flex w-full mt-2">
-              <p className=" font-semibold w-[12em]">
+              <p className=" font-semibold w-[18em]">
                 The bus driver is showing
               </p>
               <input
                 placeholder=""
                 type="text"
-                className="input-field bg-inherit"
+                value={"consideration"}
+                className="input-field bg-inherit px-5"
                 onChange={(e) => setsecondAns(e.target.value)}
               />
             </div>

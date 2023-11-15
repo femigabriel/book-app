@@ -10,7 +10,6 @@ const cards = [
   {
     id: 1,
     card: <Charlieschoice />,
-    
   },
   {
     id: 2,
@@ -38,4 +37,3 @@ export default function ActivitiesCard() {
     </div>
   );
 }
-

@@ -14,7 +14,7 @@ export const BustopPage3 = ({ onNextClick, onBackClick }: Props) => {
         <Image
           width={17}
           height={19}
-          src="./assets/icons/prevIcon.svg"
+          src="/assets/icons/prevIcon.svg"
           className="w-[70.19px] h-[34px] cursor-pointer"
           alt="back-icon"
           draggable="false"
@@ -29,7 +29,7 @@ export const BustopPage3 = ({ onNextClick, onBackClick }: Props) => {
           <Image
             width={18}
             height={20}
-            src="./assets/images/bustopGroups2.svg"
+            src="/assets/images/bustopGroups2.svg"
             className="w-full h-[480px] book"
             alt="activity-card"
             draggable="false"
