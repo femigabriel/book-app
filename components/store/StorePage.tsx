@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import { ActivitiesHeader } from "../activities/ActivitiesHeader";
+import { Header } from "../Header";
 
 
 export const StorePage = () => {
   return (
     <div className="readBook w-full">
-      <ActivitiesHeader />
+      <Header />
       <div className="px-24 mt-16 ml-5 pb-10 ">
         <h3 className="text-[1.65em] pb-7">
           Own a Hard copy of your favorite Books

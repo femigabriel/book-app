@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Input } from "antd";
 import Link from "next/link";
 import Image from "next/image";
+import { UserContext } from "@/context/user/UserContext";
 
 interface Props {
   onNextClick: () => any;
@@ -12,13 +13,18 @@ export const CreateUniqueNameForm = ({ onNextClick, onBackClick }: Props) => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
 
+  const userContext = React.useContext(UserContext);
+  const { state } = userContext;
+  const userName = state?.userName;
+  const Useremail = state?.userEmail;
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
     if (!name) {
       setError(true);
       return;
     }
-    onNextClick();
+    // onNextClick();
     e.preventDefault();
   };
   return (
@@ -28,7 +34,7 @@ export const CreateUniqueNameForm = ({ onNextClick, onBackClick }: Props) => {
           <Image
             width={24}
             height={24}
-            src="./assets/icons/back.svg"
+            src="/assets/icons/back.svg"
             className="w-[24px] h-[24px] mr-2"
             alt="back-icon"
           />
@@ -92,13 +98,15 @@ export const CreateUniqueNameForm = ({ onNextClick, onBackClick }: Props) => {
         </div> */}
 
         <div className="flex justify-center items-center mt-14">
-          <button className="bg-[#9B59B6] rounded-[24px] text-[#FDFDFF] w-full px-[12px] py-[11px]">
-            Play activities
-          </button>
+          <Link href="/activities/play-activities" className="w-full">
+            <button className="bg-[#9B59B6] rounded-[24px] text-[#FDFDFF] w-full px-[12px] py-[11px]">
+              Play activities
+            </button>
+          </Link>
         </div>
         <div className="flex justify-center items-center mt-3 text-[0.85em]">
-          <span>    Already have a nickname?</span>
-          <Link href="/">
+          <span> Already have a nickname?</span>
+          <Link href="/activities/play-activities">
             <span className="text-[#9B59B6] mx-3">Play activities</span>
           </Link>
         </div>

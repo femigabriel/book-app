@@ -19,17 +19,7 @@ export const ActivitiesPage = () => {
     switch (currentStepIndex) {
       case 0:
         return <NickNameForm onNextClick={gotoNext} />;
-      case 1:
-        return (
-          <StoybookCovers onNextClick={gotoNext} onBackClick={gotoPrevious} />
-        );
-      case 2:
-        return (
-          <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
-        );
-      case 3:
-        return <ActivitiesCard />;
-
+  
       // default:
       //   return <NickNameForm onNextClick={gotoNext} />;
     }

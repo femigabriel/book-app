@@ -22,7 +22,7 @@ export const LandingPage = () => {
               books
             </h3>
             <button className="w-full h-[47px] bg-[#B20606] text-[#F8F8F8] text-[0.75em] rounded-[24px] shadow-md">
-              <Link href="/read-book">Read Bok</Link>
+              <Link href="/read-book">Read Books</Link>
             </button>
           </div>
 
@@ -31,7 +31,7 @@ export const LandingPage = () => {
               activities
             </h3>
             <button className="w-full h-[47px] bg-[#8722B0] text-[#F8F8F8] text-[0.75em] rounded-[24px] shadow-md">
-              <Link href="/activities">Read Bok</Link>
+              <Link href="/activities">Play Activities</Link>
             </button>
           </div>
 
@@ -40,10 +40,9 @@ export const LandingPage = () => {
               store
             </h3>
             <button className="w-full h-[47px] bg-[#123EB4] text-[#F8F8F8] text-[0.75em] rounded-[24px] shadow-md">
-              <Link href="/store">Read Bok</Link>
+              <Link href="/store">Purchase Books</Link>
             </button>
           </div>
-        
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ export const Charlieschoice = () => {
      <div className="bg-[#FD8C4D] rounded-[24px] rounded-b-none h-[80px]"></div>
         <div className=" flex justify-center items-center relative ">
       
-          <div className="mt-16">
+          <div className="lg:mt-16 mt-10">
             <h1 className="text-[#F6F4F8] text-[1.5em] text-center lg:w-[8em] my-20">
               CHARLIE’S CHOICES
             </h1>

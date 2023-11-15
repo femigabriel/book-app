@@ -7,7 +7,7 @@ export const BusStop = () => {
     <div className="bg-[#242424] pb-10 rounded-[24px] lg:h-[485px]">
       <div className="bg-[#5A99EE] rounded-[24px] rounded-b-none h-[80px]"></div>
       <div className=" flex justify-center items-center relative ">
-        <div className="mt-16">
+        <div className="lg:mt-24 mt-10">
           <h1 className="text-[#F6F4F8] text-[1.5em] text-center lg:w-[8em] my-20">BUS STOPS</h1>
           <div className="">
             <Link href="/activities/charlies-choice" className="bookBtn ">

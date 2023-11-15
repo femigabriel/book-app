@@ -14,7 +14,6 @@ export const NickNameForm = ({ onNextClick }: Props) => {
   const userContext = React.useContext(UserContext);
   const { state } = userContext;
   const userName = state?.userName;
-  console.log({ userName });
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -64,13 +63,15 @@ export const NickNameForm = ({ onNextClick }: Props) => {
             )}
           </div>
           <div className="flex justify-center items-center mt-14">
-            <button className="bg-[#9B59B6] rounded-[24px] text-[#FDFDFF] w-full px-[12px] py-[11px]">
-              Continue
-            </button>
+            <Link href="activities/play-activities" className="w-full">
+              <button className="bg-[#9B59B6] rounded-[24px] text-[#FDFDFF] w-full px-[12px] py-[11px]">
+                Continue
+              </button>
+            </Link>
           </div>
           <div className="flex justify-center items-center mt-3 text-[0.85em]">
             <span>Don’t have a nickname?</span>
-            <Link href="/">
+            <Link href="activities/create-unique-name">
               <span className="text-[#9B59B6] mx-3">Create one</span>
             </Link>
           </div>

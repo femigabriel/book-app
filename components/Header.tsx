@@ -10,6 +10,7 @@ export const Header = () => {
   const [open, setOpen] = useState(false);
   const [close, setClose] = useState(false);
   const [active, setActive] = useState(false);
+  const [show, toggleShow] = useState(true);
 
   // const showDrawer = () => {
   //   setOpen(true);
@@ -33,7 +34,6 @@ export const Header = () => {
   const handleOpenChange = (flag: boolean) => {
     setOpen(flag);
   };
-
 
   const items: MenuProps["items"] = [
     {
@@ -76,17 +76,11 @@ export const Header = () => {
       ),
       key: "5",
     },
-    
   ];
 
-  
-  const userContext = React.useContext(UserContext)
-  const { state } = userContext
-  const userName = state?.userName
-  console.log({ userName })
-
-
-
+  const userContext = React.useContext(UserContext);
+  const { state } = userContext;
+  const userName = state?.userName;
 
   return (
     <div className="">
@@ -104,6 +98,29 @@ export const Header = () => {
             </Link>
 
             <div className="mt-5">
+              <button onClick={() => toggleShow(!show)}>
+                {show ? (
+                  <Dropdown
+                    menu={{
+                      items,
+                      onClick: handleMenuClick,
+                    }}
+                    onOpenChange={handleOpenChange}
+                    open={open}
+                    trigger={["click"]}
+                  >
+                    <div className="flex">
+                      <MenuOutlined className=" text-[#303030] text-[34px] cursor-pointer menuIcon" />
+                    </div>
+                  </Dropdown>
+                ) : (
+                  <CloseOutlined className=" text-[#303030] text-[34px] cursor-pointer menuIcon" />
+                )}
+              </button>
+              {show && ""}
+            </div>
+
+            {/* <div className="mt-5">
               <Dropdown
                 menu={{
                   items,
@@ -111,13 +128,13 @@ export const Header = () => {
                 }}
                 onOpenChange={handleOpenChange}
                 open={open}
-                trigger={['click']}
+                trigger={["click"]}
               >
                 <div className="flex">
                   <MenuOutlined className=" text-[#303030] text-[34px] cursor-pointer menuIcon" />
                 </div>
               </Dropdown>
-            </div>
+            </div> */}
           </div>
         </nav>
       </header>

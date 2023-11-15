@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { ActivitiesCard } from "../ActivitiesCards";
-import { CreateUniqueNameForm } from "./CreateUniqueNameForm";
-import { CreateUniqueNameAvatar } from "./CreateUniqueNameAvatar";
+import { StoybookCovers } from "../StoybookCovers";
+import { StorybookIntro } from "../StorybookIntro";
 
-export default function Form() {
+
+export default function ActivitiesPlay() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
   const gotoNext = () => {
@@ -18,21 +19,16 @@ export default function Form() {
     switch (currentStepIndex) {
       case 0:
         return (
-          <CreateUniqueNameAvatar
+          <StoybookCovers
             onNextClick={gotoNext}
             onBackClick={gotoPrevious}
           />
         );
       case 1:
         return (
-          <CreateUniqueNameForm onNextClick={gotoNext} onBackClick={gotoPrevious} />
+            <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
  
-     
-      // case 7:
-      //   return (
-      //     <CharliesChoices4 onNextClick={gotoNext} onBackClick={gotoPrevious} />
-      //   );
       default:
         return <ActivitiesCard  />;
     }

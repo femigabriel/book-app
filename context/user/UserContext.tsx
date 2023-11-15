@@ -17,8 +17,8 @@ const reducer = (state: any, { type, payload }: any) => {
       localStorage.setItem("avatar", payload);
       return (state = { ...state, avatar: payload });
       case "setEmail":
-      localStorage.setItem("email", payload);
-      return (state = { ...state, email: payload });
+      localStorage.setItem("userEmail", payload);
+      return (state = { ...state, userEmail: payload });
     default:
       return state;
   }
@@ -26,14 +26,14 @@ const reducer = (state: any, { type, payload }: any) => {
 
 const initialState = {
   userName: "",
-  email: "",
+ userEmail: "",
   avatar: "",
 };
 
 interface StateProp {
   userName: string;
   avatar: string;
-  email: string;
+  userEmail: string;
 }
 
 export const UserContext = createContext<{
