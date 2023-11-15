@@ -1,5 +1,6 @@
 "use client";
 
+import { ActivitiesHeader } from "@/components/activities/ActivitiesHeader";
 import { BusStop } from "@/components/activities/bus-stop/BusStop";
 import { Charlieschoice } from "@/components/activities/charlie'sChoice/Charlie'schoice";
 import { PowerOfWords } from "@/components/activities/powerOfWords/PowerOfWords";
@@ -26,14 +27,17 @@ const cards = [
 ];
 export default function ActivitiesCard() {
   return (
-    <div className="coverBook grid grid-cols-4 gap-5 px-20 lg:h-screen py-10 lg:py-20">
-      {cards.map((list) => {
-        return (
-          <div className="" key={list.id}>
-            {list.card}
-          </div>
-        );
-      })}
+    <div className="w-full readBook">
+      <ActivitiesHeader />
+      <div className="coverBook my-10 grid grid-cols-4 gap-5 px-20 lg:h-screen py-10 lg:py-20">
+        {cards.map((list) => {
+          return (
+            <div className="" key={list.id}>
+              {list.card}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

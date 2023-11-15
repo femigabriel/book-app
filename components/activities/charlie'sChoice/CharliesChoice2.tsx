@@ -11,6 +11,10 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
   const [firstAns, setfirstAns] = useState("");
   const [secondAns, setsecondAns] = useState("");
   const [error, setError] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [score, setScore] = useState(0);
+  const [answers, setAnswers] = useState([]);
+  const [showScore, setShowScore] = useState(false);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -19,6 +23,33 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
       return;
     }
   };
+
+  const questions = [
+    {
+      question: "What is the capital of France?",
+      type: "radio",
+      options: ["Paris", "Berlin", "London", "Rome"],
+      answer: "Paris",
+    },
+    {
+      question:
+        "Which planets are considered gas giants? (Select all that apply)",
+      type: "checkbox",
+      options: ["Venus", "Mars", "Jupiter", "Saturn"],
+      answer: ["Jupiter", "Saturn"],
+    },
+    {
+      question: "Who is the CEO of Tesla?",
+      type: "input",
+      answer: "Elon Musk",
+    },
+    {
+      question: "Share your feedback about this quiz:",
+      type: "textarea",
+      answer: "",
+    },
+    // Add more questions here
+  ];
 
   return (
     <div className="readBook w-full h-screen ">
@@ -40,6 +71,7 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
           onClick={onNextClick}
         />
       </header>
+      
       <form
         action=""
         onSubmit={handleSubmit}
@@ -57,15 +89,17 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
               parents but they are away from home.” “That’s horrible”, Charlie
               said and she began to cry.
             </p>
-            <div className="flex w-full mt-2">
-              <p className=" font-semibold w-[12em]">Charlie is showing </p>
-              <input
-                placeholder=""
-                type="text"
-                className="input-field bg-inherit"
-                onChange={(e) => setfirstAns(e.target.value)}
-              />
-            </div>
+            {/* {questions[currentQuestion].type === "empathy" && ( */}
+              <div className="flex w-full mt-2">
+                <p className=" font-semibold w-[12em]">Charlie is showing </p>
+                <input
+                  placeholder=""
+                  type="text"
+                  className="input-field bg-inherit"
+                  onChange={(e) => setfirstAns(e.target.value)}
+                />
+              </div>
+            {/* )} */}
           </div>
 
           <div className="text-[1em] w-[673px] lg:mt-10">

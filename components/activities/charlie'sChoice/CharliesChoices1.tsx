@@ -95,14 +95,7 @@ export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
               </p>
             </div>
           </div>
-          {/* <Image
-            width={18}
-            height={20}
-            src="/assets/images/choice1.svg"
-            className="w-full h-[320px] book "
-            alt="activity-card"
-            draggable="false"
-          /> */}
+
         </div>
       </div>
     </div>

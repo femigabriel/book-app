@@ -34,47 +34,39 @@ export const ActivitiesHeader = () => {
   return (
     <div className="w-full h-[96px] fixed bg-[#e1d1f6]  top-0 ">
       <header className="px-10 py-7 flex justify-between shadow-sm w-full ">
-        <Link href="/" className="flex cursor-pointer w-full">
-          {/* <Image
-                 width={24}
-                 height={24}
-              src="./assets/icons/back.svg"
-              className="w-[24px] h-[24px] mr-3"
-              alt="back-icon"
-            />
-            <span>Back</span> */}
-          <Link href="/" className="">
-            <Image
-              src="./assets/icons/logo.svg"
-              width={131}
-              height={101}
-              className="w-full h-full cursor-pointer logo"
-              alt="logo"
-            />
-          </Link>
+        <Link href="/" className="flex">
+          <Image
+            src="/assets/icons/back.svg"
+            width={12}
+            height={13}
+            className="w-[25px] h-full cursor-pointer logo"
+            alt="logo"
+          />
+          <span className="mt-2 mx-3">Back</span>
         </Link>
 
         <div className="flex">
-          <div className="flex cursor-pointer h-[] w-[198px]">
+          <div className="flex cursor-pointer mx-5">
             <Image
               width={58}
               height={58}
-              src="./assets/icons/avatarIcon.svg"
-              className="w-[58px] h-[58px] cursor-pointer"
+              src="/assets/icons/avatarIcon.svg"
+              className="w-[52px] h-[52px] cursor-pointer"
               alt="avatar"
             />
             <span className="mx-3 items-center flex justify-center">
               {userName}
             </span>
           </div>
-
-          <Image
-            width={40}
-            height={40}
-            src="./assets/icons/downIcon.svg"
-            className="w-[40px] h-[40px] mt-3 cursor-pointer"
-            alt="down-icon"
-          />
+          <Dropdown menu={{ items }} placement="bottom" arrow>
+            <Image
+              width={40}
+              height={40}
+              src="/assets/icons/downIcon.svg"
+              className="w-[30px] h-[25px] mt-3 cursor-pointer"
+              alt="down-icon"
+            />
+          </Dropdown>
         </div>
       </header>
     </div>
