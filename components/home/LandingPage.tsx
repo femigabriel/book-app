@@ -17,34 +17,33 @@ export const LandingPage = () => {
           </p>
         </div>
         <div className="flex gap-5 mt-20 lists">
-          <Link href="/read-book">
-            <Image
-              width={18}
-              height={20}
-              src="./assets/images/Frame3.svg"
-              className="w-[225px] h-[168px] cursor-pointer"
-              alt="card"
-            />
-          </Link>
+          <div className="bg-[#CB4242] page-link-card px-3 py-5 ">
+            <h3 className="text-white text-center uppercase text-[1em] mb-3">
+              books
+            </h3>
+            <button className="w-full h-[47px] bg-[#B20606] text-[#F8F8F8] text-[0.75em] rounded-[24px] shadow-md">
+              <Link href="/read-book">Read Bok</Link>
+            </button>
+          </div>
 
-          <Link href="/activities">
-            <Image
-              width={18}
-              height={20}
-              src="./assets/images/Frame1.svg"
-              className="w-[225px] h-[168px] cursor-pointer"
-              alt="card"
-            />
-          </Link>
-          <Link href="/">
-            <Image
-              width={18}
-              height={20}
-              src="./assets/images/Frame2.svg"
-              className="w-[225px] h-[168px] cursor-pointer"
-              alt="card"
-            />
-          </Link>
+          <div className="bg-[#9B59B6] page-link-card px-3 py-5 ">
+            <h3 className="text-white text-center uppercase text-[1em] mb-3">
+              activities
+            </h3>
+            <button className="w-full h-[47px] bg-[#8722B0] text-[#F8F8F8] text-[0.75em] rounded-[24px] shadow-md">
+              <Link href="/activities">Read Bok</Link>
+            </button>
+          </div>
+
+          <div className="bg-[#3C5EB8] page-link-card px-3 py-5 ">
+            <h3 className="text-white text-center uppercase text-[1em] mb-3">
+              store
+            </h3>
+            <button className="w-full h-[47px] bg-[#123EB4] text-[#F8F8F8] text-[0.75em] rounded-[24px] shadow-md">
+              <Link href="/store">Read Bok</Link>
+            </button>
+          </div>
+        
         </div>
       </div>
     </div>

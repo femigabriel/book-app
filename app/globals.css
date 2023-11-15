@@ -89,6 +89,13 @@ header {
 .charlieImg {
   display: block;
 }
+.page-link-card {
+  box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  width: 225px;
+  height: 148px;
+  cursor: pointer;
+}
 @media screen and (max-width: 920px) {
   body {
     color: #303030;
@@ -297,7 +304,8 @@ header {
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;

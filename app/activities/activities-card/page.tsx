@@ -26,7 +26,7 @@ const cards = [
 ];
 export default function ActivitiesCard() {
   return (
-    <div className="coverBook grid grid-cols-4 gap-3 px-20 lg:h-screen py-10 lg:py-20">
+    <div className="coverBook grid grid-cols-4 gap-5 px-20 lg:h-screen py-10 lg:py-20">
       {cards.map((list) => {
         return (
           <div className="" key={list.id}>
