@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const ReadBookHeader = () => {
   return (
-    <div className=" h-[96px]">
+    <div className="bg-[#E1D1F6] h-[96px]">
       <header className="px-10 py-7 flex justify-between ">
         <Link href="/read-book" className="flex cursor-pointer">
           <Image
