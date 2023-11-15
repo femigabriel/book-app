@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { ActivitiesCard } from "../ActivitiesCards";
 import { CreateUniqueNameForm } from "./CreateUniqueNameForm";
 import { CreateUniqueNameAvatar } from "./CreateUniqueNameAvatar";
+import ActivitiesCard from "@/app/activities/activities-card/page";
 
 export default function Form() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);

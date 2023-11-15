@@ -10,46 +10,36 @@ interface Props {
 export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
   const [firstAns, setfirstAns] = useState("");
   const [secondAns, setsecondAns] = useState("");
-  const [error, setError] = useState(false);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [answers, setAnswers] = useState([]);
-  const [showScore, setShowScore] = useState(false);
+  const [errorFirst, setErrorFirst] = useState(false);
+  const [errorSecond, setErrorSecond] = useState(false);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    if (!firstAns || !secondAns) {
-      setError(true);
+
+    if (hasInValidData()) {
       return;
     }
+    onNextClick();
   };
 
-  const questions = [
-    {
-      question: "What is the capital of France?",
-      type: "radio",
-      options: ["Paris", "Berlin", "London", "Rome"],
-      answer: "Paris",
-    },
-    {
-      question:
-        "Which planets are considered gas giants? (Select all that apply)",
-      type: "checkbox",
-      options: ["Venus", "Mars", "Jupiter", "Saturn"],
-      answer: ["Jupiter", "Saturn"],
-    },
-    {
-      question: "Who is the CEO of Tesla?",
-      type: "input",
-      answer: "Elon Musk",
-    },
-    {
-      question: "Share your feedback about this quiz:",
-      type: "textarea",
-      answer: "",
-    },
-    // Add more questions here
-  ];
+  const hasInValidData = () => {
+    let response = false;
+    if (!firstAns || firstAns.toLowerCase() !== "empathy") {
+      setErrorFirst(true);
+      response = true;
+    } else {
+      setErrorFirst(false);
+      response = false;
+    }
+    if (!secondAns || secondAns.toLowerCase() !== "consideration") {
+      setErrorSecond(true);
+      response = true;
+    } else {
+      setErrorSecond(false);
+      response = false;
+    }
+    return response;
+  };
 
   return (
     <div className="readBook w-full h-screen ">
@@ -68,13 +58,13 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
           src="/assets/icons/nextIcon.svg"
           className="w-[60px] h-[20px] cursor-pointer"
           alt="next-icon"
-          onClick={onNextClick}
+          onClick={(e) => handleSubmit(e)}
         />
       </header>
-      
+
       <form
         action=""
-        onSubmit={handleSubmit}
+        // onSubmit={handleSubmit}
         className="flex justify-center item-center px-5 my-10"
       >
         <div>
@@ -89,16 +79,22 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
               parents but they are away from home.” “That’s horrible”, Charlie
               said and she began to cry.
             </p>
-              <div className="flex w-full mt-2">
-                <p className=" font-semibold w-[12em]">Charlie is showing </p>
+            <div className="flex w-full mt-2">
+              <p className=" font-semibold w-[12em]">Charlie is showing </p>
+              <div className="w-full">
                 <input
                   placeholder=""
                   type="text"
                   className="input-field bg-inherit"
                   onChange={(e) => setfirstAns(e.target.value)}
                 />
+                {errorFirst && (
+                  <div className="text-[#F13737] text-[0.750em]">
+                    *Incorrect Answer, *Hint "empathy"
+                  </div>
+                )}
               </div>
-        
+            </div>
           </div>
 
           <div className="text-[1em] w-[673px] lg:mt-10">
@@ -111,12 +107,19 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
               <p className=" font-semibold w-[18em]">
                 The bus driver is showing
               </p>
-              <input
-                placeholder=""
-                type="text"
-                className="input-field bg-inherit"
-                onChange={(e) => setsecondAns(e.target.value)}
-              />
+              <div className="w-full">
+                <input
+                  placeholder=""
+                  type="text"
+                  className="input-field bg-inherit"
+                  onChange={(e) => setsecondAns(e.target.value)}
+                />
+                {errorSecond && (
+                  <div className="text-[#F13737] text-[0.750em]">
+                    *Incorrect Answer, *Hint "consideration"
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

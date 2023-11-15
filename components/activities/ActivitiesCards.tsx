@@ -32,13 +32,13 @@ const cards = [
 export const ActivitiesCard = () => {
   return (
     <div className="coverBook grid grid-cols-5 gap-5 px-20 lg:h-screen py-10 lg:py-20">
-      {/* {cards.map((list) => {
+      {cards.map((list) => {
         return (
           <div className="" key={list.id}>
             {list.card}
           </div>
         );
-      })} */}
+      })}
     </div>
   );
 };

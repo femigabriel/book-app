@@ -42,7 +42,7 @@ export const QuitModal = () => {
               <Image
                 width={17}
                 height={19}
-                src="./assets/icons/head.svg"
+                src="/assets/icons/head.svg"
                 className="w-[70px] h-[70px] cursor-pointer"
                 alt="back-icon"
                 onClick={showModal}

@@ -35,19 +35,12 @@ export default function ChalieschoicePages() {
         );
       case 2:
         return (
-          <CharliesChoices3
-            onNextClick={gotoNextChaliePage}
-            onBackClick={gotoPreviousChaliePage}
-          />
-        );
-      case 3:
-        return (
           <CharliesChoices4
             onNextClick={gotoNextChaliePage}
             onBackClick={gotoPreviousChaliePage}
           />
         );
-
+    
       default:
         return (
           <CharliesChoices1
@@ -57,12 +50,6 @@ export default function ChalieschoicePages() {
         );
     }
   };
-  const charliesCard = [
-    {
-      title: "",
-      page: "",
-      link: "",
-    },
-  ];
+
   return <div className="">{renderCurrentSelection()}</div>;
 }

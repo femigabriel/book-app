@@ -14,10 +14,15 @@ export const CharliesChoices3 = ({ onNextClick, onBackClick }: Props) => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    if (!firstAns || !secondAns) {
+    if (!firstAns || firstAns.toLowerCase() !== "empathy") {
       setError(true);
       return;
     }
+    if (!secondAns || secondAns.toLowerCase() !== "empathy") {
+      setError(true);
+      return;
+    }
+    onNextClick();
   };
 
   return (
@@ -37,7 +42,7 @@ export const CharliesChoices3 = ({ onNextClick, onBackClick }: Props) => {
           src="/assets/icons/nextIcon.svg"
           className="w-[60px] h-[20px] cursor-pointer"
           alt="next-icon"
-          onClick={onNextClick}
+          // onClick={onNextClick}
         />
       </header>
       <form
