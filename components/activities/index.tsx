@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { ActivitiesCard } from "./ActivitiesCards";
 import { NickNameForm } from "./form/NickNameForm";
 import { StorybookIntro } from "./StorybookIntro";
 import { StoybookCovers } from "./StoybookCovers";
+import ActivitiesCard from "./ActivitiesCards";
 
 export const ActivitiesPage = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -19,9 +19,17 @@ export const ActivitiesPage = () => {
     switch (currentStepIndex) {
       case 0:
         return <NickNameForm onNextClick={gotoNext} />;
-  
-      // default:
-      //   return <NickNameForm onNextClick={gotoNext} />;
+
+      case 1:
+        return (
+          <StoybookCovers onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
+      case 2:
+        return (
+          <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
+      case 3:
+        return <ActivitiesCard />;
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;

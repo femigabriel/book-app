@@ -1,15 +1,11 @@
-import React from "react";
-import { ActivitiesHeader } from "./ActivitiesHeader";
-import Image from "next/image";
-import ChalieschoicePages from "./charlie'sChoice";
-import BusStopPages from "./bus-stop";
-import PowerOfWordsPages from "./powerOfWords";
-import SpotLightPages from "./spot-light";
-import { Charlieschoice } from "./charlie'sChoice/Charlie'schoice";
-import { SpotLight } from "./spot-light/SpotLight";
-import { PowerOfWords } from "./powerOfWords/PowerOfWords";
-import { BusStop } from "./bus-stop/BusStop";
+"use client";
 
+import { ActivitiesHeader } from "@/components/activities/ActivitiesHeader";
+import { BusStop } from "@/components/activities/bus-stop/BusStop";
+import { Charlieschoice } from "@/components/activities/charlie'sChoice/Charlie'schoice";
+import { PowerOfWords } from "@/components/activities/powerOfWords/PowerOfWords";
+import { SpotLight } from "@/components/activities/spot-light/SpotLight";
+import React from "react";
 
 const cards = [
   {
@@ -29,16 +25,19 @@ const cards = [
     card: <SpotLight />,
   },
 ];
-export const ActivitiesCard = () => {
+export default function ActivitiesCard() {
   return (
-    <div className="coverBook grid grid-cols-5 gap-5 px-20 lg:h-screen py-10 lg:py-20">
-      {cards.map((list) => {
-        return (
-          <div className="" key={list.id}>
-            {list.card}
-          </div>
-        );
-      })}
+    <div className="w-full readBook h-full lg:h-screen">
+      <ActivitiesHeader />
+      <div className="coverBook my-10 grid grid-cols-4 gap-5 px-20 lg:h-screen py-10 lg:py-20">
+        {cards.map((list) => {
+          return (
+            <div className="" key={list.id}>
+              {list.card}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
-};
+}

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { CreateUniqueNameForm } from "./CreateUniqueNameForm";
 import { CreateUniqueNameAvatar } from "./CreateUniqueNameAvatar";
 import ActivitiesCard from "@/app/activities/activities-card/page";
+import { StoybookCovers } from "../StoybookCovers";
+import { StorybookIntro } from "../StorybookIntro";
 
 export default function Form() {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -32,7 +34,13 @@ export default function Form() {
         );
 
       case 3:
-        return <ActivitiesCard />;
+        return (
+          <StoybookCovers onNextClick={gotoNext} onBackClick={gotoPrevious} />
+        );
+        case 4:
+          return (
+              <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
+          );
       default:
         return (
           <CreateUniqueNameAvatar

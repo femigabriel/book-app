@@ -34,7 +34,7 @@ export const ActivitiesHeader = () => {
   return (
     <div className="w-full h-[96px] fixed bg-[#e1d1f6]  top-0 ">
       <header className="px-10 py-7 flex justify-between shadow-sm w-full ">
-        <Link href="/activities" className="flex">
+        <Link href="/activities/activities-card" className="flex">
           <Image
             src="/assets/icons/back.svg"
             width={12}

@@ -3,6 +3,7 @@ import { Input } from "antd";
 import Link from "next/link";
 import Image from "next/image";
 import { PaymentPlanList } from "@/types/global";
+import { UserContext } from "@/context/user/UserContext";
 
 interface Props {
   onNextClick: () => any;
@@ -76,6 +77,11 @@ export const CreateUniqueNameAvatar = ({ onNextClick, onBackClick }: Props) => {
   const [error, setError] = useState(false);
   const [selected, setSelected] = useState<PaymentPlanList | undefined>();
 
+
+  const userContext = React.useContext(UserContext);
+  const { state } = userContext;
+  const avatar = state?.avatar;
+
   const handleOnClick = (item: PaymentPlanList) => {
     setSelected(item);
   };
@@ -83,8 +89,7 @@ export const CreateUniqueNameAvatar = ({ onNextClick, onBackClick }: Props) => {
     if (selected === undefined) {
       return;
     }
-    // pageContext.dispatch({ type: 'setPlans', payload: selected })
-    // pageContext.dispatch({ type: 'isYearly', payload: active })
+    userContext.dispatch({ type: "setAvatar", payload: name });
     onNextClick();
   };
 

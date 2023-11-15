@@ -37,7 +37,7 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
     if (active.length < 1) {
       return;
     }
-    onNextClick();
+    // onNextClick();
   };
 
   return (
