@@ -7,7 +7,7 @@ export const StorePage = () => {
   return (
     <div className="readBook w-full">
       <Header />
-      <div className="px-24 mt-16 ml-5 pb-10 ">
+      <div className="px-24 mt-16 ml-5 py-10 ">
         <h3 className="text-[1.65em] pb-7">
           Own a Hard copy of your favorite Books
         </h3>
