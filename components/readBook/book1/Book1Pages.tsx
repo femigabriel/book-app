@@ -3,8 +3,9 @@ import Image from "next/image";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 import { ReadBookHeader } from "../ReadBookHeader";
 import HTMLFlipBook from "react-pageflip";
-import { ArrowLeftOutlined } from "@ant-design/icons";
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { Page1 } from "./Book1";
+import { BookCoverPage } from "./BookCoverPage";
 
 export const Book1Pages = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -12,15 +13,7 @@ export const Book1Pages = () => {
   const bookPages = [
     {
       id: 0,
-      page: (
-        <Image
-          width={300}
-          height={300}
-          src="/assets/illustrators/cover.png"
-          className="w-full h-full lg:w-[680px] cursor-pointer mt-2"
-          alt="avatar"
-        />
-      ),
+      page: <BookCoverPage />,
     },
     {
       id: 1,
@@ -29,7 +22,7 @@ export const Book1Pages = () => {
           width={300}
           height={300}
           src="/assets/storybooks/book1/page2.svg"
-          className="w-full h-full  cursor-pointer mt-2"
+          className="w-full h-[66vh] lg:h-[437px]  cursor-pointer mt-2"
           alt="avatar"
         />
       ),
@@ -44,7 +37,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img1.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -74,7 +67,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img2.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -102,7 +95,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img2.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -131,7 +124,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img3.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -158,7 +151,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img3.png"
-              className="w-full h-full cursor-pointer mt-2"
+            className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -185,7 +178,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img4.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -209,7 +202,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img5.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -239,7 +232,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img6.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -266,7 +259,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img7.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -294,7 +287,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img7.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -323,7 +316,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img8.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -352,7 +345,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img8.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -378,7 +371,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img9.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -404,7 +397,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img9.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -431,7 +424,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img10.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -459,7 +452,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img9.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -486,7 +479,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img11.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -511,7 +504,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img11.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -539,7 +532,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img12.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -564,7 +557,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img12.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -591,7 +584,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img12.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -618,7 +611,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img13.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -645,7 +638,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img13.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -671,7 +664,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img13.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -692,7 +685,7 @@ Mya continues to cry but then gathers herself to speak."
           width={300}
           height={300}
           src="/assets/illustrators/backCover.png"
-          className="w-full h-full cursor-pointer mt-2"
+          className="w-full h-[66vh] cursor-pointer mt-2"
           alt="avatar"
         />
       ),
@@ -711,19 +704,20 @@ Mya continues to cry but then gathers herself to speak."
   };
 
   return (
-    <div className=" w-full h-screen bg-[#e1d1f] lg:h-full">
+    <div className=" w-full readBook h-screen bg-[#e1d1f]">
       <div className="mb-5">
         <ReadBookHeader />
       </div>
 
-      <div className="flex gap-5 w-full px-5">
+      <div className="flex  gap-5 w-full px-5">
         <div className="flex justify-center items-center">
           <ArrowLeftOutlined onClick={gotoPrevious} />
         </div>
+
         {bookPages.map((index, key) => {
           return (
             <div
-              className=" shadow-md"
+              className="flip shadow-m flex justify-center items-center flex-1"
               style={{ display: key == currentStepIndex ? "block" : "none" }}
               key={key}
               onClick={gotoNext}
@@ -732,6 +726,9 @@ Mya continues to cry but then gathers herself to speak."
             </div>
           );
         })}
+        <div className="flex justify-center items-center">
+          <ArrowRightOutlined onClick={gotoNext} />
+        </div>
       </div>
     </div>
   );
