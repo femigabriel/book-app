@@ -22,7 +22,7 @@ export const Book1Pages = () => {
           width={300}
           height={300}
           src="/assets/storybooks/book1/page2.svg"
-          className="w-full h-[66vh] lg:h-[437px]  cursor-pointer mt-2"
+          className="w-full h-full lg:h-[437px]  cursor-pointer mt-2"
           alt="avatar"
         />
       ),
@@ -37,7 +37,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img1.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -67,7 +67,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img2.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -95,7 +95,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img2.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -124,7 +124,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img3.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -151,7 +151,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img3.png"
-            className="w-full h-[66vh] cursor-pointer mt-2"
+            className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -178,7 +178,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img4.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -202,7 +202,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img5.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -232,7 +232,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img6.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -259,7 +259,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img7.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -287,7 +287,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img7.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -316,7 +316,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img8.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -345,7 +345,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img8.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -371,7 +371,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img9.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -397,7 +397,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img9.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -424,7 +424,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img10.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -452,7 +452,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img9.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -479,7 +479,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img11.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -504,7 +504,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img11.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -532,7 +532,7 @@ export const Book1Pages = () => {
               width={300}
               height={300}
               src="/assets/illustrators/img12.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -557,7 +557,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img12.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -584,7 +584,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img12.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -611,7 +611,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img13.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -638,7 +638,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img13.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -664,7 +664,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/img13.png"
-              className="w-full h-[66vh] cursor-pointer mt-2"
+              className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
               alt="avatar"
             />
           }
@@ -685,7 +685,7 @@ Mya continues to cry but then gathers herself to speak."
           width={300}
           height={300}
           src="/assets/illustrators/backCover.png"
-          className="w-full h-[66vh] cursor-pointer mt-2"
+          className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
           alt="avatar"
         />
       ),
