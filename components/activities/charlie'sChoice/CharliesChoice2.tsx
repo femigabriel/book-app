@@ -65,10 +65,10 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
       <form
         action=""
         // onSubmit={handleSubmit}
-        className="flex justify-center item-center px-5 my-10"
+        className="flex lg:justify-center item-center px-5 my-10 w-full "
       >
         <div>
-          <div className="text-[1em] w-[673px]">
+          <div className="lg:text-[1em] text-[0.85em] lg:w-[673px] w-full lg:mt-10">
             <h3 className="text-[#9B59B6] my-3">Directions</h3>
             <p className=" font-semibold mb-5">
               Read each sentence carefully and choose the best answer. Refer to
@@ -80,7 +80,7 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
               said and she began to cry.
             </p>
             <div className="flex w-full mt-2">
-              <p className=" font-semibold w-[12em]">Charlie is showing </p>
+              <p className=" font-semibold lg:w-[12em]">Charlie is showing </p>
               <div className="w-full">
                 <input
                   placeholder=""
@@ -97,14 +97,14 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
             </div>
           </div>
 
-          <div className="text-[1em] w-[673px] lg:mt-10">
+          <div className="lg:text-[1em] text-[0.85em] lg:w-[673px] w-full lg:mt-10">
             <p>
               Charlie held Mya as she cried on her shoulder. The second bus
               driver walked over and asks “Are you girls okay?” I can walk you
               too into the counselor’s office.
             </p>
-            <div className="flex w-full mt-2">
-              <p className=" font-semibold w-[18em]">
+            <div className="flex w-full my-2">
+              <p className=" font-semibold lgw-[18em] ">
                 The bus driver is showing
               </p>
               <div className="w-full">

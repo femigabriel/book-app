@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import HTMLFlipBook from "react-pageflip";
+
 
 export const BookCoverPage = () => {
   return (

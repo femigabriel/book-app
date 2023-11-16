@@ -102,7 +102,7 @@ header {
     overflow-x: hidden;
   }
   .readBook {
-    /* height: 100%; */
+    height: 100%;
   }
   .landingPage {
     font-size: 0.75em;
@@ -252,6 +252,9 @@ header {
     display: flex;
     flex-direction: column;
   }
+  .book1 {
+    height: fit-content;
+  }
 }
 .input-field {
   display: block;
@@ -326,5 +329,4 @@ header {
   transform: rotateY(180deg);
 }
 .flip {
-
 }

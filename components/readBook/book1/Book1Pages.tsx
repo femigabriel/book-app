@@ -717,7 +717,7 @@ Mya continues to cry but then gathers herself to speak."
         {bookPages.map((index, key) => {
           return (
             <div
-              className="flip shadow-m flex justify-center items-center flex-1"
+              className="flip flex justify-center items-center flex-1"
               style={{ display: key == currentStepIndex ? "block" : "none" }}
               key={key}
               onClick={gotoNext}
