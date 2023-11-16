@@ -34,7 +34,7 @@ export const ActivitiesHeader = () => {
   return (
     <div className="w-full h-[96px] fixed bg-[#e1d1f6]  top-0 ">
       <header className="px-10 py-7 flex justify-between shadow-sm w-full ">
-        <Link href="/activities/activities-card" className="flex">
+        {/* <Link href="/activities" className="flex">
           <Image
             src="/assets/icons/back.svg"
             width={12}
@@ -43,6 +43,15 @@ export const ActivitiesHeader = () => {
             alt="logo"
           />
           <span className="mt-2 mx-3">Back</span>
+        </Link> */}
+        <Link href="/" className="">
+          <Image
+            src="./assets/icons/logo.svg"
+            width={131}
+            height={101}
+            className="w-full h-full cursor-pointer logo"
+            alt="logo"
+          />
         </Link>
 
         <div className="flex">
