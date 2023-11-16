@@ -29,10 +29,10 @@ export default function ActivitiesCard() {
   return (
     <div className="w-full readBook h-full lg:h-screen">
       <ActivitiesHeader />
-      <div className="coverBook my-10 grid grid-cols-4 gap-5 px-20 lg:h-screen py-10 lg:py-20">
+      <div className="coverBook lg:my-10 mt-20 lg:grid grid-cols-4 gap-5 px-20 lg:h-screen py-10 lg:py-20 ">
         {cards.map((list) => {
           return (
-            <div className="" key={list.id}>
+            <div className="mb-5" key={list.id}>
               {list.card}
             </div>
           );

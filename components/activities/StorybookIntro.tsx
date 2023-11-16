@@ -9,7 +9,7 @@ interface Props {
 
 export const StorybookIntro = ({ onNextClick, onBackClick }: Props) => {
   return (
-    <div className="readBook w-full lg:h-screen">
+    <div className="readBook w-full h-screen">
       <header className="px-10 py-7 flex justify-between ">
         <Link href="/" className="flex cursor-pointer">
           <Image
@@ -60,14 +60,14 @@ export const StorybookIntro = ({ onNextClick, onBackClick }: Props) => {
               Relationship Skills as we read Charlie’s Big Gift.
             </p>
           </div>
-          <Link href="/activities/activities-card" className=" cursor-pointer lg:float-right">
+          {/* <Link href="/activities/activities-card" className=" cursor-pointer lg:float-right"> */}
             <button
               className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5 "
-              // onClick={onNextClick}
+              onClick={onNextClick}
             >
               Get Started
             </button>
-          </Link>
+          {/* </Link> */}
         </div>
       </div>
     </div>

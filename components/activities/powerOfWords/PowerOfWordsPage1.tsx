@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { QuitModal } from "@/components/modals/QuitModal";
 
 interface Props {
   onNextClick: () => any;
@@ -11,7 +12,7 @@ export const PowerOfWordsPage1 = ({ onNextClick, onBackClick }: Props) => {
   return (
     <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
-        <Link href="/activities/activities-card">
+        {/* <Link href="/activities/activities-card">
           <Image
             width={17}
             height={19}
@@ -20,7 +21,8 @@ export const PowerOfWordsPage1 = ({ onNextClick, onBackClick }: Props) => {
             alt="back-icon"
             onClick={onBackClick}
           />
-        </Link>
+        </Link> */}
+        <QuitModal />
 
         <Image
           width={17}

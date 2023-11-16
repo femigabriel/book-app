@@ -10,7 +10,7 @@ export const Charlieschoice = () => {
   return (
     <div className="bg-[#242424] pb-10 rounded-[24px] lg:h-[485px]">
      <div className="bg-[#FD8C4D] rounded-[24px] rounded-b-none h-[80px]"></div>
-        <div className=" flex justify-center items-center relative ">
+     <div className=" flex justify-center items-center w-full px-5 ">
       
           <div className="lg:mt-16 mt-10">
             <h1 className="text-[#F6F4F8] text-[1.5em] text-center lg:w-[8em] my-20">
@@ -18,7 +18,7 @@ export const Charlieschoice = () => {
             </h1>
             <div className="">
               <Link href="/activities/charlies-choice" className="bookBtn ">
-                <button className="bg-[#9B59B6] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px] flex justify-center items-center w-full lg:w-[202px] my-5">
+               <button className="bg-[#9B59B6] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px] px-10 flex justify-center items-center w-full lg:w-[202px] my-5">
                   <Image
                     src="/assets/icons/playIcon.svg"
                     width={18}

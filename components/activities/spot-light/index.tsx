@@ -18,8 +18,7 @@ export default function SpotLightPages() {
 
   const renderCurrentSelection = () => {
     switch (currentStepIndex) {
-      // case 0:
-      //   return <SpotLight gotoNextSpotLightPages={gotoNextSpotLightPages} />;
+
       case 0:
         return (
           <SpotLightPage1
@@ -55,5 +54,7 @@ export default function SpotLightPages() {
           />;
     }
   };
+
+  
   return <div className="h-screen w-full">{renderCurrentSelection()}</div>;
 }

@@ -13,7 +13,7 @@ export const SpotLightPage3 = ({ onNextClick, onBackClick }: Props) => {
         <Image
           width={17}
           height={19}
-          src="/assets/icons/quitIcon.svg"
+          src="/assets/icons/prevIcon.svg"
           className="w-[68px] h-[25px] cursor-pointer"
           alt="back-icon"
           onClick={onBackClick}

@@ -13,7 +13,7 @@ export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
         <Image
           width={17}
           height={19}
-          src="/assets/icons/quitIcon.svg"
+          src="/assets/icons/prevIcon.svg"
           className="w-[68px] h-[25px] cursor-pointer"
           alt="back-icon"
           onClick={onBackClick}
@@ -32,9 +32,10 @@ export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
           <p>
             Good communication skills is one way to help build healthy
             relationship.
-            <br />Read the sentences and choose the answer you think is
-            best. When you are done, you can compare your choices with the
-            answer sheet at the end of the activity.
+            <br />
+            Read the sentences and choose the answer you think is best. When you
+            are done, you can compare your choices with the answer sheet at the
+            end of the activity.
           </p>
           <div className="">
             <Image

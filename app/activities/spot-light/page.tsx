@@ -1,12 +1,12 @@
 "use client";
 
-import PowerOfWordsPages from "@/components/activities/powerOfWords";
+import SpotLightPages from "@/components/activities/spot-light";
 import React from "react";
 
 export default function CharlieChoice() {
   return (
     <div className="">
-      <PowerOfWordsPages />
+      <SpotLightPages />
     </div>
   );
 }

@@ -10,7 +10,7 @@ const items: MenuProps["items"] = [
   {
     key: "1",
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="/score">
+      <a target="_blank" rel="noopener noreferrer" href="/">
         Scores
       </a>
     ),
@@ -18,7 +18,7 @@ const items: MenuProps["items"] = [
   {
     key: "2",
     label: (
-      <a target="_blank" rel="noopener noreferrer" href="/leaderboard">
+      <a target="_blank" rel="noopener noreferrer" href="/">
         Leaderboard
       </a>
     ),
@@ -46,7 +46,7 @@ export const ActivitiesHeader = () => {
         </Link> */}
         <Link href="/" className="">
           <Image
-            src="./assets/icons/logo.svg"
+            src="/assets/icons/logo.svg"
             width={131}
             height={101}
             className="w-full h-full cursor-pointer logo"
