@@ -31,9 +31,9 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
           />
         </Link>
       </header>
-      <div className="flex justify-center item-center px-20 my-5 ">
+      <div className="flex justify-center item-center lg:px-20 my-5 ">
         <div className="flex w-full bg-white shadow-md">
-          <div className="border px-5 leading-10 py-10 w-full">
+          <div className="border px-5 lg:leading-10 leading-6 py-10 w-full lg:text-[1em] text-[0.85em]">
             <nav>
               <li className="flex gap-3">
                 <span>1.</span>
@@ -77,7 +77,7 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
               </li>
             </nav>
           </div>
-          <div className="border px-5 leading-10 py-10 w-full l">
+          <div className="border px-5 lg:leading-10 leading-6 py-10 w-full lg:text-[1em] text-[0.85em]">
             <nav>
               <li className="flex gap-3">
                 <span>11.</span>

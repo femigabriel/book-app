@@ -15,7 +15,7 @@ export const PowerOfWords = () => {
         <div className="lg:mt-16 mt-10">
           <h1 className="text-[#F6F4F8] text-[1.5em] my-20 text-center lg:w-[8em]">POWER OF WORDS</h1>
           <div className="">
-            <Link href="/activities/charlies-choice" className="bookBtn ">
+            <Link href="/activities/power-of-choice" className="bookBtn ">
               <button className="bg-[#9B59B6] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px] flex justify-center items-center w-full lg:w-[202px]  my-5">
                 <Image
                   src="/assets/icons/playIcon.svg"

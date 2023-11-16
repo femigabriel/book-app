@@ -704,7 +704,7 @@ Mya continues to cry but then gathers herself to speak."
   };
 
   return (
-    <div className=" w-full readBook h-screen bg-[#e1d1f]">
+    <div className=" w-full readBook book1 h-screen bg-[#e1d1f]">
       <div className="mb-5">
         <ReadBookHeader />
       </div>
