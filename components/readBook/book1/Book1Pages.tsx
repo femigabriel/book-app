@@ -15,11 +15,29 @@ export const Book1Pages = () => {
   const bookPages = [
     {
       id: 0,
-      page: <BookCoverPage />,
+      page: (
+        <div className="flex  book1 justify-center items-center">
+          <Image
+            width={300}
+            height={300}
+            src="/assets/illustrators/book-flip.png"
+            className="w-full h-full mb-5 lg:h-[457px] lg:w-[680px] cursor-pointer mt-2"
+            alt="avatar"
+          />
+        </div>
+      ),
     },
     {
       id: 0,
-      page: <BookOpeningPage />,
+      page: (<div className="flex h- lg:h-full book1 justify-center items-center">
+      <Image
+        width={300}
+        height={300}
+        src="/assets/storybooks/book1/page2.svg"
+        className="w-full h-full mb-5 lg:h-[] lg:w-[85%] cursor-pointer mt-2"
+        alt="avatar"
+      />
+    </div>),
     },
 
     {
@@ -702,7 +720,7 @@ Mya continues to cry but then gathers herself to speak."
 
     {
       id: 22,
-      page:( <BookLastPage />),
+      page: <BookLastPage />,
     },
   ];
 
