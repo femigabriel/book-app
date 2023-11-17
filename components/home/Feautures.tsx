@@ -116,11 +116,10 @@ export const Feautures = () => {
               alt="features-4"
             />
             <div className="py-20 feat-content">
-              <h3 className="text-[1.2em]">Engaging activities</h3>
+              <h3 className="text-[1.2em]">Focusing on Personal Growth</h3>
               <p className="w-[24em] text-[0.85em] leading-6">
-                Dive into a curated selection of interactive games and
-                activities tied to the narrative, encouraging curiosity and
-                exploration
+                Discover a space dedicated to social emotional learning,
+                designed to foster personal development and inclusivity
               </p>
             </div>
           </div>
