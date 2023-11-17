@@ -38,11 +38,11 @@ export const MessageForm = () => {
               className=" h-[44px] w-full border-[#D9D9D9] bg-inherit border-2 text-[0.725em] messageInput"
             />
           </div>
-          <TextArea
-            className="h-[169px] bg-inherit w-full border-[#D9D9D9] border-2 text-[0.725em] messageInput"
+          <textarea
+            className="h-[169px] bg-inherit w-full border-[#D9D9D9] px-5 py-5 border-2 text-[0.725em] messageInput"
             placeholder="Write a message"
-            allowClear
-            onChange={onChange}
+            // allowClear
+            // onChange={onChange}
           />
           <button className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px] float-right my-5 messagebtn">
             Submit
