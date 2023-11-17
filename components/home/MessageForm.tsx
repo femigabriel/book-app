@@ -26,7 +26,7 @@ export const MessageForm = () => {
             </label>
             <input
               placeholder="Enter your name"
-              className=" h-[44px] w-full border-[#D9D9D9] px-5 py-5 bg-inherit border-2 text-[0.725em] messageInput"
+              className=" h-[44px] w-full rounded-[8px] border-[#D9D9D9] px-5 py-5 bg-inherit border-2 text-[0.725em] messageInput"
             />
           </div>
           <div className="flex w-full mb-5 ">
@@ -35,11 +35,11 @@ export const MessageForm = () => {
             </label>
             <input
               placeholder="Enter your email address"
-              className=" h-[44px] w-full border-[#D9D9D9] px-5 py-5 bg-inherit border-2 text-[0.725em] messageInput"
+              className=" h-[44px] w-full rounded-[8px] border-[#D9D9D9] px-5 py-5 bg-inherit border-2 text-[0.725em] messageInput"
             />
           </div>
           <textarea
-            className="h-[169px] bg-inherit w-full border-[#D9D9D9] px-5 py-5 border-2 text-[0.725em] messageInput"
+            className="h-[169px] bg-inherit w-full rounded-[8px] border-[#D9D9D9] px-5 py-5 border-2 text-[0.725em] messageInput"
             placeholder="Write a message"
             // allowClear
             // onChange={onChange}
