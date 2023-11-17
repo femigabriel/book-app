@@ -1,7 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 export const AboutPage = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
+  // This function will scroll the window to the top
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // for smoothly scrolling
+    });
+  };
+
   return (
     <div className="bg-[#F8F8F8] px-10 py-10 pt-20 aboutPage">
       <div className="flex justify-between ">
@@ -9,9 +29,10 @@ export const AboutPage = () => {
         <Image
           width={64}
           height={59}
-          src="./assets/icons/scrollUp.svg"
-          className=" cursor-pointer w-[64px] h-[59px]"
+          src="/assets/icons/scrollUp.svg"
+          className=" cursor-pointer w-[44px] h-[39px]"
           alt="scroll-up"
+          onClick={scrollToTop}
         />
       </div>
       <div className="flex justify-between aboutPage-Content">
@@ -24,7 +45,7 @@ export const AboutPage = () => {
             <Image
               width={365}
               height={351}
-              src="./assets/images/charlieImg.svg"
+              src="/assets/images/charlieImg.svg"
               className=" cursor-pointer w-[365px] h-[351.46px]"
               alt="scroll-up"
             />
@@ -48,7 +69,7 @@ export const AboutPage = () => {
           <Image
             width={365}
             height={351}
-            src="./assets/images/charlieImg.svg"
+            src="/assets/images/charlieImg.svg"
             className=" cursor-pointer w-[365px] h-[351.46px]"
             alt="scroll-up"
           />
