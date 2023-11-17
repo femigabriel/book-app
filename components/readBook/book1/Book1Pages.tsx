@@ -22,7 +22,7 @@ export const Book1Pages = () => {
             height={300}
             src="/assets/illustrators/book-flip.png"
             className="w-full h-full mb-5 lg:h-[457px] lg:w-[680px] cursor-pointer mt-2"
-            alt="avatar"
+            alt="book-flip"
           />
         </div>
       ),
