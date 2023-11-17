@@ -24,18 +24,18 @@ export const MessageForm = () => {
             <label htmlFor="" className="mt-2 mr-3">
               Name:
             </label>
-            <Input
+            <input
               placeholder="Enter your name"
-              className=" h-[44px] w-full border-[#D9D9D9] bg-inherit border-2 text-[0.725em] messageInput"
+              className=" h-[44px] w-full border-[#D9D9D9] px-5 py-5 bg-inherit border-2 text-[0.725em] messageInput"
             />
           </div>
           <div className="flex w-full mb-5 ">
             <label htmlFor="" className="mt-2 mr-3">
               Email:
             </label>
-            <Input
+            <input
               placeholder="Enter your email address"
-              className=" h-[44px] w-full border-[#D9D9D9] bg-inherit border-2 text-[0.725em] messageInput"
+              className=" h-[44px] w-full border-[#D9D9D9] px-5 py-5 bg-inherit border-2 text-[0.725em] messageInput"
             />
           </div>
           <textarea
