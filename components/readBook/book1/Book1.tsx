@@ -20,5 +20,9 @@ export const Page1 = (props: Props) => {
         <p>{props.content}</p>
       </div>
     </div>
+        //   <HTMLFlipBook width={300} height={500}>
+        //   <div> {props.illustrator}</div>
+        //   <p>{props.content}</p>
+        // </HTMLFlipBook>
   );
 };

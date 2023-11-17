@@ -5,7 +5,7 @@ import HTMLFlipBook from "react-pageflip";
 
 export const BookCoverPage = () => {
   return (
-    <div className="flex h-screen my-10 book1 justify-center items-center">
+    <div className="flex h-screen lg:h-full my-10 book1 justify-center items-center">
       <Image
         width={300}
         height={300}

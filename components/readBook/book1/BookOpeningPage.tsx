@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const BookOpeningPage = () => {
   return (
-    <div className="flex h-screen my-10 book1 justify-center items-center">
+    <div className="flex h- lg:h-full book1 justify-center items-center">
       <Image
         width={300}
         height={300}
