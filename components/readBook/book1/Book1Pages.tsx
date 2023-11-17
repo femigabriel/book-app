@@ -7,6 +7,7 @@ import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import { Page1 } from "./Book1";
 import { BookCoverPage } from "./BookCoverPage";
 import { BookOpeningPage } from "./BookOpeningPage";
+import { BookLastPage } from "./BookLastPage";
 
 export const Book1Pages = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -17,7 +18,7 @@ export const Book1Pages = () => {
       page: <BookCoverPage />,
     },
     {
-      id: 1,
+      id: 0,
       page: <BookOpeningPage />,
     },
 
@@ -47,6 +48,7 @@ export const Book1Pages = () => {
           “Charlie” in graffiti on the back and still shakes her head, “This is
           still not going to do!” Charlie’s mom Cindy sticks her head in to her
           room."
+          pageNumber={2}
         />
       ),
     },
@@ -75,6 +77,7 @@ export const Book1Pages = () => {
           “Yes, these kids not only are away from their parents but they are away from their homes. Some
           of these kids would have literally walked hundreds of miles to get the United Sates border only
           to be torn from their mothers.”"
+          pageNumber={3}
         />
       ),
     },
@@ -104,6 +107,7 @@ export const Book1Pages = () => {
           “Being a productive citizen of the world.” Charlie chimed in a reassuring voice. “That’s my girl!” Cindy blurted out with joy!
           Charlie and Cindy high-five and hug and Cindy goes to the door. “Mom?”
           “Yes.”"
+          pageNumber={4}
         />
       ),
     },
@@ -131,6 +135,7 @@ export const Book1Pages = () => {
           “Are you going to miss the first day of 5th grade, my senior?”
           “Huh, what? Oh my God!”
           Charlie pops her head up and jumps out of the bed and tumbles to the floor. “Please don’t break an arm trying to get to school today.” Charlie jumps up and rushes to the bathroom as she tries to get her bearings together for her day."
+          pageNumber={5}
         />
       ),
     },
@@ -158,6 +163,7 @@ export const Book1Pages = () => {
           Charlie dashes out of her front door and makes her way to the corner where she slyly slows down
           to a cool trot as to not lose her cool on the first day. As Charlie arrives three other friends meet
           her and they hug one another like they hadn’t seen one another in years. “Charlie!!!” screamed the girls in unison."
+          pageNumber={6}
         />
       ),
     },
@@ -182,6 +188,7 @@ export const Book1Pages = () => {
           doors in complete disarray with her clothes sloppy and hair flying to and from in the wind. The
           children bursts out into laughter, and Charlie becomes immediately protective of her friend.
           Charlie stands up and shouts."
+          pageNumber={7}
         />
       ),
     },
@@ -212,6 +219,7 @@ export const Book1Pages = () => {
           Charlie holds Mya as she cries in her shoulder, while the bus driver walks to check on them.
           “Are you girls, okay?” asked the bus driver.
           Charlie looks up and smiles."
+          pageNumber={8}
         />
       ),
     },
@@ -239,6 +247,7 @@ export const Book1Pages = () => {
           “I have it from here, we are going to go to the counselor’s office and then we’ll go to breakfast.”
           “Okay, you girls take care and have a great first day of school.” the bus driver declared, then he
           looked at Mya."
+          pageNumber={9}
         />
       ),
     },
@@ -256,6 +265,7 @@ export const Book1Pages = () => {
               alt="avatar"
             />
           }
+          pageNumber={10}
           content="“Well at least the best day that you can have”, as he patted Mya on her back. With that kind
           gesture, he turned and walked away as Charlie watched his every move. Once he was a clear
           distance away, Charlie rushed Mya in to the bathroom.
@@ -275,6 +285,7 @@ export const Book1Pages = () => {
       id: 8,
       page: (
         <Page1
+          pageNumber={11}
           illustrator={
             <Image
               width={300}
@@ -304,6 +315,7 @@ export const Book1Pages = () => {
       id: 9,
       page: (
         <Page1
+          pageNumber={12}
           illustrator={
             <Image
               width={300}
@@ -333,6 +345,7 @@ export const Book1Pages = () => {
       id: 10,
       page: (
         <Page1
+          pageNumber={13}
           illustrator={
             <Image
               width={300}
@@ -357,8 +370,10 @@ export const Book1Pages = () => {
 
     {
       id: 11,
+
       page: (
         <Page1
+          pageNumber={14}
           illustrator={
             <Image
               width={300}
@@ -385,6 +400,7 @@ export const Book1Pages = () => {
       id: 12,
       page: (
         <Page1
+          pageNumber={15}
           illustrator={
             <Image
               width={300}
@@ -412,6 +428,7 @@ export const Book1Pages = () => {
       id: 13,
       page: (
         <Page1
+          pageNumber={16}
           illustrator={
             <Image
               width={300}
@@ -440,6 +457,7 @@ export const Book1Pages = () => {
       id: 14,
       page: (
         <Page1
+          pageNumber={17}
           illustrator={
             <Image
               width={300}
@@ -467,6 +485,7 @@ export const Book1Pages = () => {
       id: 15,
       page: (
         <Page1
+          pageNumber={18}
           illustrator={
             <Image
               width={300}
@@ -492,6 +511,7 @@ export const Book1Pages = () => {
       id: 16,
       page: (
         <Page1
+          pageNumber={19}
           illustrator={
             <Image
               width={300}
@@ -520,6 +540,7 @@ export const Book1Pages = () => {
       id: 17,
       page: (
         <Page1
+          pageNumber={20}
           illustrator={
             <Image
               width={300}
@@ -545,6 +566,7 @@ Mya continues to cry but then gathers herself to speak."
       id: 17,
       page: (
         <Page1
+          pageNumber={21}
           illustrator={
             <Image
               width={300}
@@ -572,6 +594,7 @@ Mya continues to cry but then gathers herself to speak."
       id: 18,
       page: (
         <Page1
+          pageNumber={22}
           illustrator={
             <Image
               width={300}
@@ -599,6 +622,7 @@ Mya continues to cry but then gathers herself to speak."
       id: 19,
       page: (
         <Page1
+          pageNumber={23}
           illustrator={
             <Image
               width={300}
@@ -626,6 +650,7 @@ Mya continues to cry but then gathers herself to speak."
       id: 20,
       page: (
         <Page1
+          pageNumber={24}
           illustrator={
             <Image
               width={300}
@@ -652,6 +677,7 @@ Mya continues to cry but then gathers herself to speak."
       id: 21,
       page: (
         <Page1
+          pageNumber={25}
           illustrator={
             <Image
               width={300}
@@ -673,15 +699,7 @@ Mya continues to cry but then gathers herself to speak."
 
     {
       id: 22,
-      page: (
-        <Image
-          width={300}
-          height={300}
-          src="/assets/illustrators/backCover.png"
-          className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
-          alt="avatar"
-        />
-      ),
+      page:( <BookLastPage />),
     },
   ];
 

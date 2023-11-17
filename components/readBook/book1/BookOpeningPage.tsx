@@ -8,7 +8,7 @@ export const BookOpeningPage = () => {
         width={300}
         height={300}
         src="/assets/storybooks/book1/page2.svg"
-        className="w-full h-full mb-5 lg:h-[457px] lg:w-[680px] cursor-pointer mt-2"
+        className="w-full h-full mb-5 lg:h-[] lg:w-[85%] cursor-pointer mt-2"
         alt="avatar"
       />
     </div>
