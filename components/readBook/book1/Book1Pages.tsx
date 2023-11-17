@@ -22,7 +22,7 @@ export const Book1Pages = () => {
           width={300}
           height={300}
           src="/assets/storybooks/book1/page2.svg"
-          className="w-full h-full lg:h-[437px]  cursor-pointer mt-2"
+          className="w-full h-full lg:h-[437px] my-10 cursor-pointer mt-2"
           alt="avatar"
         />
       ),

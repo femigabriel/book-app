@@ -5,7 +5,6 @@ import { MenuOutlined, CloseOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Dropdown, Space } from "antd";
 import { UserContext } from "@/context/user/UserContext";
-
 export const Header = () => {
   const [open, setOpen] = useState(false);
 

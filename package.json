@@ -16,6 +16,7 @@
     "framer-motion": "^10.16.5",
     "next": "latest",
     "react": "latest",
+    "react-card-flip": "^1.2.2",
     "react-dom": "latest",
     "react-hot-toast": "^2.4.1",
     "react-pageflip": "^2.0.3",
