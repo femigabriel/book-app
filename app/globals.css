@@ -82,6 +82,7 @@ header {
 }
 .messageInput {
   width: 543px;
+  background: inherit;
 }
 .mobile-img {
   display: none;
