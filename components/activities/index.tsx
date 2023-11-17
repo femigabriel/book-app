@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NickNameForm } from "./form/NickNameForm";
 import { StorybookIntro } from "./StorybookIntro";
 import { StoybookCovers } from "./StoybookCovers";
-import ActivitiesCard from "./ActivitiesCards";
+import { ActivitiesCards } from "./ActivitiesCards";
 
 export const ActivitiesPage = () => {
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
@@ -29,7 +29,7 @@ export const ActivitiesPage = () => {
           <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
       case 3:
-        return <ActivitiesCard />;
+        return <ActivitiesCards onBackClick={gotoPrevious} />;
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;
