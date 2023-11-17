@@ -384,9 +384,9 @@ export const Book1Pages = () => {
             />
           }
           content="Charlie and Mya get to the bus stop just in time as the bus comes to a stop. Just then a man with
-          a bike rushes to the bus as the door opens and he waves for assistance from the bus driver.  As the driver brushes by them they hurriedly get on the bus and pay their fare and take their seat.
+          a bike rushes to the bus as the door opens and he waves for assistance from the bus driver. As the driver brushes by them they hurriedly get on the bus and pay their fare and take their seat.
           “See Mya it’s our day, that guy with the bike is just like the pre-kindergarteners with their
-          meltdowns. He got the attention off of us!” Mya smiles as if all of her problems have melted away and she was assured that she would soon
+          meltdowns. He got the attention off of us!” Mya smiles as if all of her problems have melted away and she was assured that she would soon
           be in the arms of her beloved father. Charlie looks around the bus and sees people in their own
           worlds listening to music and nodding off as the bus rolls off into traffic.
           “How long is it going to take to get there?” Mya asked.
@@ -410,13 +410,14 @@ export const Book1Pages = () => {
               alt="avatar"
             />
           }
-          content="Mya’s smile began to fade. “Do you know where we’re going?” Mya asked full of weariness.
-          “Don’t worry, we will find it.” Charlie puts her arm around Mya and holds her tight as Charlie looks out of the bus window with
+          content="Mya’s smile began to fade. “Do you know where we’re going?” Mya asked full of weariness.
+          “Don’t worry, we will find it.” Charlie puts her arm around Mya and holds her tight as Charlie looks out of the bus window with
           a look a sheer fear across her face for the first time.
           “Charlie?”
           “Yes, Mya?”
           “Thank you.”
-          “Thank me for what, we haven’t even gotten there yet?” “I know, but at least you tried. Everyone else would just stand back and say it’s going to be okay and then move on. At least you tried.”
+          “Thank me for what, we haven’t even gotten there yet?” 
+          “I know, but at least you tried. Everyone else would just stand back and say it’s going to be okay and then move on. At least you tried.”
           And with those words Charlie is rejuvenated once again in her cause to find Mya’s dad. She
           turns and faces Mya once again very reassured.”
           "
@@ -441,10 +442,10 @@ export const Book1Pages = () => {
           content="“That’s what good friends are for, and we’re going to find your dad.”
           Charlie looks at the map and points her finger at what she thinks will be the place that they get
           off of the bus.
-          “I think that stop is the best one.” Charlie looks up at the bus driver as to not alert him of their presence. As Charlie sees the bus
+          “I think that stop is the best one.” Charlie looks up at the bus driver as to not alert him of their presence. As Charlie sees the bus
           driver deep in thought and driving to his own beat, she looks around for someone friendly to ask
           about how many stops they are going to take. Charlie finds a nice guy two seats back from she
-          and Mya and waves to get his attention. “Hello, we’re looking to get to downtown, how many stops?”
+          and Mya and waves to get his attention. “Hello, we’re looking to get to downtown, how many stops?”
           The man smiles at the girls in bewilderment, and with caution speaks.
           “Well you have about four more stops” the man said looking more and more suspicious of the
           girls. “I have to ask, aren’t you two supposed to be in school at this time of morning?””
@@ -467,9 +468,9 @@ export const Book1Pages = () => {
               alt="avatar"
             />
           }
-          content="Charlie smiles and quickly blurts out an answer. “We’re going to school, we go to school downtown.”
+          content="Charlie smiles and quickly blurts out an answer. “We’re going to school, we go to school downtown.”
           Mya turns around and tries not to face the man as she was not good with telling untruths to
-          adults, and she didn’t want to mess up anything. “Oh okay, when I was in school we rode the big yellow bus, “The Big Cheese”, laughed the man.
+          adults, and she didn’t want to mess up anything. “Oh okay, when I was in school we rode the big yellow bus, “The Big Cheese”, laughed the man.
           Charlie laughed with the man and turned around like Mya, she knew the less she told the untruth
           the better she would be. The man just kept his chuckle, then went back to listening to his music.
           As the girls rode in silence, they began to count the stops as they got closer to the city skyline
@@ -499,7 +500,7 @@ export const Book1Pages = () => {
           bring them. As the bus came to the their stop, they got up rang the bell line as they had seen the
           adults do and walked to the back door and looked out at the big world that was in front of them.
           They pushed at the door and stepped out and was hit immediately with the hustle and bustle of a
-          hectic Monday morning. Mya looked at Charlie with slight terror, trying to stay hopeful. “What do we do, where do we go?” Mya whispered out.
+          hectic Monday morning. Mya looked at Charlie with slight terror, trying to stay hopeful. “What do we do, where do we go?” Mya whispered out.
           Charlie as always trying to control everything and make everything seem easy-peezy. She looked
           Mya straight in the eye and looked forward and just pointed at the first buildings she saw.”
           "
@@ -524,7 +525,7 @@ export const Book1Pages = () => {
           content="“Let’s go that way?” Charlie pointed and Mya followed and they both headed off on an
           adventure that they had not planned for nor wanted, but deemed impossible to ignore. As the
           girls walk up the hill toward the buildings, they see a police officer headed straight for them and
-          they panic. “Is he going to arrest us?” Mya asked in a panic.
+          they panic. “Is he going to arrest us?” Mya asked in a panic.
           “No, all he can do is ask us a few questions, don’t worry, I’ll do all the talking.
           As the police man got closer, someone yelled out “Help, I’ve fallen!”, and the officer took his
           gaze from us and planted it toward the elderly woman that needed his immediate assistance.
@@ -552,10 +553,10 @@ export const Book1Pages = () => {
           }
           content=" Mya and Charlie keep moving past all of the hustle and bustle of the morning and tried to stay as
 off the grid as possible. As they move while looking back at the police officer they don’t notice
-as they run smack dab into Charlie’s mom, Cindy, as she fumes. “Charlie, where in the world have you been!?” Cindy spews in anger.
+as they run smack dab into Charlie’s mom, Cindy, as she fumes. “Charlie, where in the world have you been!?” Cindy spews in anger.
 Charlie slowly turns around to face her mother that is so mad you can see the steam coming from
 her head. Charlie quickly turns to Mya and she bursts out into tears and for a minute, Cindy goes
-to comfort Mya. “Mya, I’m not angry with you guys, I was just worried. You guys could have been taken or
+to comfort Mya. “Mya, I’m not angry with you guys, I was just worried. You guys could have been taken or
 worse. Thank God Charlie your cell phone was on and I was able to track you.”
 Mya continues to cry but then gathers herself to speak."
         />
@@ -583,7 +584,8 @@ Mya continues to cry but then gathers herself to speak."
           “The ICE agents, they are going to send him away and I just want to see him.”
           Cindy takes Mya in her arms and holds her as she sobs.
           “It’s going to be okay,”
-          Charlie looks over at her mom. “But it’s not going to be okay, if we don’t get to see him. We need to know where he is.”
+          Charlie looks over at her mom.
+          “But it’s not going to be okay, if we don’t get to see him. We need to know where he is.”
           Cindy lets go of Mya and looks at them both. Charlie grabs her mom’s hand.
           “Mom, you told me that there were bigger things than myself, and this is bigger.”"
         />
@@ -604,7 +606,8 @@ Mya continues to cry but then gathers herself to speak."
               alt="avatar"
             />
           }
-          content="Cindy looks at both girls and both girls look back and forth then back at her, and Cindy caves. “You both are in big trouble, but for now you are right Charlie we have to find Mya’s dad.”
+          content="Cindy looks at both girls and both girls look back and forth then back at her, and Cindy caves.
+          “You both are in big trouble, but for now you are right Charlie we have to find Mya’s dad.”
           Charlie hugs her mom tightly.
           “Thank you so much mom, we are sorry.”
           “I know you both are, now let’s go and find your dad Mya.”
@@ -632,11 +635,11 @@ Mya continues to cry but then gathers herself to speak."
               alt="avatar"
             />
           }
-          content="“Yes, everything is going to be fine,” Mya says as she moves toward the door. Cindy walks the girls to a window in the front and places the girls to her side as she speaks to the
+          content="“Yes, everything is going to be fine,” Mya says as she moves toward the door.Cindy walks the girls to a window in the front and places the girls to her side as she speaks to the
           window clerk. The girls look around the room as people are wondering and asking questions
           about their loved ones. The room seems to be in total chaos, and when a back door opens, Mya
           sees her dad being moved in a line with other men.
-          “There he is”, Mya exclaimed with a shriek of joy and terror. Cindy and Charlie look in the direction Mya’s gaze and find Mr. Martinez nodding his head and
+          “There he is”, Mya exclaimed with a shriek of joy and terror. and Charlie look in the direction Mya’s gaze and find Mr. Martinez nodding his head and
           smiling. Cindy turns to the lady in the window.
           “I am his lawyer and I need to see him immediately.” Cindy respectfully states to the lady in the
           window.
@@ -663,10 +666,10 @@ Mya continues to cry but then gathers herself to speak."
           content="“Thank you.”
           Charlie, Mya, and Cindy wait on Mr. Martinez to be released and after checking the clock many
           times over, Mr. Martinez comes through the door. Mya runs and jumps in his arms!
-          “Papa”, Mya exclaimed. “I came for you!” Mr. Martinez holds Mya as tears run down his face, and Mya pushes back to see his tears.
+          “Papa”, Mya exclaimed. “I came for you!”Mr. Martinez holds Mya as tears run down his face, and Mya pushes back to see his tears.
           “What’s wrong Papa?”
           “Nothing I’m just so glad to see you, I never thought I’d see you again.”
-          Cindy bends down and places her hand on Mr. Martinez’s back. “Please don’t worry, I am going to work very hard to make sure that you are back with your
+          Cindy bends down and places her hand on Mr. Martinez’s back.“Please don’t worry, I am going to work very hard to make sure that you are back with your
           family very soon.”
           “Thank you, thank you so much.” Mr. Gomes said."
         />
