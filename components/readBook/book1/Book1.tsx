@@ -10,7 +10,7 @@ interface Props {
 
 export const Page1 = (props: Props) => {
   return (
-    <div className="lg:flex shadow-md bg-white cursor-pointer my-5 h-full lg:h-[457px] w-full cover">
+    <div className="lg:flex shadow-md rounded-md bg-white cursor-pointer my-5 h-full lg:h-[457px] w-full cover">
       <div className="bg-[#E1D1F6 coverBook w-full flex justify-center items-center">
         <div className="h-full  w-full bg-[#E1D1F6] px-5 lg:px-20 lg:py-5">
           {props.illustrator}

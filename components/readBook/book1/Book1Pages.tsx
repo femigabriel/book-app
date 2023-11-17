@@ -16,7 +16,7 @@ export const Book1Pages = () => {
     {
       id: 0,
       page: (
-        <div className="flex  book1 justify-center items-center">
+        <div className="flex  justify-center items-center">
           <Image
             width={300}
             height={300}
@@ -749,7 +749,7 @@ Mya continues to cry but then gathers herself to speak."
   };
 
   return (
-    <div className=" w-full readBook book1 h-screen bg-[#e1d1f]">
+    <div className=" w-full readBook h-screen bg-[#e1d1f]">
       <div className="mb-5">
         <ReadBookHeader />
       </div>
