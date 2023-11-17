@@ -36,7 +36,7 @@ export const Book1Pages = () => {
             height={300}
             src="/assets/storybooks/book1/page2.svg"
             className="w-full h-full mb-5 lg:h-[] lg:w-[85%] cursor-pointer mt-2"
-            alt="avatar"
+            alt="page2"
           />
         </div>
       ),
@@ -52,7 +52,7 @@ export const Book1Pages = () => {
               height={300}
               src="/assets/illustrators/img1.png"
               className="w-full h-full lg:h-[66vh] cursor-pointer mt-2"
-              alt="avatar"
+              alt="page"
             />
           }
           content="Charlie was too excited to sleep as most kids her age! She was going to
