@@ -361,3 +361,102 @@ header {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.r-hex {
+  overflow: hidden;
+  display: inline-block;
+  /* margin: 3em 0; */
+  margin: 0 3em;
+  width: 112px;
+  height: 109px;
+  transform: rotate(-30deg) skewX(30deg);
+  border-radius: 20px;
+}
+.r-hex *,
+.r-hex *:before {
+  display: block;
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+}
+.r-hex-inner {
+  transform: skewX(-30deg) rotate(60deg) skewX(30deg);
+  cursor: pointer;
+}
+.r-hex:first-child .r-hex-inner:before,
+.r-hex-inner-2 {
+  transform: skewX(-30deg) rotate(60deg) skewX(30deg);
+  background: white;
+  content: "";
+}
+
+.hexagon {
+  position: relative;
+  width: 112.125px;
+  height: 108.942px;
+  background: #fff;
+}
+.hexagon:before,
+.double:after {
+  position: absolute;
+  content: "";
+}
+.hexagon:before {
+  top: 2px;
+  left: 2px;
+  height: 18.942px;
+  background: #fff;
+}
+.hexagon,
+.hexagon:before,
+.double:after {
+  -webkit-clip-path: polygon(
+    50% 0%,
+    100% 25%,
+    100% 75%,
+    50% 100%,
+    0% 75%,
+    0% 25%
+  );
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.double:after {
+  top: 8px;
+  left: 8px;
+  width: 112.125px;
+  height: 108.942px;
+  background: #f8f8f8;
+}
+
+/* Just for demo */
+
+.hexagon {
+  display: inline-block;
+  margin: 20px;
+}
+
+.bus-stop {
+  width: 102.125px;
+  height: 98.942px;
+  background: #f8f8f8;
+  border-radius: 24px;
+  margin: 0 2.6em;
+  cursor: pointer;
+  border: 1px solid #9b59b6;
+}
+.bus-stop:hover {
+  background: #9b59b6;
+  color: white;
+}
+.bus-active {
+  background: #9b59b6;
+  color: white;
+}
+.stick {
+  width: 17px;
+  height: 86px;
+  background: linear-gradient(180deg, #9b59b6 0.09%, #e7e3e0 67.42%);
+  margin: 0 5.1em;
+}

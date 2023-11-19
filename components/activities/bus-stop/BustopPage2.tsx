@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import { BusStopCard } from "./BusStopCard";
 
 interface Props {
   onNextClick: () => any;
   onBackClick: () => any;
 }
 export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
+  const [active, setActive] = useState("");
+
   return (
-    <div className="readBook w-full h-screen ">
+    <div className="readBook w-full h-full">
       <header className="px-10 py-7 flex justify-between shadow-sm">
         <Image
           width={17}
@@ -28,16 +31,23 @@ export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
           onClick={onNextClick}
         />
       </header>
-      <div className="flex justify-center item-center px-5 my-10">
-        <div className="">
-          <Image
-            width={18}
-            height={20}
-            src="/assets/images/bustopGroups1.svg"
-            className="w-full h-[480px] book"
-            alt="activity-card"
-            draggable="false"
-          />
+
+      <div className="px-5 lg:px-32  my-5 lg:my-10 flex justify-center">
+        <div className="lg:flex w-full justify-between">
+          <div>
+            <BusStopCard busNumber="1" content="Cooperation" />
+          </div>
+          <div className="flex">
+            <div className="lg:mt-20">
+              <BusStopCard busNumber="3" content="being respectful" />
+            </div>
+            <div>
+              <BusStopCard busNumber="2" content="Not compromising" />
+            </div>
+            <div className="lg:mt-20">
+              <BusStopCard busNumber="4" content="Not listening" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
