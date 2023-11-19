@@ -748,6 +748,8 @@ Mya continues to cry but then gathers herself to speak."
     setCurrentStepIndex((x) => x - 1);
   };
 
+  
+
   return (
     <div className=" w-full readBook h-screen bg-[#e1d1f]">
       <div className="mb-5">
