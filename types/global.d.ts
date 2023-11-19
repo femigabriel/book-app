@@ -138,3 +138,10 @@ export type PaymentPlanList = {
   id: number;
   img: React.ReactElement;
 };
+
+export type QuestionOptions = {
+  id: number;
+  number: any;
+  text: string;
+ 
+};

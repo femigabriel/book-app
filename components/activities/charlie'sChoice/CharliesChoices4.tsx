@@ -1,44 +1,43 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { ScorePointsModal } from "@/components/modals/ScorePointsModal";
+import { QuestionOptions } from "@/types/global";
 
 interface Props {
   onNextClick: () => any;
   onBackClick: () => any;
 }
 
-const options = [
+const options: QuestionOptions[] = [
   {
     id: 0,
-    numb: "A.",
+    number: "A.",
     text: "Whatever is going on, you will be alright.",
   },
   {
     id: 1,
-    numb: "B.",
+    number: "B.",
     text: "What’s wrong, why do you look like that?",
   },
   {
     id: 2,
-    numb: "C.",
+    number: "C.",
     text: "Let’s ignore her/ look away.",
   },
   {
     id: 3,
-    numb: "D.",
+    number: "D.",
     text: "Girl, her use my brush!",
   },
 ];
 export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
-  const [active, setActive] = useState("");
+  const [selected, setSelected] = useState<QuestionOptions | undefined>()
+ 
 
-  const handleClick = () => {
-    if (active.length < 1) {
-      return;
-    }
-    // onNextClick();
-  };
+  const handleOnClick = (item: QuestionOptions) => {
+    setSelected(item)
+  }
+
 
   return (
     <div className="readBook w-full h-screen ">
@@ -70,10 +69,14 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
             {options.map((list) => {
               return (
                 <div
-                  onClick={() => handleClick()}
+                key={list.id}
+                style={{ backgroundColor: list.id === selected?.id ? '#e1d1f6' : '' }}
+                onClick={() => handleOnClick(list)}
+                // onClick={() => handleClick(list)}
+                // style={{ backgroundColor: isSelected(list) ? '#D9D9D9' : '' }}
                   className="options flex gap-2 px-5 py-3 mb-3"
                 >
-                  <span className="">{list.numb}</span>
+                  <span className="">{list.number}</span>
                   <span className="">{list.text}</span>
                 </div>
               );
