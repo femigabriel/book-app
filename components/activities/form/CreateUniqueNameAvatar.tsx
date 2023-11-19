@@ -17,7 +17,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar1.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -29,7 +29,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar4.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -41,7 +41,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar3.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -53,7 +53,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar5.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -65,7 +65,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar2.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -78,7 +78,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar6.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -90,7 +90,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar7.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -102,7 +102,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar8.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -114,7 +114,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar9.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -126,7 +126,7 @@ const items: PaymentPlanList[] = [
         width={17}
         height={19}
         src="/assets/images/avatar10.svg"
-        className="w-[120px] h-[90px] cursor-pointer rounded-full"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
         alt="forward-icon"
       />
     ),
@@ -173,28 +173,92 @@ export const CreateUniqueNameAvatar = ({ onNextClick, onBackClick }: Props) => {
           Choose an Avater to continue
         </p>
         <div className="mt-20">
-          <div>{avatar}</div>
           <p className="text-[0.850em] mb-2">Choose an Avater</p>
-          <div className="w-full border-dashed border-2 border-[#D9D9D9] grid grid-flow-col gap-[10px]">
-            <div className="w-max h-full max-w- overflow-x-auto flex">
+          {/* <div className="w-full border-dashed border-2 border-[#D9D9D9] h-[122px]  gap-[10px] flex flex-nowrap overflow-x-scroll">
             {items.map((list) => {
               return (
-
                 <div
                   key={list.id}
-                  className=""
-                  // style={{
-                  //   borderColor: list.id === selected?.id ? "blue" : "",
-                  // }}
-                  //   onClick={() => handleOnClick(list)}
+                 className="w-full"
                   onClick={onNextClick}
                 >
                   {list.img}
                 </div>
               );
             })}
-            </div>
-            
+          </div> */}
+          <div className="flex w-full lg:w-[546px] flex-row overflow-x-scroll space-x-5  p-4 mx-14 mt-5 border-dashed border-2 border-[#D9D9D9] h-[122px] avatar-list">
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar1.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar4.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar3.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar5.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar2.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar6.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar7.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar8.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar9.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            <Image
+              width={17}
+              height={19}
+              src="/assets/images/avatar10.svg"
+              className="w-[90px] h-[90px] cursor-pointer rounded-full"
+              alt="forward-icon"
+            />
+            ,
           </div>
           <div className="mt-10">
             <div className="bg-[#303030] h-[1px] w-full"></div>
