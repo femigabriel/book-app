@@ -187,7 +187,7 @@ export const CreateUniqueNameAvatar = ({ onNextClick, onBackClick }: Props) => {
               );
             })}
           </div> */}
-          <div className="flex w-full lg:w-[546px] flex-row overflow-x-scroll space-x-5  p-4 mx-14 mt-5 border-dashed border-2 border-[#D9D9D9] h-[122px] avatar-list">
+          <div className="flex w-full lg:w-[546px] flex-row overflow-x-scroll space-x-5  p-4 mt-5 border-dashed border-2 border-[#D9D9D9] h-[122px] avatar-list">
             <Image
               width={17}
               height={19}
