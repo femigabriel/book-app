@@ -69,7 +69,7 @@ export const Feautures = () => {
             <Image
               width={18}
               height={20}
-              src="./assets/images/features1.svg"
+              src="./assets/images/features5.svg"
               className="w-[413.94px] h-[245.871px]"
               alt="features-1"
             />
@@ -78,7 +78,7 @@ export const Feautures = () => {
             <Image
               width={18}
               height={20}
-              src="./assets/images/features2.svg"
+              src="./assets/images/features6.svg"
               className="w-[413.94px] h-[245.871px]"
               alt="features-2"
             />
@@ -102,7 +102,7 @@ export const Feautures = () => {
             <Image
               width={18}
               height={20}
-              src="./assets/images/features3.svg"
+              src="./assets/images/features7.svg"
               className="w-[413.94px] h-[245.871px]"
               alt="features-3"
             />
@@ -111,7 +111,7 @@ export const Feautures = () => {
             <Image
               width={18}
               height={20}
-              src="./assets/images/features4.svg"
+              src="./assets/images/features8.svg"
               className="w-[413.94px] h-[245.871px]"
               alt="features-4"
             />

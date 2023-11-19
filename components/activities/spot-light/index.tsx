@@ -39,13 +39,13 @@ export default function SpotLightPages() {
             onBackClick={gotoPreviousSpotLightPages}
           />
         );
-      case 3:
-        return (
-          <SpotLightPage4
-            onNextClick={gotoNextSpotLightPages}
-            onBackClick={gotoPreviousSpotLightPages}
-          />
-        );
+      // case 3:
+      //   return (
+      //     <SpotLightPage4
+      //       onNextClick={gotoNextSpotLightPages}
+      //       onBackClick={gotoPreviousSpotLightPages}
+      //     />
+      //   );
 
       default:
         return (

@@ -70,13 +70,73 @@ const items: PaymentPlanList[] = [
       />
     ),
   },
+
+  {
+    id: 5,
+    img: (
+      <Image
+        width={17}
+        height={19}
+        src="/assets/images/avatar6.svg"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
+        alt="forward-icon"
+      />
+    ),
+  },
+  {
+    id: 6,
+    img: (
+      <Image
+        width={17}
+        height={19}
+        src="/assets/images/avatar7.svg"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
+        alt="forward-icon"
+      />
+    ),
+  },
+  {
+    id: 7,
+    img: (
+      <Image
+        width={17}
+        height={19}
+        src="/assets/images/avatar8.svg"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
+        alt="forward-icon"
+      />
+    ),
+  },
+  {
+    id: 8,
+    img: (
+      <Image
+        width={17}
+        height={19}
+        src="/assets/images/avatar9.svg"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
+        alt="forward-icon"
+      />
+    ),
+  },
+  {
+    id: 9,
+    img: (
+      <Image
+        width={17}
+        height={19}
+        src="/assets/images/avatar10.svg"
+        className="w-[90px] h-[90px] cursor-pointer rounded-full"
+        alt="forward-icon"
+      />
+    ),
+  },
 ];
 
 export const CreateUniqueNameAvatar = ({ onNextClick, onBackClick }: Props) => {
   const [name, setName] = useState("");
   const [error, setError] = useState(false);
   const [selected, setSelected] = useState<PaymentPlanList | undefined>();
-
 
   const userContext = React.useContext(UserContext);
   const { state } = userContext;
