@@ -47,7 +47,7 @@ header {
   width: 100%;
 }
 .landingPage {
-  background-image: url(../public/assets/images/her.png);
+  background-image: url(../public/assets/images/landing.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -493,3 +493,6 @@ header {
   width: calc(100% - 16px);
   background:  #F8F8F8;
 }
+
+
+
