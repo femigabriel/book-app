@@ -23,9 +23,9 @@ export const BusStopCard = (props: Props) => {
           <span>Bus stops</span>
           <span>{props.busNumber}</span>
         </div>
-        <div className="border border-[#9B59B6] rounded-[24px] w-[207px] h-[102px]">
+        <div className="border border-[#9B59B6] rounded-[24px] w-[207px] h-[102px] z-10">
           <div className="flex justify-center text-center">
-            <span className="w-[83px]">{props.content}</span>
+            <span className="w-[110px]">{props.content}</span>
           </div>
         </div>
         <div className="stick"></div>

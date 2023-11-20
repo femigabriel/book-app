@@ -442,7 +442,7 @@ header {
   height: 98.942px;
   background: #f8f8f8;
   border-radius: 24px;
-  margin: 0 2.6em;
+  margin: 0 3em;
   cursor: pointer;
   border: 1px solid #9b59b6;
 }
@@ -458,5 +458,5 @@ header {
   width: 17px;
   height: 86px;
   background: linear-gradient(180deg, #9b59b6 0.09%, #e7e3e0 67.42%);
-  margin: 0 5.1em;
+  margin: 0 6em;
 }
