@@ -39,17 +39,19 @@ export const TryHarderModal = () => {
         <div className="flex justify-center">
           <div className="mt-5">
             <div className="flex justify-center items-center">
-              <div>
+              <div className="">
                 <h1 className="text-[2em] text-center"> Try harder</h1>
-                <p>300/300</p>
-                <Image
-                  width={17}
-                  height={19}
-                  src="/assets/icons/grommet-icons_status-good.svg"
-                  className="w-[70px] h-[70px] cursor-pointer"
-                  alt="back-icon"
-                  onClick={showModal}
-                />
+                <p className="text-center">300/300</p>
+                <div className="flex justify-center">
+                  <Image
+                    width={17}
+                    height={19}
+                    src="/assets/icons/grommet-icons_status-good.svg"
+                    className="w-[70px] h-[70px] cursor-pointer"
+                    alt="back-icon"
+                    onClick={showModal}
+                  />
+                </div>
               </div>
             </div>
 
