@@ -161,7 +161,7 @@ export const CreateUniqueNameAvatar = ({ onNextClick, onBackClick }: Props) => {
           <div className="flex justify-between w-full cursor-pointer">
             <span></span>
             <Link href="/activities">
-              <CloseOutlined className="text-[1.5em]"/>
+              <CloseOutlined className="text-[1.5em]" />
             </Link>
           </div>
           <h3 className="text-[1.500em] text-center my-7">
@@ -191,70 +191,80 @@ export const CreateUniqueNameAvatar = ({ onNextClick, onBackClick }: Props) => {
                 height={19}
                 src="/assets/images/avatar1.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar4.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar3.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar5.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar2.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar6.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar7.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar8.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar9.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               <Image
                 width={17}
                 height={19}
                 src="/assets/images/avatar10.svg"
                 className="w-[90px] h-[90px] cursor-pointer rounded-full"
-                alt="forward-icon"
+                alt="avatar"
+                onClick={onNextClick}
               />
               ,
             </div>
