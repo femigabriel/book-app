@@ -38,7 +38,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/">Leaderboard</Link>
+          <Link href="/store">Purchase Book</Link>
         </li>
       ),
       key: "3",
@@ -46,7 +46,7 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/">How it Works</Link>
+          <Link href="/">Leaderboard</Link>
         </li>
       ),
       key: "4",
@@ -54,10 +54,18 @@ export const Header = () => {
     {
       label: (
         <li className=" text-[1.2em]">
-          <Link href="/">About</Link>
+          <Link href="/">How it Works</Link>
         </li>
       ),
       key: "5",
+    },
+    {
+      label: (
+        <li className=" text-[1.2em]">
+          <Link href="/">About</Link>
+        </li>
+      ),
+      key: "6",
     },
   ];
 
@@ -83,7 +91,6 @@ export const Header = () => {
             <div className="mt-5">
               {open ? (
                 <div>
-                  
                   <Dropdown
                     menu={{
                       items,
