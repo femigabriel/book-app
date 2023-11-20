@@ -7,7 +7,6 @@ interface Props {
   onBackClick: () => any;
 }
 export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
-  const [active, setActive] = useState("");
 
   return (
     <div className="readBook w-full h-full">
