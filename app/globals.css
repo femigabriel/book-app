@@ -460,3 +460,36 @@ header {
   background: linear-gradient(180deg, #9b59b6 0.09%, #e7e3e0 67.42%);
   margin: 0 6em;
 }
+
+
+.hexagons {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: #9B59B6;
+}
+.hexagons:before, .double:after {
+  position: absolute;
+  content: '';
+}
+.hexagons:before {
+  top: 4px;  /* border width */
+  left: 4px;  /* border width */
+  height: calc(100% - 8px);  
+  width: calc(100% - 8px);  
+  background: #F8F8F8;
+}
+.hexagons, .hexagons:before, .double:after {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+.image:before {
+  background: url(http://lorempixel.com/150/150/nature/1);
+}
+.double:after {
+  top: 8px;
+  left: 8px;
+  height: calc(100% - 16px);
+  width: calc(100% - 16px);
+  background:  #F8F8F8;
+}

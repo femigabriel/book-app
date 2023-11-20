@@ -7,7 +7,6 @@ interface Props {
   onBackClick: () => any;
 }
 export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
-
   return (
     <div className="readBook w-full h-full">
       <header className="px-10 py-7 flex justify-between shadow-sm">
