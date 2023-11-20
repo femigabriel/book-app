@@ -120,7 +120,7 @@ export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
     },
     {
       id: 8,
-      text: "8. I don’t need your help.",
+      text: "8. What’s going on?.",
       colorRed: (
         <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
       ),
@@ -133,7 +133,7 @@ export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
     },
     {
       id: 9,
-      text: "9. I don’t need your help.",
+      text: "9. I don’t have time for this.",
       colorRed: (
         <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
       ),
@@ -146,7 +146,7 @@ export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
     },
     {
       id: 10,
-      text: "10. I don’t need your help.",
+      text: "10. I am smarter than you.",
       colorRed: (
         <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
       ),
