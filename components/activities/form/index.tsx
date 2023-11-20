@@ -33,21 +33,21 @@ export default function Form() {
           />
         );
 
-      case 3:
+      case 2:
         return (
           <StoybookCovers onNextClick={gotoNext} onBackClick={gotoPrevious} />
         );
-        case 4:
+        case 3:
           return (
               <StorybookIntro onNextClick={gotoNext} onBackClick={gotoPrevious} />
           );
-      default:
-        return (
-          <CreateUniqueNameAvatar
-            onNextClick={gotoNext}
-            onBackClick={gotoPrevious}
-          />
-        );
+      // default:
+      //   return (
+      //     <CreateUniqueNameAvatar
+      //       onNextClick={gotoNext}
+      //       onBackClick={gotoPrevious}
+      //     />
+      //   );
     }
   };
   return <div className="">{renderCurrentSelection()}</div>;

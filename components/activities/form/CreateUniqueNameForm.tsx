@@ -3,6 +3,7 @@ import { Input } from "antd";
 import Link from "next/link";
 import Image from "next/image";
 import { UserContext } from "@/context/user/UserContext";
+import { CloseOutlined } from "@ant-design/icons";
 
 interface Props {
   onNextClick: () => any;
@@ -24,21 +25,17 @@ export const CreateUniqueNameForm = ({ onNextClick, onBackClick }: Props) => {
       setError(true);
       return;
     }
-    // onNextClick();
-    e.preventDefault();
+    userContext.dispatch({ type: "setUserName", payload: name });
+    onNextClick();
   };
   return (
     <div className=" flex justify-center items-center h-screen">
-      <form action="" onSubmit={handleSubmit} className="formgroup px-20 py-10">
-        <div className="flex cursor-pointer mb-5" onClick={onBackClick}>
-          <Image
-            width={24}
-            height={24}
-            src="/assets/icons/back.svg"
-            className="w-[24px] h-[24px] mr-2"
-            alt="back-icon"
-          />
-          <span>Back</span>
+      <form action="" className="formgroup px-20 py-10">
+        <div className="flex justify-between w-full cursor-pointer">
+          <span></span>
+          <Link href="/activities">
+            <CloseOutlined className="text-[1.5em]" />
+          </Link>
         </div>
         <h3 className="text-[1.500em] text-center my-7">
           Your Nickname is your Passcode
@@ -58,7 +55,7 @@ export const CreateUniqueNameForm = ({ onNextClick, onBackClick }: Props) => {
             <span></span>
             {error && name.length <= 0 ? (
               <label className="text-[#F13737] text-[0.750em]">
-                Nickname already exist
+                This field is required
               </label>
             ) : (
               ""
@@ -98,11 +95,14 @@ export const CreateUniqueNameForm = ({ onNextClick, onBackClick }: Props) => {
         </div> */}
 
         <div className="flex justify-center items-center mt-14">
-          <Link href="/activities/play-activities" className="w-full">
-            <button className="bg-[#9B59B6] rounded-[24px] text-[#FDFDFF] w-full px-[12px] py-[11px]">
-              Play activities
-            </button>
-          </Link>
+          {/* <Link href="/activities/play-activities" className="w-full"> */}
+          <button
+            onClick={handleSubmit}
+            className="bg-[#9B59B6] rounded-[24px] text-[#FDFDFF] w-full px-[12px] py-[11px]"
+          >
+            Play activities
+          </button>
+          {/* </Link> */}
         </div>
         <div className="flex justify-center items-center mt-3 text-[0.85em]">
           <span> Already have a nickname?</span>
