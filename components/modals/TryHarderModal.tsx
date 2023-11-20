@@ -42,7 +42,7 @@ export const TryHarderModal = () => {
               <div className="">
                 <h1 className="text-[2em] text-center"> Try harder</h1>
                 <p className="text-center">300/300</p>
-                <div className="flex justify-center">
+                <div className="flex justify-center mt-5">
                   <Image
                     width={17}
                     height={19}
