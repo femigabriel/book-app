@@ -8,158 +8,71 @@ interface Props {
 }
 
 export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
-  const [active, setActive] = useState<any[]>([]);
+const [result, setResult] = useState([])
 
-  const handleClick = (item: any) => {
-    const res = findItem(item);
-    if (res) {
-      setActive(active.filter((e: { id: any }) => e.id != item.id));
-    } else {
-      setActive((current) => [...current, item]);
-    }
-  };
-  const isSelected = (item: any): boolean => {
-    return findItem(item) !== undefined;
-  };
+const handleSetResult = (r: boolean) => {
+// setResult((data) => 
+// [...data, {isCorrect[r]}]
+// ) 
+}
 
-  const findItem = (item: any): any | undefined => {
-    return active.find((i) => item.id === i.id);
-  };
 
   const items = [
     {
       id: 1,
       text: "1. You are determined",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      correctAns: "green",
     },
     {
       id: 2,
       text: "2. Great work!",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      correctAns: "green",
     },
     {
       id: 3,
       text: "3. I don’t need your help.",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      correctAns: "red",
     },
     {
       id: 4,
-      text: "3. I don’t need your help.",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      text: "4. Could you please stop!.",
+      correctAns: "yellow",
     },
     {
       id: 5,
-      text: "3. I don’t need your help.",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      text: "5. Love your ideas.",
+      correctAns: "green",
     },
     {
       id: 6,
-      text: "6. You are determined",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      text: "6. Listen to me!",
+      correctAns: "green",
     },
     {
       id: 7,
-      text: "7. Great work!",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      text: "7. I don’t want to talk.",
+      correctAns: "red",
     },
     {
       id: 8,
       text: "8. What’s going on?.",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      correctAns: "yellow",
     },
     {
       id: 9,
       text: "9. I don’t have time for this.",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      correctAns: "red",
     },
     {
       id: 10,
       text: "10. I am smarter than you.",
-      colorRed: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FF0000]"></button>
-      ),
-      colorGreen: (
-        <button className="w-[36px] rounded-full h-[36px] bg-[#039A00]"></button>
-      ),
-      colorYellow: (
-        <button className="w-[36px] rounded-full  h-[36px] bg-[#FDB804]"></button>
-      ),
+      correctAns: "red",
     },
   ];
+
   return (
     <div className="readBook w-full h-full  lg:pb-10 pb-5">
+
       <header className="px-10 py-7 flex justify-between shadow-sm">
         <Image
           width={17}
@@ -191,7 +104,7 @@ export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
           </p>
           <div className="border border-[#333] b border-t-0 border-x-0">
             {items.map((list, index) => {
-              return <SpotLightGame list={list} key={index} />;
+              return <SpotLightGame list={list} setResult={handleSetResult}  key={index} />;
             })}
           </div>
         </div>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import HTMLFlipBook from "react-pageflip";
 import ReactCardFlip from "react-card-flip";
 
-
 interface Props {
   content?: string;
   illustrator?: any;
@@ -11,7 +10,7 @@ interface Props {
 
 export const Page1 = (props: Props) => {
   return (
-    <div className="lg:flex shadow-md rounded-md bg-white cursor-pointer my-5 h-full lg:h-[457px] w-full cover page">
+    <div className="lg:flex shadow-md rounded-md bg-white cursor-pointer my-5 h-full lg:h-[457px] w-full cover">
       <div className="bg-[#E1D1F6 coverBook w-full flex justify-center items-center">
         <div className="h-full  w-full bg-[#E1D1F6] px-5 lg:px-20 lg:py-5">
           {props.illustrator}
@@ -27,6 +26,6 @@ export const Page1 = (props: Props) => {
         <p className="text-[0.65em]">{props.pageNumber}</p>
       </div>
     </div>
-  
+    
   );
 };

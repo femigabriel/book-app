@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 
 interface Props {
-text: string,
-colors: any
+  text: string;
+  colors: any;
 }
-export const SpotLightGame = ({list}: any) => {
+export const SpotLightGame = ({ list, setResult }: any) => {
   const [active, setActive] = useState("");
+
+  const handleClick = (e: any) => {
+    setActive(e);
+    setResult(list.correctAns == e)
+  };
 
   return (
     <div>
@@ -18,7 +23,7 @@ export const SpotLightGame = ({list}: any) => {
 
         <div className="border border-[#333] border-y-0 border-x-0 flex gap-3 justify-center items-center px-5  w-full">
           <button
-            onClick={() => setActive("green")}
+            onClick={() => handleClick("green")}
             style={{
               opacity: active == "green" || active == "" ? 1 : 0.3,
             }}
@@ -26,7 +31,7 @@ export const SpotLightGame = ({list}: any) => {
           ></button>
 
           <button
-            onClick={() => setActive("red")}
+            onClick={() => handleClick("red")}
             style={{
               opacity: active == "red" || active == "" ? 1 : 0.3,
             }}
@@ -34,7 +39,7 @@ export const SpotLightGame = ({list}: any) => {
           ></button>
 
           <button
-            onClick={() => setActive("yellow")}
+            onClick={() => handleClick("yellow")}
             style={{
               opacity: active == "yellow" || active == "" ? 1 : 0.3,
             }}

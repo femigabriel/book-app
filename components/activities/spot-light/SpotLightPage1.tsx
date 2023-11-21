@@ -66,7 +66,7 @@ export const SpotLightPage1 = ({ onNextClick, onBackClick }: Props) => {
             />
           </div>
           <div className="text-[1.em] lg:w-[40em]">
-            <h3 className="mb-3 text-[#9B59B6]">Directions</h3>
+            <h3 className="mb-3 text-[#9B59B6] mt-3">Directions</h3>
             <p>
               Look at the sentences on the next page, assign the sentence green,
               red or yellow by clicking on the desired color
