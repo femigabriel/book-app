@@ -15,12 +15,13 @@ export default function Home() {
       <div className="mb-5">
         <ReadBookHeader />
       </div>
-      <div className="flex justify-center items-center my-5  w-full  h-screen">
+      <div className="flex justify-center items-center  w-full  h-screen">
         <HTMLFlipBook
           width={500}
           height={600}
           className="bg-white shadow-md rounded-sm"
-        >
+          // style={{background: '#e1d1f'}} startPage={0} flippingTime={0.1} size={"fixed"} minWidth={0} maxWidth={0} minHeight={0} maxHeight={0} drawShadow={false}  usePortrait={false} startZIndex={0} autoSize={false} maxShadowOpacity={0} showCover={false} mobileScrollSupport={false} clickEventForward={false} useMouseEvents={false} swipeDistance={0} showPageCorners={false} disableFlipByClick={false}   
+           >
           <div>
             <Image
               width={300}
