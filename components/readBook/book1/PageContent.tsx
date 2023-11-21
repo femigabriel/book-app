@@ -14,7 +14,7 @@ export const PageContent = (props: Props) => {
           <p>{props.content}</p>
         </div>
       </div>
-      <div className="flex lg:items-end float-right my-5 mx-5">
+      <div className="flex lg:items-end float-right my-5 lg:mt-10 mx-5">
         <span></span>
         <p className="text-[0.65em]">{props.pageNumber}</p>
       </div>

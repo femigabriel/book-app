@@ -7,6 +7,7 @@ import Image from "next/image";
 import { PageIllustrator } from "@/components/readBook/book1/PageIllustrator";
 import { PageContent } from "@/components/readBook/book1/PageContent";
 import { ReadBookHeader } from "@/components/readBook/ReadBookHeader";
+import { ArrowLeftOutlined, ArrowRightOutlined } from "@ant-design/icons";
 
 export default function Home() {
   return (
@@ -35,7 +36,7 @@ export default function Home() {
               width={300}
               height={300}
               src="/assets/illustrators/page26.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-full cursor-pointer"
               alt="avatar"
             />
           </div>
@@ -44,7 +45,7 @@ export default function Home() {
               width={300}
               height={300}
               src="/assets/illustrators/bookflip.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-full cursor-pointer"
               alt="avatar"
             />
           </div>
@@ -54,7 +55,7 @@ export default function Home() {
               width={300}
               height={300}
               src="/assets/illustrators/page1.svg"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-full cursor-pointer"
               alt="avatar"
             />
           </div>
@@ -66,7 +67,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img1.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -99,7 +100,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img2.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -130,7 +131,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img2.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -149,7 +150,7 @@ export default function Home() {
             “No, it’s not,” Charlie sighed realizing her decisions.
             “Then let’s focus on having a fun year and stay focused on what...?”
             “Being a productive citizen of the world.” Charlie chimed in a reassuring voice. “That’s my girl!” Cindy blurted out with joy!
-            Charlie and Cindy high-five and hug and Cindy goes to the door. “Mom?”
+            Charlie and Cindy high-five and hug and Cindy goes to the door. “Mom?”
             “Yes.”"
               pageNumber={4}
             />
@@ -162,7 +163,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img3.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -189,7 +190,7 @@ export default function Home() {
               width={300}
               height={300}
               src="/assets/illustrators/img3.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-full cursor-pointer"
               alt="avatar"
             />
           </div>
@@ -218,8 +219,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img4.png"
-                  className="w-full h-full cursor-pointer mt-2"
-                  alt="page"
+                  className="w-full h-full cursor-pointer"
                 />
               }
             />
@@ -245,7 +245,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img5.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -277,7 +277,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img6.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -307,7 +307,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img7.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -338,7 +338,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img7.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -370,7 +370,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img8.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -402,7 +402,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img8.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -431,7 +431,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img9.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -461,7 +461,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img9.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -492,7 +492,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img10.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -523,7 +523,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img9.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -553,7 +553,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img11.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -581,7 +581,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img11.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -612,7 +612,7 @@ export default function Home() {
                   width={300}
                   height={300}
                   src="/assets/illustrators/img12.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -640,7 +640,7 @@ Mya continues to cry but then gathers herself to speak."
                   width={300}
                   height={300}
                   src="/assets/illustrators/img12.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -671,7 +671,7 @@ Mya continues to cry but then gathers herself to speak."
                   width={300}
                   height={300}
                   src="/assets/illustrators/img12.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -702,7 +702,7 @@ Mya continues to cry but then gathers herself to speak."
                   width={300}
                   height={300}
                   src="/assets/illustrators/img13.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -732,7 +732,7 @@ Mya continues to cry but then gathers herself to speak."
                   width={300}
                   height={300}
                   src="/assets/illustrators/img13.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -760,7 +760,7 @@ Mya continues to cry but then gathers herself to speak."
                   width={300}
                   height={300}
                   src="/assets/illustrators/img13.png"
-                  className="w-full h-full cursor-pointer mt-2"
+                  className="w-full h-full cursor-pointer"
                   alt="page"
                 />
               }
@@ -793,7 +793,7 @@ Mya continues to cry but then gathers herself to speak."
               width={300}
               height={300}
               src="/assets/illustrators/page26.png"
-              className="w-full h-full cursor-pointer mt-2"
+              className="w-full h-full cursor-pointer"
               alt="avatar"
             />
           </div>
