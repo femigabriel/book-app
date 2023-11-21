@@ -24,10 +24,10 @@ export default function Home() {
           startPage={0}
           flippingTime={1000}
           size={"fixed"}
-          minWidth={0}
-          maxWidth={0}
-          minHeight={0}
-          maxHeight={0}
+          minWidth={500}
+          maxWidth={500}
+          minHeight={600}
+          maxHeight={600}
           drawShadow={true}
           usePortrait={true}
           startZIndex={0}
