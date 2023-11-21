@@ -20,8 +20,27 @@ export default function Home() {
           width={500}
           height={600}
           className="bg-white shadow-md rounded-sm"
-          // style={{background: '#e1d1f'}} startPage={0} flippingTime={0.1} size={"fixed"} minWidth={0} maxWidth={0} minHeight={0} maxHeight={0} drawShadow={false}  usePortrait={false} startZIndex={0} autoSize={false} maxShadowOpacity={0} showCover={false} mobileScrollSupport={false} clickEventForward={false} useMouseEvents={false} swipeDistance={0} showPageCorners={false} disableFlipByClick={false}   
-           >
+          style={{ background: "#e1d1f" }}
+          startPage={0}
+          flippingTime={1000}
+          size={"fixed"}
+          minWidth={0}
+          maxWidth={0}
+          minHeight={0}
+          maxHeight={0}
+          drawShadow={true}
+          usePortrait={true}
+          startZIndex={0}
+          autoSize={true}
+          maxShadowOpacity={1}
+          showCover={false}
+          mobileScrollSupport={true}
+          clickEventForward={true}
+          useMouseEvents={true}
+          swipeDistance={0}
+          showPageCorners={true}
+          disableFlipByClick={false}
+        >
           <div>
             <Image
               width={300}
@@ -216,11 +235,13 @@ export default function Home() {
           <div>
             <PageIllustrator
               illustrator={
+             
                 <Image
                   width={300}
                   height={300}
                   src="/assets/illustrators/img4.png"
                   className="w-full h-full cursor-pointer"
+                  alt="page"
                 />
               }
             />
