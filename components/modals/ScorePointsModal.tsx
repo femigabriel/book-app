@@ -3,11 +3,11 @@ import { Button, Input, Modal } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 
-  interface Props {
-    totalClick:  any;
-    totalResults:  any;
-  }
-  export const ScorePointsModal = ({ totalClick, totalResults }: Props) => {
+interface Props {
+  totalClick: any;
+  totalResults: any;
+}
+export const ScorePointsModal = ({ totalClick, totalResults }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -45,7 +45,8 @@ import Link from "next/link";
             <div className="flex justify-center items-center">
               <div className="text-center">
                 <h1 className="text-[2em] text-center"> Amazing!</h1>
-                {totalClick * 10} / {totalResults * 10}
+                {/* {totalClick * 10} / {totalResults * 10} */}
+                {totalClick} / 20
                 <div className="flex justify-center items-center lg:mt-10">
                   <Image
                     width={17}

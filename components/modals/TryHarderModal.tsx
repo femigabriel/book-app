@@ -46,7 +46,7 @@ export const TryHarderModal = ({ totalClick, totalResults }: Props) => {
               <div className="">
                 <h1 className="text-[2em] text-center"> Try harder</h1>
                 <p className="text-center">
-                  {totalClick * 10} / {totalResults * 10}
+                  {totalClick} / 20
                 </p>
                 <div className="flex justify-center mt-5">
                   <Image

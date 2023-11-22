@@ -12,14 +12,6 @@ export const BustopPage1 = ({ onNextClick, onBackClick }: Props) => {
   return (
     <div className="readBook w-full h-screen ">
       <header className="px-10 py-7 flex justify-between shadow-sm">
-        {/* <Image
-          width={17}
-          height={19}
-          src="/assets/icons/quitIcon.svg"
-          className="w-[68px] h-[25px] cursor-pointer"
-          alt="back-icon"
-          onClick={onBackClick}
-        /> */}
         <QuitModal />
         <Image
           width={17}

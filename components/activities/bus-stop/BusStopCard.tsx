@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { ResultContext } from "@/context/user/ResultContext";
+import React, { useContext, useState } from "react";
 
 interface Props {
   content?: string;
@@ -8,6 +9,19 @@ interface Props {
 
 export const BusStopCard = (props: Props) => {
   const [active, setActive] = useState("");
+
+  const resultContext = useContext(ResultContext);
+  const { state } = resultContext;
+
+  const handleSetResult = (r: boolean) => {
+    resultContext.dispatch({
+      type: "setBusStopResults",
+      payload: [...(state?.busStopResults ?? []), { isCorrect: r }],
+
+    });
+  };
+
+
 
   return (
     <div>
@@ -32,27 +46,5 @@ export const BusStopCard = (props: Props) => {
       </div>
     </div>
 
-    // <div>
-    //   <div
-    //     className="hexagons cursor-pointer ml-8"
-    //     onClick={() => setActive("green")}
-    //     style={{
-    //       backgroundColor: active == "green" ? "#9b59b6" : "",
-    //       color: active == "green" ? "#fff" : "",
-    //     }}
-    //   ></div>
-    //   <div className="flex flex-col relative bottom-[100px] left-[80px] text-[1em]">
-    //     <span className="">Bus stops</span>
-    //     <span>1</span>
-    //   </div>
-    //   <div className="text-[1em]">
-    //     <div className="border border-[#9B59B6] rounded-[24px] w-[207px] h-[102px] ">
-    //       <div className="flex justify-center text-center">
-    //         <span className="w-[110px]">{props.content}</span>
-    //       </div>
-    //     </div>
-    //     <div className="stick"></div>
-    //   </div>
-    // </div>
   );
 };

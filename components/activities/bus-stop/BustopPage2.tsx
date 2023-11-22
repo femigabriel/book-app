@@ -1,12 +1,29 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import { BusStopCard } from "./BusStopCard";
+import { ResultContext } from "@/context/user/ResultContext";
 
 interface Props {
   onNextClick: () => any;
   onBackClick: () => any;
 }
+
+
+
 export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
+
+  const resultContext = useContext(ResultContext);
+  const { state } = resultContext;
+
+  const handleSetResult = (r: boolean, id: string) => {
+    resultContext.dispatch({
+      type: "setResults",
+      payload: [...(state?.results ?? []), { isCorrect: r, id: id }],
+    });
+  };
+  
+
+
   return (
     <div className="readBook w-full h-full">
       <header className="px-10 py-7 flex justify-between shadow-sm">

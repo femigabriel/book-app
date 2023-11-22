@@ -149,3 +149,7 @@ export type ResultInterface = {
   id: string;
   isCorrect: boolean;
 }
+export type PowerResultInterface = {
+  id: number;
+  isCorrect: boolean;
+}

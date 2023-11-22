@@ -8,6 +8,58 @@ interface Props {
   onNextClick: () => any;
   onBackClick: () => any;
 }
+const items = [
+  {
+    id: 1,
+    text: "1. You are determined",
+    correctAns: "green",
+  },
+  {
+    id: 2,
+    text: "2. Great work!",
+    correctAns: "green",
+  },
+  {
+    id: 3,
+    text: "3. I don’t need your help.",
+    correctAns: "red",
+  },
+  {
+    id: 4,
+    text: "4. Could you please stop!.",
+    correctAns: "red",
+  },
+  {
+    id: 5,
+    text: "5. Love your ideas.",
+    correctAns: "red",
+  },
+  {
+    id: 6,
+    text: "6. Listen to me!",
+    correctAns: "red",
+  },
+  {
+    id: 7,
+    text: "7. I don’t want to talk.",
+    correctAns: "yellow",
+  },
+  {
+    id: 8,
+    text: "8. What’s going on?.",
+    correctAns: "yellow",
+  },
+  {
+    id: 9,
+    text: "9. I don’t have time for this.",
+    correctAns: "red",
+  },
+  {
+    id: 10,
+    text: "10. I am smarter than you.",
+    correctAns: "red",
+  },
+];
 
 export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
   const resultContext = useContext(ResultContext);
@@ -20,61 +72,8 @@ export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
     });
   };
 
-  // console.log(state?.results)
 
-  const items = [
-    {
-      id: 1,
-      text: "1. You are determined",
-      correctAns: "green",
-    },
-    {
-      id: 2,
-      text: "2. Great work!",
-      correctAns: "green",
-    },
-    {
-      id: 3,
-      text: "3. I don’t need your help.",
-      correctAns: "red",
-    },
-    {
-      id: 4,
-      text: "4. Could you please stop!.",
-      correctAns: "red",
-    },
-    {
-      id: 5,
-      text: "5. Love your ideas.",
-      correctAns: "red",
-    },
-    {
-      id: 6,
-      text: "6. Listen to me!",
-      correctAns: "red",
-    },
-    {
-      id: 7,
-      text: "7. I don’t want to talk.",
-      correctAns: "yellow",
-    },
-    {
-      id: 8,
-      text: "8. What’s going on?.",
-      correctAns: "yellow",
-    },
-    {
-      id: 9,
-      text: "9. I don’t have time for this.",
-      correctAns: "red",
-    },
-    {
-      id: 10,
-      text: "10. I am smarter than you.",
-      correctAns: "red",
-    },
-  ];
-
+ 
   return (
     <div className="readBook w-full h-full  lg:pb-10 pb-5">
       <header className="px-10 py-7 flex justify-between shadow-sm">
