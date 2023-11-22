@@ -145,3 +145,7 @@ export type QuestionOptions = {
   text: string;
  
 };
+export type ResultInterface = {
+  id: string;
+  isCorrect: boolean;
+}

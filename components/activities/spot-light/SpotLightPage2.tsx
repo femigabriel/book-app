@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import { SpotLightGame } from "./SpotLightGame";
+import { ResultInterface } from "@/types/global";
+import { ResultContext } from "@/context/user/ResultContext";
 
 interface Props {
   onNextClick: () => any;
@@ -8,14 +10,17 @@ interface Props {
 }
 
 export const SpotLightPage2 = ({ onNextClick, onBackClick }: Props) => {
-const [result, setResult] = useState([])
+  const resultContext = useContext(ResultContext);
+  const { state } = resultContext;
 
-const handleSetResult = (r: boolean) => {
-// setResult((data) => 
-// [...data, {isCorrect[r]}]
-// ) 
-}
+  const handleSetResult = (r: boolean, id: string) => {
+    resultContext.dispatch({
+      type: "setResults",
+      payload: [...(state?.results ?? []), { isCorrect: r, id: id }],
+    });
+  };
 
+  // console.log(state?.results)
 
   const items = [
     {
@@ -36,22 +41,22 @@ const handleSetResult = (r: boolean) => {
     {
       id: 4,
       text: "4. Could you please stop!.",
-      correctAns: "yellow",
+      correctAns: "red",
     },
     {
       id: 5,
       text: "5. Love your ideas.",
-      correctAns: "green",
+      correctAns: "red",
     },
     {
       id: 6,
       text: "6. Listen to me!",
-      correctAns: "green",
+      correctAns: "red",
     },
     {
       id: 7,
       text: "7. I don’t want to talk.",
-      correctAns: "red",
+      correctAns: "yellow",
     },
     {
       id: 8,
@@ -72,7 +77,6 @@ const handleSetResult = (r: boolean) => {
 
   return (
     <div className="readBook w-full h-full  lg:pb-10 pb-5">
-
       <header className="px-10 py-7 flex justify-between shadow-sm">
         <Image
           width={17}
@@ -104,7 +108,13 @@ const handleSetResult = (r: boolean) => {
           </p>
           <div className="border border-[#333] b border-t-0 border-x-0">
             {items.map((list, index) => {
-              return <SpotLightGame list={list} setResult={handleSetResult}  key={index} />;
+              return (
+                <SpotLightGame
+                  list={list}
+                  setResult={handleSetResult}
+                  key={index}
+                />
+              );
             })}
           </div>
         </div>

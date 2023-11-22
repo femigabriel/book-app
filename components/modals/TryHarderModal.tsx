@@ -3,7 +3,11 @@ import { Button, Input, Modal } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 
-export const TryHarderModal = () => {
+interface Props {
+  totalClick: any;
+  totalResults: any;
+}
+export const TryHarderModal = ({ totalClick, totalResults }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -41,7 +45,9 @@ export const TryHarderModal = () => {
             <div className="flex justify-center items-center">
               <div className="">
                 <h1 className="text-[2em] text-center"> Try harder</h1>
-                <p className="text-center">300/300</p>
+                <p className="text-center">
+                  {totalClick * 10} / {totalResults * 10}
+                </p>
                 <div className="flex justify-center mt-5">
                   <Image
                     width={17}

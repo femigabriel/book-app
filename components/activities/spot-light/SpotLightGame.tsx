@@ -9,7 +9,7 @@ export const SpotLightGame = ({ list, setResult }: any) => {
 
   const handleClick = (e: any) => {
     setActive(e);
-    setResult(list.correctAns == e)
+    setResult(list.correctAns == e, list.id)
   };
 
   return (
