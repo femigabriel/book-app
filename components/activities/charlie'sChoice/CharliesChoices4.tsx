@@ -52,7 +52,7 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
         />
 
         <div>
-          <ScorePointsModal />
+          <ScorePointsModal totalClick={undefined} totalResults={undefined} />
         </div>
       </header>
       <div className="flex justify-center item-center px-5 my-10">
