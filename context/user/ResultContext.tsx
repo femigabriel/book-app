@@ -15,7 +15,7 @@ const initialState = {
 };
 interface StateProp {
   results: ResultInterface[];
-  busStopResults: []
+  busStopResults: ResultInterface[]
   power: ResultInterface[]
 }
 const reducer = (state: any, { type, payload }: any) => {

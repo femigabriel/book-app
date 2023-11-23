@@ -53,7 +53,7 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
   console.log(state?.power);
 
   return (
-    <div className="readBook w-full h-screen lg:h-full">
+    <div className="readBook w-full h-screen mb-5">
       <header className="px-10 py-7 flex justify-between shadow-sm">
         <Image
           width={17}
@@ -81,11 +81,11 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
       </header>
 
       <div className="flex justify-center item-center lg:px-20 my-5 ">
-        <div className="flex w-full bg-white shadow-md">
-          <div className="border px-5 py-5 w-full">
+        <div className="flex w-full  bg-white shadow-md">
+          <div className="border  w-full grid grid-cols-2">
             {items.map((list, index) => {
               return (
-                <div className="w-">
+                <div className=" px-5 ">
                   <PowerOfWordsCard
                     list={list}
                     setResult={handleSetResult}

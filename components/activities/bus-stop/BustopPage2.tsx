@@ -8,22 +8,82 @@ interface Props {
   onBackClick: () => any;
 }
 
-
-
 export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
-
   const resultContext = useContext(ResultContext);
   const { state } = resultContext;
 
   const handleSetResult = (r: boolean, id: string) => {
     resultContext.dispatch({
-      type: "setResults",
-      payload: [...(state?.results ?? []), { isCorrect: r, id: id }],
+      type: "setBusStopResults",
+      payload: [...(state?.busStopResults ?? []), { isCorrect: r, id: id }],
     });
   };
-  
+  console.log(state?.busStopResults);
 
+  const items = [
+    {
+      id: 1,
+      busNumber: 1,
+      content: "Cooperation",
+      correctAns: "true",
+    },
+    {
+      id: 2,
+      busNumber: 2,
+      content: "being respectful",
+      correctAns: "true",
+    },
+    {
+      id: 3,
+      busNumber: 3,
+      content: "Not compromising",
+      correctAns: "true",
+    },
+    {
+      id: 4,
+      busNumber: 4,
+      content: "Not listening",
+      correctAns: "false",
+    },
+    {
+      id: 5,
+      busNumber: 5,
+      content: "Cooperation",
+      correctAns: "true",
+    },
+    {
+      id: 6,
+      busNumber: 6,
+      content: "Cooperation",
+      correctAns: "true",
+    },
+    {
+      id: 7,
+      busNumber: 7,
+      content: "Cooperation",
+      correctAns: " true",
+    },
+    {
+      id: 8,
+      busNumber: 8,
+      content: "Cooperation",
+      correctAns: "false",
+    },
+    {
+      id: 9,
+      busNumber: 9,
+      content: "Cooperation",
+      correctAns: "true",
+    },
+    {
+      id: 10,
+      busNumber: 10,
+      content: "Cooperation",
+      correctAns: "true",
+    },
+  ];
 
+ 
   return (
     <div className="readBook w-full h-full">
       <header className="px-10 py-7 flex justify-between shadow-sm">
@@ -47,57 +107,18 @@ export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
         />
       </header>
 
-      <div className="px-10 lg:px-32  my-5 lg:my-10 flex justify-center">
-        <div className="w-full">
-          <div className="lg:flex w-full justify-between ">
-            <div className="lg:pl-10">
-              <BusStopCard busNumber="1" content="Cooperation" />
-            </div>
-            <div className="lg:flex lg:gap-7">
-              <div className="lg:mt-20">
-                <BusStopCard busNumber="3" content="being respectful" />
-              </div>
-              <div>
-                <BusStopCard busNumber="2" content="Not compromising" />
-              </div>
-              <div className="lg:mt-20">
-                <BusStopCard busNumber="4" content="Not listening" />
-              </div>
-            </div>
-          </div>
-
-          <div className="lg:flex w-full justify-between">
-            <div className="relative lg:bottom-[70px] lg:right-10">
-              <BusStopCard busNumber="5" content="Encouragement" />
-            </div>
-            <div className="lg:mt-7">
+      <div className="px-10 lg:px-32  my-5 lg:my-10 grid grid-cols-4">
+        {items.map((list, index) => {
+          return (
+            <div className="mb-5"  key={index}>
               <BusStopCard
-                busNumber="7"
-                content="Saying mean things to hurt others"
+                list={list}
+                setResult={handleSetResult}
+                key={index}
               />
             </div>
-            <div className="lg:flex">
-              <div className="relative lg:bottom-[70px] lg:right-10">
-                <BusStopCard
-                  busNumber="6"
-                  content="Showing concern for others"
-                />
-              </div>
-              <div className="lg:mt-7">
-                <BusStopCard busNumber="8" content="Selfish" />
-              </div>
-            </div>
-          </div>
-
-          <div className="lg:flex justify-center w-full">
-            <div className="lg:mx-20 relative lg:right-[200px] lg:bottom-[100px]">
-              <BusStopCard busNumber="9" content="Caring for others feelings" />
-            </div>
-            <div className="relative lg:bottom-[100px]">
-              <BusStopCard busNumber="10" content="Desire to help" />
-            </div>
-          </div>
-        </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -1,50 +1,39 @@
-import { ResultContext } from "@/context/user/ResultContext";
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 
 interface Props {
   content?: string;
   busNumber: string;
-  //   id: number
 }
 
-export const BusStopCard = (props: Props) => {
+export const BusStopCard = ({ list, setResult }: any) => {
   const [active, setActive] = useState("");
 
-  const resultContext = useContext(ResultContext);
-  const { state } = resultContext;
-
-  const handleSetResult = (r: boolean) => {
-    resultContext.dispatch({
-      type: "setBusStopResults",
-      payload: [...(state?.busStopResults ?? []), { isCorrect: r }],
-
-    });
+  const handleClick = (e: any) => {
+    setActive(e);
+    setResult(list.correctAns == e, list.id);
   };
-
-
 
   return (
     <div>
       <div className="text-[1em]">
         <div
           className="bus-stop flex-col flex text-center text-[#9B59B6] font-semibold"
-          onClick={() => setActive("green")}
+          onClick={() => handleClick("true")}
           style={{
-            backgroundColor: active == "green" ? "#9b59b6" : "",
-            color: active == "green" ? "#fff" : "",
+            backgroundColor: active == "true" ? "#9b59b6" : "",
+            color: active == "true" ? "#fff" : "",
           }}
         >
           <span>Bus stops</span>
-          <span>{props.busNumber}</span>
+          <span>{list.busNumber}</span>
         </div>
         <div className="border border-[#9B59B6] rounded-[24px] w-[207px] h-[102px] z-10">
           <div className="flex justify-center text-center">
-            <span className="w-[110px]">{props.content}</span>
+            <span className="w-[110px]">{list.content}</span>
           </div>
         </div>
         <div className="stick"></div>
       </div>
     </div>
-
   );
 };
