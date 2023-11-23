@@ -10,7 +10,8 @@ interface Props {
 
 const initialState = {
   results: [],
-  busStopResults: []
+  busStopResults: [],
+  power: []
 };
 interface StateProp {
   results: ResultInterface[];

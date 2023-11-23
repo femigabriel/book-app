@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import { SpotLightGame } from "./SpotLightGame";
+import { TryHarderModal } from "@/components/modals/TryHarderModal";
 import { ResultContext } from "@/context/user/ResultContext";
 import { SpotLightResultsModal } from "@/components/modals/SpotLightResultsModal";
 import { SpotLightTryHarderModal } from "@/components/modals/SpotLightTryHarderModal";

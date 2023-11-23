@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { PowerOfWordsCard } from "./PowerOfWordsCard";
 import { ResultContext } from "@/context/user/ResultContext";
+import { PowerOfWordsTryHarder } from "@/components/modals/PowerOfWordsTryHarder";
+import { PowerOfWordsScorePoint } from "@/components/modals/PowerOfWordsScorePoint";
 
 interface Props {
   onNextClick: () => any;
@@ -10,16 +12,30 @@ interface Props {
 }
 
 const items = [
-  { id: 1, number: 1, text: "give up", correctAns: true },
-  { id: 2, number: 2, text: "nice try", correctAns: true },
-  { id: 3, number: 3, text: "fearless", correctAns: true },
-  { id: 4, number: 4, text: "reaasure", correctAns: false },
-  { id: 5, number: 5, text: "don't have a meltdown", correctAns: true },
-  { id: 6, number: 6, text: "she is uncontrollable", correctAns: true },
-  { id: 7, number: 7, text: "confidence", correctAns: false },
-  { id: 8, number: 8, text: "don't worry", correctAns: false },
-  { id: 9, number: 9, text: "take care", correctAns: true },
-  { id: 10, number: 10, text: "kind", correctAns: true },
+  { id: 1, number: 1, text: "give up", correctAns: "true" },
+  { id: 2, number: 2, text: "nice try", correctAns: "false" },
+  { id: 3, number: 3, text: "fearless", correctAns: "false" },
+  { id: 4, number: 4, text: "reaasure", correctAns: "false" },
+  { id: 5, number: 5, text: "don't have a meltdown", correctAns: "true" },
+  { id: 6, number: 6, text: "she is uncontrollable", correctAns: "true" },
+  { id: 7, number: 7, text: "confidence", correctAns: "false" },
+  { id: 8, number: 8, text: "don't worry", correctAns: "false" },
+  { id: 9, number: 9, text: "take care", correctAns: "true" },
+  { id: 10, number: 10, text: "kind", correctAns: "true" },
+  { id: 11, number: 11, text: "Its going to be okay", correctAns: "true" },
+  { id: 12, number: 12, text: "time to panic", correctAns: "true" },
+  { id: 13, number: 13, text: "stay hopeful", correctAns: "false" },
+  { id: 14, number: 14, text: "everything will be fine", correctAns: "false" },
+  { id: 15, number: 15, text: "your room is in chaos", correctAns: "true" },
+  { id: 16, number: 16, text: "don't smirk", correctAns: "true" },
+  { id: 17, number: 17, text: "confidence", correctAns: "false" },
+  { id: 18, number: 18, text: "worried", correctAns: "false" },
+  {
+    id: 19,
+    number: 19,
+    text: "that's what good friends are for",
+    correctAns: "true",
+  },
 ];
 export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
   const resultContext = useContext(ResultContext);
@@ -28,16 +44,16 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
   const handleSetResult = (r: boolean, id: string) => {
     resultContext.dispatch({
       type: "setPowerResults",
-      payload: [...(state?.results ?? []), { isCorrect: r, id: id }],
+      payload: [...(state?.power ?? []), { isCorrect: r, id: id }],
     });
   };
 
-  const totalClick = state?.results.filter((items) => items.isCorrect).length;
-  const totalResults = state?.results.length;
-  console.log(state?.results);
+  const totalClick = state?.power.filter((items) => items.isCorrect).length;
+  const totalResults = state?.power.length;
+  console.log(state?.power);
 
   return (
-    <div className="readBook w-full h-screen ">
+    <div className="readBook w-full h-screen lg:h-full">
       <header className="px-10 py-7 flex justify-between shadow-sm">
         <Image
           width={17}
@@ -49,56 +65,36 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
           onClick={onBackClick}
         />
 
-        <Link href="/activities/activities-card">
-          <Image
-            width={17}
-            height={19}
-            src="/assets/icons/finishIcon.svg"
-            className="w-[60px] h-[20px] cursor-pointer"
-            alt="next-icon"
-            // onClick={onNextClick}
-          />
-        </Link>
+        <div>
+          {totalClick !== totalResults ? (
+            <PowerOfWordsTryHarder
+              totalClick={totalClick}
+              totalResults={totalResults}
+            />
+          ) : (
+            <PowerOfWordsScorePoint
+              totalClick={totalClick}
+              totalResults={totalResults}
+            />
+          )}
+        </div>
       </header>
 
       <div className="flex justify-center item-center lg:px-20 my-5 ">
         <div className="flex w-full bg-white shadow-md">
-          <div className="border px-5 py-10 w-full">
+          <div className="border px-5 py-5 w-full">
             {items.map((list, index) => {
               return (
-                <PowerOfWordsCard
-                  list={list}
-                  setResult={handleSetResult}
-                  key={index}
-                />
+                <div className="w-">
+                  <PowerOfWordsCard
+                    list={list}
+                    setResult={handleSetResult}
+                    key={index}
+                  />
+                </div>
               );
             })}
-
-            {/* <PowerOfWordsCard text={"nice try"} id={2} />
-            <PowerOfWordsCard text={"fearless"} id={3} />
-            <PowerOfWordsCard text={"reaasure"} id={4} />
-            <PowerOfWordsCard text={"don't have a meltdown"} id={5} />
-            <PowerOfWordsCard text={"she is uncontrollable"} id={6} />
-            <PowerOfWordsCard text={"confidence"} id={7} />
-            <PowerOfWordsCard text={"don't worry"} id={8} />
-            <PowerOfWordsCard text={"take care"} id={9} />
-            <PowerOfWordsCard text={"kind"} id={10} /> */}
           </div>
-
-          {/* <div className="border px-5 py-10 w-full">
-            <PowerOfWordsCard text={"Its going to be okay"} id={11} />
-            <PowerOfWordsCard text={"time to panic"} id={12} />
-            <PowerOfWordsCard text={"stay hopeful"} id={13} />
-            <PowerOfWordsCard text={"everything will be fine"} id={14} />
-            <PowerOfWordsCard text={"your room is in chaos"} id={15} />
-            <PowerOfWordsCard text={"don't smirk"} id={16} />
-            <PowerOfWordsCard text={"worried"} id={17} />
-            <PowerOfWordsCard text={"you tried"} id={18} />
-            <PowerOfWordsCard
-              text={"that's what good friends are for"}
-              id={19}
-            />
-          </div> */}
         </div>
       </div>
     </div>

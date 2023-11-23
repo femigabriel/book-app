@@ -10,19 +10,17 @@ export const PowerOfWordsCard = ({ list, setResult }: any) => {
 
   const handleClick = (e: any) => {
     setActive(e);
-    setResult(list.correctAns == e, list.id)
+    setResult(list.correctAns == e, list.id);
   };
 
-  
-
   return (
-    <div className=" lg:leading-10 leading-6  w-full lg:text-[1em] text-[0.85em]">
+    <div className=" lg:leading-10 leading-6 w-full lg:text-[1em] text-[0.85em]">
       <div className="flex gap-3 cursor-pointer">
         <span>{list.number}</span>
         <span
-          onClick={() => handleClick("green")}
+          onClick={() => handleClick("true")}
           style={{
-            textDecoration: active == "green" ? "underline" : "",
+            textDecoration: active == "true" ? "underline" : "",
           }}
         >
           {list.text}
