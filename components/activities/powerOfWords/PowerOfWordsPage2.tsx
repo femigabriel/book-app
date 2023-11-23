@@ -3,8 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { PowerOfWordsCard } from "./PowerOfWordsCard";
 import { ResultContext } from "@/context/user/ResultContext";
-import { TryHarderModal } from "@/components/modals/TryHarderModal";
-import { ScorePointsModal } from "@/components/modals/ScorePointsModal";
 
 interface Props {
   onNextClick: () => any;
@@ -51,19 +49,16 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
           onClick={onBackClick}
         />
 
-        <div>
-          {totalClick !== totalResults ? (
-            <TryHarderModal
-              totalClick={totalClick}
-              totalResults={totalResults}
-            />
-          ) : (
-            <ScorePointsModal
-              totalClick={totalClick}
-              totalResults={totalResults}
-            />
-          )}
-        </div>
+        <Link href="/activities/activities-card">
+          <Image
+            width={17}
+            height={19}
+            src="/assets/icons/finishIcon.svg"
+            className="w-[60px] h-[20px] cursor-pointer"
+            alt="next-icon"
+            // onClick={onNextClick}
+          />
+        </Link>
       </header>
 
       <div className="flex justify-center item-center lg:px-20 my-5 ">

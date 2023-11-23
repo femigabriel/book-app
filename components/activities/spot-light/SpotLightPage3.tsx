@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import Image from "next/image";
 import { SpotLightGame } from "./SpotLightGame";
-import { TryHarderModal } from "@/components/modals/TryHarderModal";
 import { ResultContext } from "@/context/user/ResultContext";
-import { ScorePointsModal } from "@/components/modals/ScorePointsModal";
+import { SpotLightResultsModal } from "@/components/modals/SpotLightResultsModal";
+import { SpotLightTryHarderModal } from "@/components/modals/SpotLightTryHarderModal";
 
 interface Props {
   onNextClick: () => any;
@@ -90,12 +90,12 @@ export const SpotLightPage3 = ({ onNextClick, onBackClick }: Props) => {
         <div>
           <div>
             {totalClick !== totalResults ? (
-              <TryHarderModal
+              <SpotLightTryHarderModal
                 totalClick={totalClick}
                 totalResults={totalResults}
               />
             ) : (
-              <ScorePointsModal
+              <SpotLightResultsModal
                 totalClick={totalClick}
                 totalResults={totalResults}
               />

@@ -3,7 +3,11 @@ import { Button, Input, Modal } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 
-export const ScorePointsModal = () => {
+interface Props {
+  totalClick: any;
+  totalResults: any;
+}
+export const SpotLightTryHarderModal = ({ totalClick, totalResults }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -39,26 +43,28 @@ export const ScorePointsModal = () => {
         <div className="flex justify-center">
           <div className="mt-5">
             <div className="flex justify-center items-center">
-              <div className="text-center">
-                <h1 className="text-[2em] text-center"> Amazing!</h1>
-                <p>300/300</p>
-                <div className="flex justify-center items-center lg:mt-10">
-               <Image
-                  width={17}
-                  height={19}
-                  src="/assets/icons/grommet-icons_status-good.svg"
-                  className="w-[70px] h-[70px] cursor-pointer "
-                  alt="back-icon"
-                  onClick={showModal}
-                />
-               </div>
+              <div className="">
+                <h1 className="text-[2em] text-center"> Try harder</h1>
+                <p className="text-center">
+                  {totalClick} / 20
+                </p>
+                <div className="flex justify-center mt-5">
+                  <Image
+                    width={17}
+                    height={19}
+                    src="/assets/icons/grommet-icons_status-good.svg"
+                    className="w-[70px] h-[70px] cursor-pointer"
+                    alt="back-icon"
+                    onClick={showModal}
+                  />
+                </div>
               </div>
             </div>
 
             <div className="w-full flex justify-center py-5 pt-20">
               <Link href="/activities/activities-card">
                 <button
-                  className="bg-[#9B59B6] rounded-[24px] py-3 px-7 lg:px-16 text-white text-[1em] flex"
+                  className="bg-[#9B59B6] rounded-[24px] py-3 px-5 lg:px-16 text-white text-[1em] flex"
                   onClick={handleOk}
                 >
                   <Image
