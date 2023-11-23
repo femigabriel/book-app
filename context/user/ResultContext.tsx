@@ -11,12 +11,14 @@ interface Props {
 const initialState = {
   results: [],
   busStopResults: [],
-  power: []
+  power: [],
+  charlie: []
 };
 interface StateProp {
   results: ResultInterface[];
   busStopResults: ResultInterface[]
   power: ResultInterface[]
+  charlie: ResultInterface[]
 }
 const reducer = (state: any, { type, payload }: any) => {
   switch (type) {
@@ -26,6 +28,8 @@ const reducer = (state: any, { type, payload }: any) => {
         return (state = { ...state, busStopResults: payload });
         case "setPowerResults":
         return (state = { ...state, power: payload });
+        case "setCharlieResults":
+          return (state = { ...state, charlie: payload });
     default:
       return state;
   }

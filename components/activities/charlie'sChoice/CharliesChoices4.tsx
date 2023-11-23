@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Image from "next/image";
 import { ScorePointsModal } from "@/components/modals/ScorePointsModal";
 import { QuestionOptions } from "@/types/global";
+import { ResultContext } from "@/context/user/ResultContext";
 
 interface Props {
   onNextClick: () => any;
@@ -31,13 +32,26 @@ const options: QuestionOptions[] = [
   },
 ];
 export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
-  const [selected, setSelected] = useState<QuestionOptions | undefined>()
- 
+  const [selected, setSelected] = useState<QuestionOptions | undefined>();
 
   const handleOnClick = (item: QuestionOptions) => {
-    setSelected(item)
-  }
+    setSelected(item);
+  };
 
+  const resultContext = useContext(ResultContext);
+  const { state } = resultContext;
+
+  const handleSetResult = (r: boolean, id: string) => {
+    resultContext.dispatch({
+      type: "setCharlieResults",
+      payload: [...(state?.charlie ?? []), { isCorrect: r, id: id }],
+    });
+  };
+
+  const totalClick = state?.charlie.filter((items) => items.isCorrect).length;
+  const totalResults = state?.charlie.length;
+
+  // console.log(state?.charlie);
 
   return (
     <div className="readBook w-full h-screen ">
@@ -69,9 +83,11 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
             {options.map((list) => {
               return (
                 <div
-                key={list.id}
-                style={{ backgroundColor: list.id === selected?.id ? '#e1d1f6' : '' }}
-                onClick={() => handleOnClick(list)}
+                  key={list.id}
+                  style={{
+                    backgroundColor: list.id === selected?.id ? "#e1d1f6" : "",
+                  }}
+                  onClick={() => handleOnClick(list)}
                   className="options flex gap-2 px-5 py-3 mb-3"
                 >
                   <span className="">{list.number}</span>
@@ -85,4 +101,3 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
     </div>
   );
 };
-

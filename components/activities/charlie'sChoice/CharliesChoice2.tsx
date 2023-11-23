@@ -20,6 +20,7 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
       return;
     }
     onNextClick();
+    
   };
 
   const hasInValidData = () => {

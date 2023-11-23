@@ -107,7 +107,7 @@ export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
         />
       </header>
 
-      <div className="px-10 lg:px-32  my-5 lg:my-10 grid grid-cols-4">
+      <div className="px-10 lg:px-32  my-5 lg:my-10 grid lg:grid-cols-4">
         {items.map((list, index) => {
           return (
             <div className="mb-5"  key={index}>

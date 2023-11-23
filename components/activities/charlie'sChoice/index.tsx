@@ -27,6 +27,7 @@ export default function ChalieschoicePages() {
       case 1:
         return (
           <CharliesChoices2
+          
             onNextClick={gotoNextChaliePage}
             onBackClick={gotoPreviousChaliePage}
           />
