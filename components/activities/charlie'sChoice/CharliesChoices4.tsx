@@ -9,7 +9,6 @@ import { TryHarderModal } from "@/components/modals/TryHarderModal";
 interface Props {
   onNextClick: () => any;
   onBackClick: () => any;
-  // setResult: any
 }
 
 const options = [

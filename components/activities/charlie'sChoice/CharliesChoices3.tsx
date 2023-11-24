@@ -81,7 +81,7 @@ export const CharliesChoices3 = ({ onNextClick, onBackClick }: Props) => {
               too into the counselor’s office.
             </p>
             <div className="flex w-full mt-2">
-              <p className=" font-semibold w-[18em]">
+              <p className=" font-semibold w-[18em] lg:w-[24em]">
                 The bus driver is showing
               </p>
               <input

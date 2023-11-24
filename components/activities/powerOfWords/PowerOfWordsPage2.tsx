@@ -51,7 +51,6 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
 
   const totalClick = state?.power.filter((items) => items.isCorrect).length;
   const totalResults = state?.power.length;
-  // console.log(state?.power);
 
   return (
     <div className="readBook w-full h-screen mb-5">
@@ -82,17 +81,15 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
       </header>
 
       <div className="flex justify-center item-center lg:px-20 my-5 ">
-        <div className="flex w-full  bg-white shadow-md">
-          <div className="border  w-full grid grid-cols-2">
+        <div className="flex w-full  bg-white border border-[#303030] shadow-md">
+          <div className=" w-full grid grid-cols-2">
             {items.map((list, index) => {
               return (
-                // <div className="  ">
                 <PowerOfWordsCard
                   list={list}
                   setResult={handleSetResult}
                   key={index}
                 />
-                // </div>
               );
             })}
           </div>

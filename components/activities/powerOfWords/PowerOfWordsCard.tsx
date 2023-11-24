@@ -20,7 +20,7 @@ export const PowerOfWordsCard = ({ list, setResult }: any) => {
         <span
           onClick={() => handleClick("true")}
           style={{
-            textDecoration: active == "true" ? "underline" : "",
+            textDecoration: active == "true" ? "line-through" : "",
           }}
         >
           {list.text}
