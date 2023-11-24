@@ -30,13 +30,14 @@ export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
     {
       id: 2,
       busNumber: 2,
-      content: "being respectful",
+      content: "Not compromising",
+     
       correctAns: "true",
     },
     {
       id: 3,
       busNumber: 3,
-      content: "Not compromising",
+      content: "being respectful",
       correctAns: "true",
     },
     {
@@ -48,37 +49,37 @@ export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
     {
       id: 5,
       busNumber: 5,
-      content: "Cooperation",
+      content: "Encouragement",
       correctAns: "true",
     },
     {
       id: 6,
       busNumber: 6,
-      content: "Cooperation",
+      content: "Showing concern for others",
       correctAns: "true",
     },
     {
       id: 7,
       busNumber: 7,
-      content: "Cooperation",
+      content: "Saying mean things for others",
       correctAns: "false",
     },
     {
       id: 8,
       busNumber: 8,
-      content: "Cooperation",
+      content: "Selfish",
       correctAns: "false",
     },
     {
       id: 9,
       busNumber: 9,
-      content: "Cooperation",
+      content: "Caring for others feelings",
       correctAns: "true",
     },
     {
       id: 10,
       busNumber: 10,
-      content: "Cooperation",
+      content: "Desire to help",
       correctAns: "true",
     },
   ];

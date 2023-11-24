@@ -39,7 +39,8 @@ const items = [
   },
   {
     id: 15,
-    busNumber:15, content:"Move",
+    busNumber:15, 
+    content:"Move",
     correctAns: "false",
   },
   {
