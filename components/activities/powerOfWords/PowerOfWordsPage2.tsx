@@ -50,7 +50,7 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
 
   const totalClick = state?.power.filter((items) => items.isCorrect).length;
   const totalResults = state?.power.length;
-  console.log(state?.power);
+  // console.log(state?.power);
 
   return (
     <div className="readBook w-full h-screen mb-5">
