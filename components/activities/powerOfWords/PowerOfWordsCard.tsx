@@ -15,7 +15,7 @@ export const PowerOfWordsCard = ({ list, setResult }: any) => {
 
   return (
     <div className=" lg:leading-10 leading-6 w-full lg:text-[1em] text-[0.85em]">
-      <div className="flex gap-3 cursor-pointer">
+      <div className="flex gap-3 px-5 cursor-pointer">
         <span>{list.number}</span>
         <span
           onClick={() => handleClick("true")}

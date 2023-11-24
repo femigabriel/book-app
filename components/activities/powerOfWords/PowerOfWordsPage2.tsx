@@ -20,9 +20,9 @@ const items = [
   { id: 6, number: 6, text: "she is uncontrollable", correctAns: "true" },
   { id: 7, number: 7, text: "confidence", correctAns: "false" },
   { id: 8, number: 8, text: "don't worry", correctAns: "false" },
-  { id: 9, number: 9, text: "take care", correctAns: "true" },
-  { id: 10, number: 10, text: "kind", correctAns: "true" },
-  { id: 11, number: 11, text: "Its going to be okay", correctAns: "true" },
+  { id: 9, number: 9, text: "take care", correctAns: "false" },
+  { id: 10, number: 10, text: "kind", correctAns: "false" },
+  { id: 11, number: 11, text: "Its going to be okay", correctAns: "false" },
   { id: 12, number: 12, text: "time to panic", correctAns: "true" },
   { id: 13, number: 13, text: "stay hopeful", correctAns: "false" },
   { id: 14, number: 14, text: "everything will be fine", correctAns: "false" },
@@ -85,13 +85,13 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
           <div className="border  w-full grid grid-cols-2">
             {items.map((list, index) => {
               return (
-                <div className=" px-5 ">
-                  <PowerOfWordsCard
-                    list={list}
-                    setResult={handleSetResult}
-                    key={index}
-                  />
-                </div>
+                // <div className="  ">
+                <PowerOfWordsCard
+                  list={list}
+                  setResult={handleSetResult}
+                  key={index}
+                />
+                // </div>
               );
             })}
           </div>
