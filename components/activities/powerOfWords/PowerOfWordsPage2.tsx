@@ -34,13 +34,23 @@ const items = [
     id: 19,
     number: 19,
     text: "that's what good friends are for",
-    correctAns: "true",
+    correctAns: "false",
   },
 ];
 
 export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
   const resultContext = useContext(ResultContext);
   const { state } = resultContext;
+
+  // const handleSetResult = (r: boolean, id: string) => {
+  //   resultContext.dispatch({
+  //     type: "setPowerResults",
+  //     payload: [...(state?.power ?? []), { isCorrect: r, id: id }],
+  //   });
+  // };
+
+  // const totalClick = state?.power.filter((items) => items.isCorrect).length;
+  // const totalResults = state?.power.length;
 
   const handleSetResult = (r: boolean, id: string) => {
     resultContext.dispatch({
@@ -51,6 +61,7 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
 
   const totalClick = state?.power.filter((items) => items.isCorrect).length;
   const totalResults = state?.power.length;
+  console.log(totalClick);
 
   return (
     <div className="readBook w-full h-screen mb-5">
@@ -72,7 +83,7 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
               totalResults={totalResults}
             />
           ) : (
-            <PowerOfWordsScorePoint
+            <PowerOfWordsScorePoint 
               totalClick={totalClick}
               totalResults={totalResults}
             />
@@ -81,15 +92,17 @@ export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
       </header>
 
       <div className="flex justify-center item-center lg:px-20 my-5 ">
-        <div className="flex w-full  bg-white border border-[#303030] shadow-md">
+        <div className="flex w-full my-5  bg-white border border-[#303030] shadow-md">
           <div className=" w-full grid grid-cols-2">
             {items.map((list, index) => {
               return (
-                <PowerOfWordsCard
-                  list={list}
-                  setResult={handleSetResult}
-                  key={index}
-                />
+                <div key={index}>
+                  <PowerOfWordsCard
+                    list={list}
+                    setResult={handleSetResult}
+                    key={index}
+                  />
+                </div>
               );
             })}
           </div>

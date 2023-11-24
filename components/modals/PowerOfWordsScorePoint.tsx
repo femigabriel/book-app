@@ -45,7 +45,7 @@ export const PowerOfWordsScorePoint = ({ totalClick, totalResults }: Props) => {
             <div className="flex justify-center items-center">
               <div className="text-center">
                 <h1 className="text-[2em] text-center"> Amazing!</h1>
-                {totalClick * 10} / 60
+               6 / 6
                 <div className="flex justify-center items-center lg:mt-10">
                   <Image
                     width={17}

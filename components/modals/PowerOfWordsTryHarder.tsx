@@ -47,17 +47,17 @@ export const PowerOfWordsTryHarder = ({ totalClick, totalResults }: Props) => {
                 <h1 className="text-[2em] text-center"> Try harder</h1>
                 <p className="text-center">
                 
-                  {totalClick * 10} / 60
+                  {totalClick} / 6
                 </p>
                 <div className="flex justify-center mt-5">
-                  <Image
+                  {/* <Image
                     width={17}
                     height={19}
                     src="/assets/icons/grommet-icons_status-good.svg"
                     className="w-[70px] h-[70px] cursor-pointer"
                     alt="back-icon"
                     onClick={showModal}
-                  />
+                  /> */}
                 </div>
               </div>
             </div>

@@ -13,6 +13,8 @@ export const PowerOfWordsCard = ({ list, setResult }: any) => {
     setResult(list.correctAns == e, list.id);
   };
 
+  
+
   return (
     <div className=" lg:leading-10 leading-6 w-full lg:text-[1em] text-[0.85em]">
       <div className="flex gap-3 px-5 cursor-pointer">

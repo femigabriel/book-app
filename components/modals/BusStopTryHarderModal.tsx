@@ -68,13 +68,13 @@ export const BusStopTryHarderModal = ({ totalClick, totalResults }: Props) => {
                   className="bg-[#9B59B6] rounded-[24px] py-3 px-5 lg:px-16 text-white text-[1em] flex"
                   onClick={handleOk}
                 >
-                  <Image
+                  {/* <Image
                     width={17}
                     height={19}
                     src="/assets/icons/playIcon.svg"
                     className="w-[30px] h-[25px] cursor-pointer mr-2"
                     alt="back-icon"
-                  />
+                  /> */}
                   <span>Retake</span>
                 </button>
               </Link>
