@@ -143,6 +143,7 @@ export type QuestionOptions = {
   id: number;
   number: any;
   text: string;
+  correctAns: string
  
 };
 export type ResultInterface = {

@@ -14,29 +14,41 @@ const options: QuestionOptions[] = [
     id: 0,
     number: "A.",
     text: "Whatever is going on, you will be alright.",
+    correctAns: "true",
   },
   {
     id: 1,
     number: "B.",
     text: "What’s wrong, why do you look like that?",
+    correctAns: "false",
   },
   {
     id: 2,
     number: "C.",
     text: "Let’s ignore her/ look away.",
+    correctAns: "false",
   },
   {
     id: 3,
     number: "D.",
     text: "Girl, her use my brush!",
+     correctAns: "false",
   },
 ];
 export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
   const [selected, setSelected] = useState<QuestionOptions | undefined>();
+  const [active, setActive] = useState("");
+
+  const handleClick = (e: any) => {
+    setActive(e);
+    // setResult(list.correctAns == e, list.id);
+  };
 
   const handleOnClick = (item: QuestionOptions) => {
     setSelected(item);
   };
+
+
 
   const resultContext = useContext(ResultContext);
   const { state } = resultContext;

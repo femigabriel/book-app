@@ -45,7 +45,7 @@ export const BusStopScorePoint = ({ totalClick, totalResults }: Props) => {
             <div className="flex justify-center items-center">
               <div className="text-center">
                 <h1 className="text-[2em] text-center"> Amazing!</h1>
-                {totalClick * 10} / {totalResults * 10}
+                {totalClick} / 11
                 <div className="flex justify-center items-center lg:mt-10">
                   <Image
                     width={17}

@@ -17,19 +17,19 @@ const items = [
     id: 11,
     busNumber: 11,
     content: "Why did you buy that shirt, it’s too small",
-    correctAns: "true",
+    correctAns: "false",
   },
   {
     id: 12,
     busNumber: 12,
     content: "Let’s work together",
-    correctAns: "false",
+    correctAns: "true",
   },
   {
     id: 13,
     busNumber: 13,
     content: "I appreciate you",
-    correctAns: " true",
+    correctAns: "true",
   },
   {
     id: 14,
@@ -63,7 +63,7 @@ const items = [
     id: 9,
     busNumber: 19,
     content: "I don’t want to sit next to you",
-    correctAns: " true",
+    correctAns: "true",
   },
 
 ];
@@ -83,6 +83,8 @@ export const BustopPage3 = ({ onNextClick, onBackClick }: Props) => {
     (items) => items.isCorrect
   ).length;
   const totalResults = state?.busStopResults.length;
+
+
 
   return (
     <div className="readBook w-full h-full">

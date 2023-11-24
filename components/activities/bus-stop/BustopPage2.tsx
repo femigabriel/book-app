@@ -18,7 +18,7 @@ export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
       payload: [...(state?.busStopResults ?? []), { isCorrect: r, id: id }],
     });
   };
-  console.log(state?.busStopResults);
+  
 
   const items = [
     {
@@ -61,7 +61,7 @@ export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
       id: 7,
       busNumber: 7,
       content: "Cooperation",
-      correctAns: " true",
+      correctAns: "false",
     },
     {
       id: 8,
