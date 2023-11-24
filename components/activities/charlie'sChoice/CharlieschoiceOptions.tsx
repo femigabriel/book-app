@@ -8,15 +8,17 @@ export const CharlieschoiceOptions = ({ list, setResult }: any) => {
     setSelected(item);
   };
   return (
-    <div
-      style={{
-        backgroundColor: list.id === selected?.id ? "#e1d1f6" : "",
-      }}
-      onClick={() => handleOnClick(list)}
-      className="options flex gap-2 px-5 py-3 mb-3"
-    >
-      <span className="">{list.number}</span>
-      <span className="">{list.text}</span>
+    <div>
+      <div
+        style={{
+          backgroundColor: list.id === selected?.id ? "#e1d1f6" : "",
+        }}
+        onClick={() => handleOnClick(list)}
+        className="options flex gap-2 px-5 py-3 mb-3"
+      >
+        <span className="">{list.number}</span>
+        <span className="">{list.text}</span>
+      </div>
     </div>
   );
 };

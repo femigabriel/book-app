@@ -37,6 +37,7 @@ const items = [
     correctAns: "true",
   },
 ];
+
 export const PowerOfWordsPage2 = ({ onNextClick, onBackClick }: Props) => {
   const resultContext = useContext(ResultContext);
   const { state } = resultContext;

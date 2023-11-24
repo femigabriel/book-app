@@ -3,13 +3,16 @@ import Image from "next/image";
 import { ScorePointsModal } from "@/components/modals/ScorePointsModal";
 import { QuestionOptions } from "@/types/global";
 import { ResultContext } from "@/context/user/ResultContext";
+import { CharlieschoiceOptions } from "./CharlieschoiceOptions";
+import { TryHarderModal } from "@/components/modals/TryHarderModal";
 
 interface Props {
   onNextClick: () => any;
   onBackClick: () => any;
+  // setResult: any
 }
 
-const options: QuestionOptions[] = [
+const options = [
   {
     id: 0,
     number: "A.",
@@ -32,38 +35,15 @@ const options: QuestionOptions[] = [
     id: 3,
     number: "D.",
     text: "Girl, her use my brush!",
-     correctAns: "false",
+    correctAns: "false",
   },
 ];
 export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
-  const [selected, setSelected] = useState<QuestionOptions | undefined>();
-  const [active, setActive] = useState("");
+  const [selected, setSelected] = useState("");
 
-  const handleClick = (e: any) => {
-    setActive(e);
-    // setResult(list.correctAns == e, list.id);
-  };
-
-  const handleOnClick = (item: QuestionOptions) => {
+  const handleOnClick = (item: string) => {
     setSelected(item);
   };
-
-
-
-  const resultContext = useContext(ResultContext);
-  const { state } = resultContext;
-
-  const handleSetResult = (r: boolean, id: string) => {
-    resultContext.dispatch({
-      type: "setCharlieResults",
-      payload: [...(state?.charlie ?? []), { isCorrect: r, id: id }],
-    });
-  };
-
-  const totalClick = state?.charlie.filter((items) => items.isCorrect).length;
-  const totalResults = state?.charlie.length;
-
-  // console.log(state?.charlie);
 
   return (
     <div className="readBook w-full h-screen ">
@@ -78,7 +58,7 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
         />
 
         <div>
-          <ScorePointsModal />
+          {selected !== "A." ? <TryHarderModal /> : <ScorePointsModal />}
         </div>
       </header>
       <div className="flex justify-center item-center px-5 my-10">
@@ -92,14 +72,14 @@ export const CharliesChoices4 = ({ onNextClick, onBackClick }: Props) => {
             demonstrated when Mya got on the bus?
           </p>
           <div className="my-5">
-            {options.map((list) => {
+            {options.map((list, index) => {
               return (
                 <div
-                  key={list.id}
+                  key={index}
                   style={{
-                    backgroundColor: list.id === selected?.id ? "#e1d1f6" : "",
+                    backgroundColor: list.number === selected ? "#e1d1f6" : "",
                   }}
-                  onClick={() => handleOnClick(list)}
+                  onClick={() => handleOnClick(list.number)}
                   className="options flex gap-2 px-5 py-3 mb-3"
                 >
                   <span className="">{list.number}</span>

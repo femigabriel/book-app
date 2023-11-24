@@ -44,7 +44,7 @@ export const BusStopTryHarderModal = ({ totalClick, totalResults }: Props) => {
           <div className="mt-5">
             <div className="flex justify-center items-center">
               <div className="">
-                <h1 className="text-[2em] text-center"> Try harder</h1>
+                <h1 className="text-[2em] text-center"> You got off at the Wrong stop</h1>
                 <p className="text-center">
                 
                 {totalClick} / 11

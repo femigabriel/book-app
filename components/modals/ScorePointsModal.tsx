@@ -3,7 +3,11 @@ import { Button, Input, Modal } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 
-export const ScorePointsModal = () => {
+interface Props {
+  totalClick: any;
+  totalResults: any;
+}
+export const ScorePointsModal =  () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -43,15 +47,15 @@ export const ScorePointsModal = () => {
                 <h1 className="text-[2em] text-center"> Amazing!</h1>
                 <p>300/300</p>
                 <div className="flex justify-center items-center lg:mt-10">
-               <Image
-                  width={17}
-                  height={19}
-                  src="/assets/icons/grommet-icons_status-good.svg"
-                  className="w-[70px] h-[70px] cursor-pointer "
-                  alt="back-icon"
-                  onClick={showModal}
-                />
-               </div>
+                  <Image
+                    width={17}
+                    height={19}
+                    src="/assets/icons/grommet-icons_status-good.svg"
+                    className="w-[70px] h-[70px] cursor-pointer "
+                    alt="back-icon"
+                    onClick={showModal}
+                  />
+                </div>
               </div>
             </div>
 
