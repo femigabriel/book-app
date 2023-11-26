@@ -37,7 +37,7 @@ export const BustopPage2 = ({ onNextClick, onBackClick }: Props) => {
     {
       id: 3,
       busNumber: 3,
-      content: "being respectful",
+      content: "Being respectful",
       correctAns: "true",
     },
     {
