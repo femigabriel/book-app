@@ -11,7 +11,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
   return (
     <div className="readBook w-full">
       <Header />
-      <div className="px-24 ml-5 py-10 pt-28 ">
+      <div className="lg:px-24 px-5 ml- py-10 pt-28 ">
         <h3 className="text-[1.500em] pb-5">Books</h3>
         <div className="grid grid-cols-3 gap-5 booklist">
           <div className="flex flex-col">
@@ -66,7 +66,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             <div className="book-cover">
               <div className="book-inner">
                 <div className="flex justify-center items-center py-10 px-5">
-                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
+                  <h3 className="text-[#303030] mt-20 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
                     Charlie's Big Hack:
                     <br />
                     The Coder Club Challenge
@@ -85,7 +85,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             <div className="book-cover">
               <div className="book-inner">
                 <div className="flex justify-center items-center py-10 px-5">
-                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
+                  <h3 className="text-[#303030] mt-20 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
                     Charlie's Big Convention:
                     <br />
                     Anime Over Accessories
@@ -104,7 +104,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             <div className="book-cover">
               <div className="book-inner">
                 <div className="flex justify-center items-center py-10 px-5">
-                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
+                  <h3 className="text-[#303030] mt-20 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
                     Black Nails and Brave Notes:
                     <br />
                     The Punk Progidy's Rise
@@ -123,7 +123,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             <div className="book-cover">
               <div className="book-inner">
                 <div className="flex justify-center items-center py-10 px-5">
-                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
+                  <h3 className="text-[#303030] mt-20 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
                     Big Journey, True Heart:
                     <br />
                     The Path to Wellness Together
@@ -142,7 +142,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             <div className="book-cover">
               <div className="book-inner">
                 <div className="flex justify-center items-center py-10 px-5">
-                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
+                  <h3 className="text-[#303030] mt-20 lg:mt-44 mt font-semibold lg:text-3xl text-2xl text-center">
                     Big Merge:
                     <br />
                     The Unlikely Family Mix-up
@@ -156,7 +156,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
               </button>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
