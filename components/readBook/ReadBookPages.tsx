@@ -14,6 +14,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
       <div className="px-24 ml-5 py-10 pt-28 ">
         <h3 className="text-[1.500em] pb-5">Books</h3>
         <div className="grid grid-cols-3 gap-5 booklist">
+
           <div className="flex flex-col">
             <Image
               width={17}
@@ -32,7 +33,7 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
             </Link>
           </div>
 
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <Image
               width={17}
               height={19}
@@ -60,7 +61,105 @@ export const ReadBookPages = ({ onNextClick }: Props) => {
                 Read Book
               </button>
             </div>
+          </div> */}
+
+          <div className="flex flex-col">
+            <div className="book-cover">
+              <div className="book-inner">
+                <div className="flex justify-center items-center ">
+                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold text-3xl text-center">
+                    Charlie's Big Hack:
+                    <br />
+                    The Coder Club Challenge
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div className="mx-14 bookBtn">
+              <button className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5">
+                Read Book
+              </button>
+            </div>
           </div>
+
+          <div className="flex flex-col">
+            <div className="book-cover">
+              <div className="book-inner">
+                <div className="flex justify-center items-center ">
+                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold text-3xl text-center">
+                    Charlie's Big Convention:
+                    <br />
+                    Anime Over Accessories
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div className="mx-14 bookBtn">
+              <button className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5">
+                Read Book
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="book-cover">
+              <div className="book-inner">
+                <div className="flex justify-center items-center ">
+                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold text-3xl text-center">
+                    Black Nails and Brave Notes:
+                    <br />
+                    The Punk Progidy's Rise
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div className="mx-14 bookBtn">
+              <button className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5">
+                Read Book
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="book-cover">
+              <div className="book-inner">
+                <div className="flex justify-center items-center ">
+                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold text-3xl text-center">
+                    Big Journey, True Heart:
+                    <br />
+                    The Path to Wellness Together
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div className="mx-14 bookBtn">
+              <button className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5">
+                Read Book
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="book-cover">
+              <div className="book-inner">
+                <div className="flex justify-center items-center ">
+                  <h3 className="text-[#303030] mt-10 lg:mt-44 mt font-semibold text-3xl text-center">
+                    Big Merge:
+                    <br />
+                    The Unlikely Family Mix-up
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div className="mx-14 bookBtn">
+              <button className="bg-[#9B59B6] w-[202px] h-[47px] text-[#F8F8F8] text-[0.85em] rounded-[24px]  my-5">
+                Read Book
+              </button>
+            </div>
+          </div>
+
+
+
         </div>
       </div>
     </div>
