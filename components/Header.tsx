@@ -89,7 +89,7 @@ export const Header = () => {
               />
             </Link>
 
-            <div className="mt-5">
+            <div className="mt-5 px-5">
               {open ? (
                 <div>
                   <Dropdown
