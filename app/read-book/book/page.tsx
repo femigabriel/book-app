@@ -15,7 +15,7 @@ export default function Home() {
       <div className="mb-5">
         <ReadBookHeader />
       </div>
-      <div className="flex justify-center items-center  w-full  h-screen">
+      <div className="flex justify-center items-center   w-full  h-screen lg:h-full lg:py-10">
         <HTMLFlipBook
           width={500}
           height={600}

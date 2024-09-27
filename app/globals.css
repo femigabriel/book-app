@@ -4,11 +4,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Fredoka&display=swap");
 
+@font-face {
+  font-family: "Gill Sans", sans-serif;
+  src: url('../fonts/Gill-Sans/Gill\ Sans\ Medium.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fredoka", sans-serif;
+  /* font-family: "Fredoka", sans-serif; */
+  font-family: "Gill Sans", sans-serif;
+
 }
 body {
   color: #303030;
