@@ -44,7 +44,7 @@ export const CharliesChoices2 = ({ onNextClick, onBackClick }: Props) => {
 
   return (
     <div className="readBook w-full h-screen ">
-      <header className="px-10 py-7 flex justify-between shadow-sm">
+      <header className="px-10 items-center flex justify-between shadow-sm">
         <Image
           width={17}
           height={19}
