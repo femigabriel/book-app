@@ -24,6 +24,10 @@
   font-family: 'Gill Sans', sans-serif;
 
 }
+html, body {
+  height: 100%; 
+  margin: 0;
+}
 body {
   color: #303030;
   overflow-x: hidden;
@@ -81,10 +85,14 @@ header {
 }
 
 .readBook {
-  background: var(
-    --MIXED,
-    conic-gradient(from 251deg at 121.01% 56.74%, #f8f8f8 0deg, #e1d1f6 360deg)
+  min-height: 100vh; /* Full viewport height */
+  background: conic-gradient(
+    from 251deg at 121.01% 56.74%, 
+    #f8f8f8 0deg, 
+    #e1d1f6 360deg
   );
+  background-size: cover; 
+  background-attachment: fixed; 
 }
 
 .coverBook {
