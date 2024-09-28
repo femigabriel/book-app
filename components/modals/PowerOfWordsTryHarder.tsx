@@ -9,6 +9,11 @@ interface Props {
 }
 export const PowerOfWordsTryHarder = ({ totalClick, totalResults }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  // Function to play the sound
+  const playSound = () => {
+    const audio = new Audio("/assets/sounds/756267__joseegn__ui_sound_return_1.wav"); 
+    audio.play();
+  };
 
   const showModal = () => {
     setIsModalOpen(true);
@@ -16,6 +21,7 @@ export const PowerOfWordsTryHarder = ({ totalClick, totalResults }: Props) => {
 
   const handleOk = () => {
     setIsModalOpen(false);
+    playSound()
   };
 
   const handleCancel = () => {

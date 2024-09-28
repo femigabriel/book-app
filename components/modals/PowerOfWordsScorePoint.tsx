@@ -10,8 +10,15 @@ interface Props {
 export const PowerOfWordsScorePoint = ({ totalClick, totalResults }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+    // Function to play the sound
+    const playSound = () => {
+      const audio = new Audio("/assets/sounds/756229__timbre__yeah-man-rock-roll.flac"); 
+      audio.play();
+    };
+
   const showModal = () => {
     setIsModalOpen(true);
+    playSound(); 
   };
 
   const handleOk = () => {

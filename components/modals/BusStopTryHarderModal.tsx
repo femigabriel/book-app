@@ -9,13 +9,20 @@ interface Props {
 }
 export const BusStopTryHarderModal = ({ totalClick, totalResults }: Props) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  // Function to play the sound
+  const playSound = () => {
+    const audio = new Audio("/assets/sounds/756267__joseegn__ui_sound_return_1.wav"); 
+    audio.play();
+  };
 
   const showModal = () => {
     setIsModalOpen(true);
+
   };
 
   const handleOk = () => {
     setIsModalOpen(false);
+    playSound()
   };
 
   const handleCancel = () => {
