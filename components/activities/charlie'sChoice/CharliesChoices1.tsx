@@ -12,7 +12,7 @@ interface Props {
 export const CharliesChoices1 = ({ onNextClick, onBackClick }: Props) => {
   return (
     <div className="readBook w-full lg:h-full">
-      <header className="px-10 py-5 flex justify-between shadow-sm">
+      <header className="px-10 py- flex justify-between items-center shadow-sm">
     
         <QuitModal />
 
